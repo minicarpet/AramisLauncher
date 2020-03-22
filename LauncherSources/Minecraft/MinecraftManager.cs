@@ -42,8 +42,8 @@ namespace AramisLauncher.Minecraft
         {
             StringBuilder arguments = new StringBuilder();
 
-            arguments.Append("-Xms" + 1024 + "M ");
-            arguments.Append("-Xmx" + 2048 + "M ");
+            arguments.Append("-Xms" + 5120 + "M ");
+            arguments.Append("-Xmx" + 8192 + "M ");
 
             arguments.Append("-Djava.library.path=" + CommonData.nativeFolder + " ");
             arguments.Append("-Dorg.lwjgl.librarypath=" + CommonData.nativeFolder + " ");
@@ -64,7 +64,7 @@ namespace AramisLauncher.Minecraft
             arguments.Append(";" + CommonData.aramisFolder + "versions/" + ManifestManager.minecraftVersionJson.Id + "/" + ManifestManager.minecraftVersionJson.Id + ".jar ");
 
             //arguments.Append(ManifestManager.minecraftVersionJson.MainClass + " ");
-            arguments.Append("net.minecraft.launchwrapper.Launch ");
+            arguments.Append(ManifestManager.forgeVersionJson.MainClass + " ");
 
             arguments.Append("--username ");
             arguments.Append(CommonData.launcherProfileJson.authenticationDatabase.selectedProfile.name + " ");
@@ -85,6 +85,7 @@ namespace AramisLauncher.Minecraft
             arguments.Append("--tweakClass net.minecraftforge.fml.common.launcher.FMLTweaker ");
             arguments.Append("--versionType ");
             arguments.Append("Forge ");
+            arguments.Append("mc.hypixel.net:25565 ");
 
             arguments.Append("--width " + 1920 + " ");
             arguments.Append("--height " + 1080 + " ");

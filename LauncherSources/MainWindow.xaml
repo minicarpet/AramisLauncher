@@ -9,7 +9,6 @@
         Title="AramisLauncher" Height="570" Width="970">
     <Grid>
         <WebBrowser x:Name="webContent" HorizontalAlignment="Left" Height="108" Margin="488,10,0,0" VerticalAlignment="Top" Width="294"/>
-        <ComboBox x:Name="versionBox" HorizontalAlignment="Left" Margin="578,158,0,0" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="downloadButton" Content="Start Minecraft" HorizontalAlignment="Left" Margin="578,320,0,0" VerticalAlignment="Top" Width="120" Click="downloadButton_Click"/>
         <ProgressBar x:Name="downloadProgression" HorizontalAlignment="Left" Height="20" Margin="119,295,0,0" VerticalAlignment="Top" Width="579"/>
         <Label x:Name="downloadDescription" Content="" HorizontalAlignment="Left" Margin="119,269,0,0" VerticalAlignment="Top" Width="579"/>
@@ -18,6 +17,6 @@
         <Button x:Name="connectButton" Content="Connect" HorizontalAlignment="Left" Margin="119,194,0,0" VerticalAlignment="Top" Width="75" Height="18" Click="connectButton_Click"/>
         <Label x:Name="ConnectionStateLabel" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="215"/>
         <Label x:Name="Copyright" Content="Designed by Aramis inc. in Naveil&#xD;&#xA;Assembled in Naveil" HorizontalAlignment="Left" Margin="10,489,0,0" VerticalAlignment="Top" Width="215"/>
-
+        <Ellipse x:Name="ConnectionCircle" Stroke="Black" Fill=" Green" StrokeThickness="1" Canvas.Left="135" Canvas.Top="100" Margin="10,36,934,485" />
     </Grid>
 </Window>

@@ -17,6 +17,7 @@ namespace AramisLauncher.Download
     class DownloadManager
     {
         public static string libraryFolder = CommonData.aramisFolder + "libraries/";
+        public static string modsFolder = CommonData.aramisFolder + "mods/";
 
         public static List<string> nativesToExtract = new List<string>();
 
@@ -35,21 +36,21 @@ namespace AramisLauncher.Download
             
         }
 
-        public static void startDownload(int indexVersion)
+        public static void startDownload()
         {
             LoggerManager.log("Start Download !");
 
-            ManifestManager.GetManifestVersion(ManifestManager.minecraftVersions[indexVersion]);
+            ManifestManager.GetManifestVersion();
 
             /* download necessary files step by step */
-            downloadAssets(indexVersion);
-            downloadLibraries(indexVersion);
-            downloadMinecraft(indexVersion);
+            downloadAssets();
+            downloadLibraries();
+            downloadMinecraft();
             downloadForgeLibrairies();
             downloadForgeMods();
         }
 
-        private static void downloadAssets(int indexVersion)
+        private static void downloadAssets()
         {
             int currentAsset = 0;
 
@@ -114,7 +115,7 @@ namespace AramisLauncher.Download
             });
         }
 
-        private static void downloadLibraries(int indexVersion)
+        private static void downloadLibraries()
         {
             int currentAsset = 0;
 
@@ -228,7 +229,7 @@ namespace AramisLauncher.Download
             });
         }
 
-        private static  void downloadMinecraft(int indexVersion)
+        private static  void downloadMinecraft()
         {
             LoggerManager.log("Start Game Download !");
             fileToDownload.Clear();
@@ -315,7 +316,9 @@ namespace AramisLauncher.Download
 
         private static void downloadForgeLibrairies()
         {
-            MainWindow.ChangeDownLoadDescriptor("Step 7/10 : Téléchargement des fichiers forge...");
+            LoggerManager.log("Start Forge Download !");
+            fileToDownload.Clear();
+            MainWindow.ChangeDownLoadDescriptor("Step 7/10 : Vérification des fichiers forge...");
             int currentAsset = 0;
             MainWindow.ChangeProgressBarValue(0);
             foreach (ForgeLibrary library in ManifestManager.forgeVersionJson.Libraries)
@@ -369,7 +372,53 @@ namespace AramisLauncher.Download
 
         private static void downloadForgeMods()
         {
+            LoggerManager.log("Start Mods Download !");
+            fileToDownload.Clear();
+            MainWindow.ChangeDownLoadDescriptor("Step 9/10 : Vérification des mods forge...");
+            int currentAsset = 0;
+            MainWindow.ChangeProgressBarValue(0);
+            foreach (InstalledAddon addon in ManifestManager.aramisPackageJson.InstalledAddons)
+            {
+                FileDownloadInformation fileDownloadInformation = new FileDownloadInformation();
 
+                string filePath = modsFolder + addon.InstalledFile.FileName;
+                fileDownloadInformation.outputPath = filePath;
+                fileDownloadInformation.url = addon.InstalledFile.DownloadUrl.AbsoluteUri;
+
+                if (System.IO.File.Exists(filePath))
+                {
+                    /* Compare size */
+                    if(new FileInfo(filePath).Length != addon.InstalledFile.FileLength)
+                    {
+                        /* Size is incorrect, add to download list */
+                        fileToDownload.Add(fileDownloadInformation);
+                    }
+                }
+                else
+                {
+                    /* add to download list */
+                    fileToDownload.Add(fileDownloadInformation);
+                }
+            }
+
+            int test = ManifestManager.aramisPackageJson.CachedScans.Length;
+
+            MainWindow.ChangeDownLoadDescriptor("Step 10/10 : Téléchargement des mods forge...");
+            currentAsset = 0;
+            MainWindow.ChangeProgressBarValue(0);
+            fileToDownload.ForEach(delegate (FileDownloadInformation libFile)
+            {
+                /* Create dir if not exist */
+                if (!Directory.Exists(Path.GetDirectoryName(libFile.outputPath)))
+                {
+                    Directory.CreateDirectory(Path.GetDirectoryName(libFile.outputPath));
+                }
+
+                /* Download file asset */
+                webClient.DownloadFile(libFile.url, libFile.outputPath);
+
+                MainWindow.ChangeProgressBarValue(++currentAsset * 100.0 / fileToDownload.Count);
+            });
         }
 
         private static void DownloadProgressCallback(object sender, DownloadProgressChangedEventArgs e)

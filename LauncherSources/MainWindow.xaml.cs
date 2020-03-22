@@ -20,7 +20,6 @@ namespace AramisLauncher
     /// </summary>
     public partial class MainWindow : Window
     {
-        public static ComboBox menuVersion;
         public static ProgressBar downloadProgress;
         public static Label downloadDescriptor;
         public static PasswordBox passwordUserBox;
@@ -33,12 +32,11 @@ namespace AramisLauncher
         private DownloadManager donwloaderManager;
         private MinecraftManager minecraftManager;
 
-        private Thread thread = new Thread(ExecuteInForeground);
+        private Thread thread = new Thread(ExecuteInBackground);
         public MainWindow()
         {
             InitializeComponent();
 
-            menuVersion = (ComboBox)FindName("versionBox");
             downloadProgress = (ProgressBar)FindName("downloadProgression");
             downloadDescriptor = (Label)FindName("downloadDescription");
             userNameBox = (TextBox)FindName("usernameBox");
@@ -73,13 +71,6 @@ namespace AramisLauncher
             manifestManager = new ManifestManager();
             donwloaderManager = new DownloadManager();
             minecraftManager = new MinecraftManager();
-
-            foreach (JSON.Version version in ManifestManager.minecraftVersions)
-            {
-                menuVersion.Items.Add(version.Id);
-            }
-
-            menuVersion.SelectedIndex = 0;
         }
 
         private void downloadButton_Click(object sender, RoutedEventArgs e)
@@ -97,7 +88,7 @@ namespace AramisLauncher
                                 thread.Start();
                                 break;
                             case ThreadState.Stopped:
-                                thread = new Thread(ExecuteInForeground);
+                                thread = new Thread(ExecuteInBackground);
                                 thread.IsBackground = true;
                                 thread.Start();
                                 break;
@@ -171,15 +162,10 @@ namespace AramisLauncher
             });
         }
 
-        private static void ExecuteInForeground()
+        private static void ExecuteInBackground()
         {
-            int versionIndex = 0;
-            Application.Current.Dispatcher.Invoke(() =>
-            {
-                versionIndex = menuVersion.SelectedIndex;
-            });
             /* Download the selected version */
-            DownloadManager.startDownload(versionIndex);
+            DownloadManager.startDownload();
             /* start the selected version */
             MinecraftManager.StartMinecraft();
         }

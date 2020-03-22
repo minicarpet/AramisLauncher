@@ -43,10 +43,12 @@ namespace AramisLauncher.JSON
             MainWindow.downloadDescriptor.Content = "Manifests récupérés";
         }
 
-        public static void GetManifestVersion(Version version)
+        public static void GetManifestVersion()
         {
+            Version versionFound = minecraftVersions.Find(version => version.Id == aramisPackageJson.BaseModLoader.MinecraftVersion);
+
             /* Get manifest for specified version */
-            manifestVersionData = webClient.DownloadString(version.Url);
+            manifestVersionData = webClient.DownloadString(versionFound.Url);
             minecraftVersionJson = MinecraftVersionJson.FromJson(manifestVersionData);
 
             /* get assets json */
