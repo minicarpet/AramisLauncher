@@ -367,7 +367,7 @@ namespace AramisLauncher.Download
             });
         }
 
-        private static void downloadForgeLibrairies()
+        private static void downloadForgeMods()
         {
 
         }
