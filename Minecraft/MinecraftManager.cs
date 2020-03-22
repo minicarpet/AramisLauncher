@@ -63,7 +63,8 @@ namespace AramisLauncher.Minecraft
 
             arguments.Append(";" + CommonData.aramisFolder + "versions/" + ManifestManager.minecraftVersionJson.Id + "/" + ManifestManager.minecraftVersionJson.Id + ".jar ");
 
-            arguments.Append(ManifestManager.minecraftVersionJson.MainClass + " ");
+            //arguments.Append(ManifestManager.minecraftVersionJson.MainClass + " ");
+            arguments.Append("net.minecraft.launchwrapper.Launch ");
 
             arguments.Append("--username ");
             arguments.Append(CommonData.launcherProfileJson.authenticationDatabase.selectedProfile.name + " ");
@@ -81,8 +82,9 @@ namespace AramisLauncher.Minecraft
             arguments.Append(CommonData.launcherProfileJson.authenticationDatabase.accessToken + " ");
             arguments.Append("--userType ");
             arguments.Append("mojang ");
+            arguments.Append("--tweakClass net.minecraftforge.fml.common.launcher.FMLTweaker ");
             arguments.Append("--versionType ");
-            arguments.Append("Vanilla ");
+            arguments.Append("Forge ");
 
             arguments.Append("--width " + 1920 + " ");
             arguments.Append("--height " + 1080 + " ");

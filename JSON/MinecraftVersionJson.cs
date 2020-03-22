@@ -334,15 +334,15 @@ namespace AramisLauncher.JSON
 
     public partial class MinecraftVersionJson
     {
-        public static MinecraftVersionJson FromJson(string json) => JsonConvert.DeserializeObject<MinecraftVersionJson>(json, AramisLauncher.JSON.Converter.Settings);
+        public static MinecraftVersionJson FromJson(string json) => JsonConvert.DeserializeObject<MinecraftVersionJson>(json, AramisLauncher.JSON.MinecraftVersionJsonConverter.Settings);
     }
 
-    public static class Serialize
+    public static class MinecraftVersionJsonSerialize
     {
-        public static string ToJson(this MinecraftVersionJson self) => JsonConvert.SerializeObject(self, AramisLauncher.JSON.Converter.Settings);
+        public static string ToJson(this MinecraftVersionJson self) => JsonConvert.SerializeObject(self, AramisLauncher.JSON.MinecraftVersionJsonConverter.Settings);
     }
 
-    internal static class Converter
+    internal static class MinecraftVersionJsonConverter
     {
         public static readonly JsonSerializerSettings Settings = new JsonSerializerSettings
         {
@@ -350,7 +350,7 @@ namespace AramisLauncher.JSON
             DateParseHandling = DateParseHandling.None,
             Converters =
             {
-                GameElementConverter.Singleton,
+                MinecraftVersionJsonGameElementConverter.Singleton,
                 ActionConverter.Singleton,
                 ValueConverter.Singleton,
                 JvmElementConverter.Singleton,
@@ -360,7 +360,7 @@ namespace AramisLauncher.JSON
         };
     }
 
-    internal class GameElementConverter : JsonConverter
+    internal class MinecraftVersionJsonGameElementConverter : JsonConverter
     {
         public override bool CanConvert(Type t) => t == typeof(GameElement) || t == typeof(GameElement?);
 
@@ -395,7 +395,7 @@ namespace AramisLauncher.JSON
             throw new Exception("Cannot marshal type GameElement");
         }
 
-        public static readonly GameElementConverter Singleton = new GameElementConverter();
+        public static readonly MinecraftVersionJsonGameElementConverter Singleton = new MinecraftVersionJsonGameElementConverter();
     }
 
     internal class ActionConverter : JsonConverter

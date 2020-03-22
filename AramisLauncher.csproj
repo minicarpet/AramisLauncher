@@ -95,6 +95,7 @@
     <Compile Include="Common\CommonData.cs" />
     <Compile Include="Download\DownloadManager.cs" />
     <Compile Include="JSON\AramisPackageJson.cs" />
+    <Compile Include="JSON\ForgeVersionJson.cs" />
     <Compile Include="JSON\ManifestManager.cs" />
     <Compile Include="JSON\MinecraftVersionJson.cs" />
     <Compile Include="JSON\MojangMinecraftManifest.cs" />

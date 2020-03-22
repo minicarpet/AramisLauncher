@@ -12,10 +12,13 @@ namespace AramisLauncher.JSON
 {
     class ManifestManager
     {
+        public static AramisPackageJson aramisPackageJson = new AramisPackageJson();
+
         public static List<Version> minecraftVersions = new List<Version>();
         public static Uri minecrafetVersionAssets;
         public static List<AssetInformation> assetsInformation = new List<AssetInformation>();
         public static MinecraftVersionJson minecraftVersionJson = new MinecraftVersionJson();
+        public static ForgeVersionJson forgeVersionJson = new ForgeVersionJson();
         public static string manifestVersionData;
         
         private static WebClient webClient = new WebClient();
@@ -25,6 +28,7 @@ namespace AramisLauncher.JSON
         {
             MainWindow.downloadDescriptor.Content = "Récupération des manifests...";
             AramisManifest();
+
             string manifestData = webClient.DownloadString(mojangMinecraftManifestUrl);
             MojangMinecraftManifest mojangMinecraftManifest = JsonConvert.DeserializeObject<MojangMinecraftManifest>(manifestData);
 
@@ -78,12 +82,11 @@ namespace AramisLauncher.JSON
 
         public static void AramisManifest()
         {
-            /* Get the recommended version */
+            /* To get the recommended version */
             //https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
 
-            string testRead = System.IO.File.ReadAllText(CommonData.aramisFolder + "minecraftinstance.json");
-
-            AramisPackageJson test = AramisPackageJson.FromJson(System.IO.File.ReadAllText(CommonData.aramisFolder + "minecraftinstance.json"));
+            aramisPackageJson = AramisPackageJson.FromJson(webClient.DownloadString("https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/aramisPackage.json"));
+            forgeVersionJson = ForgeVersionJson.FromJson(aramisPackageJson.BaseModLoader.VersionJson);
         }
     }
 }

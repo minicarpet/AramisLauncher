@@ -45,7 +45,8 @@ namespace AramisLauncher.Download
             downloadAssets(indexVersion);
             downloadLibraries(indexVersion);
             downloadMinecraft(indexVersion);
-            downloadForge(indexVersion);
+            downloadForgeLibrairies();
+            downloadForgeMods();
         }
 
         private static void downloadAssets(int indexVersion)
@@ -64,7 +65,7 @@ namespace AramisLauncher.Download
             string assetsManifest = webClient.DownloadString(ManifestManager.minecrafetVersionAssets);
             System.IO.File.WriteAllText(assetsIndexFolder + ManifestManager.minecraftVersionJson.Assets + ".json", assetsManifest);
 
-            MainWindow.ChangeDownLoadDescriptor("Step 1/6 : Vérification des assets...");
+            MainWindow.ChangeDownLoadDescriptor("Step 1/10 : Vérification des assets...");
             fileToDownload.Clear();
             MainWindow.ChangeProgressBarValue(0);
             ManifestManager.assetsInformation.ForEach(delegate (AssetInformation assetInformation)
@@ -95,7 +96,7 @@ namespace AramisLauncher.Download
             });
 
             /* download assets */
-            MainWindow.ChangeDownLoadDescriptor("Step 2/6 : Téléchargement des assets...");
+            MainWindow.ChangeDownLoadDescriptor("Step 2/10 : Téléchargement des assets...");
             currentAsset = 0;
             MainWindow.ChangeProgressBarValue(0);
             fileToDownload.ForEach(delegate (FileDownloadInformation assetFile)
@@ -128,7 +129,7 @@ namespace AramisLauncher.Download
                 Directory.CreateDirectory(libraryFolder);
             }
 
-            MainWindow.ChangeDownLoadDescriptor("Step 3/6 : Vérification des Librairies...");
+            MainWindow.ChangeDownLoadDescriptor("Step 3/10 : Vérification des Librairies...");
             currentAsset = 0;
             MainWindow.ChangeProgressBarValue(0);
             foreach (Library library in ManifestManager.minecraftVersionJson.Libraries)
@@ -209,7 +210,7 @@ namespace AramisLauncher.Download
                 MainWindow.ChangeProgressBarValue(++currentAsset * 100.0 / ManifestManager.minecraftVersionJson.Libraries.Length);
             }
 
-            MainWindow.ChangeDownLoadDescriptor("Step 4/6 : Téléchargement des Librairies...");
+            MainWindow.ChangeDownLoadDescriptor("Step 4/10 : Téléchargement des Librairies...");
             currentAsset = 0;
             MainWindow.ChangeProgressBarValue(0);
             fileToDownload.ForEach(delegate (FileDownloadInformation libFile)
@@ -239,7 +240,7 @@ namespace AramisLauncher.Download
                 Directory.CreateDirectory(versionFolder + ManifestManager.minecraftVersionJson.Id);
             }
 
-            MainWindow.ChangeDownLoadDescriptor("Step 5/6 : Vérification des fichiers du jeu...");
+            MainWindow.ChangeDownLoadDescriptor("Step 5/10 : Vérification des fichiers du jeu...");
             string gameFilePath = versionFolder + ManifestManager.minecraftVersionJson.Id + "/" + ManifestManager.minecraftVersionJson.Id + ".jar";
             gameDownloadInformation.url = ManifestManager.minecraftVersionJson.Downloads.Client.Url.AbsoluteUri;
             gameDownloadInformation.outputPath = gameFilePath;
@@ -284,7 +285,7 @@ namespace AramisLauncher.Download
                 }
             }
 
-            MainWindow.ChangeDownLoadDescriptor("Step 6/6 : Téléchargement des fichiers du jeu...");
+            MainWindow.ChangeDownLoadDescriptor("Step 6/10 : Téléchargement des fichiers du jeu...");
             /* record json into this same path if not exist */
             string gameJSONFilePath = versionFolder + ManifestManager.minecraftVersionJson.Id + "/" + ManifestManager.minecraftVersionJson.Id + ".json";
 
@@ -312,9 +313,63 @@ namespace AramisLauncher.Download
             webClient.DownloadProgressChanged -= eventHandler;
         }
 
-        private static void downloadForge(int indexVersion)
+        private static void downloadForgeLibrairies()
         {
-            
+            MainWindow.ChangeDownLoadDescriptor("Step 7/10 : Téléchargement des fichiers forge...");
+            int currentAsset = 0;
+            MainWindow.ChangeProgressBarValue(0);
+            foreach (ForgeLibrary library in ManifestManager.forgeVersionJson.Libraries)
+            {
+                FileDownloadInformation fileDownloadInformation = new FileDownloadInformation();
+
+                string[] tempSplitted = library.Name.Split(':');
+                if(tempSplitted.Length == 3)
+                {
+                    string completedFilePath = tempSplitted[0].Replace('.', '/') + "/" + tempSplitted[1] + "/" + tempSplitted[2] + "/" + tempSplitted[1] + "-" + tempSplitted[2] + ".jar";
+
+                    if (library.Url != null)
+                    {
+                        fileDownloadInformation.url = library.Url.AbsoluteUri + completedFilePath;
+                    }
+                    else
+                    {
+                        fileDownloadInformation.url = "https://libraries.minecraft.net/" + completedFilePath;
+                    }
+                    fileDownloadInformation.outputPath = libraryFolder + completedFilePath;
+                    classPathList.Add(fileDownloadInformation.outputPath);
+
+                    if (System.IO.File.Exists(fileDownloadInformation.outputPath))
+                    {
+                        System.IO.File.Delete(fileDownloadInformation.outputPath);
+                    }
+
+                    fileToDownload.Add(fileDownloadInformation);
+                }
+
+                MainWindow.ChangeProgressBarValue(++currentAsset * 100.0 / ManifestManager.forgeVersionJson.Libraries.Length);
+            }
+
+            MainWindow.ChangeDownLoadDescriptor("Step 8/10 : Téléchargement des fichiers forge...");
+            currentAsset = 0;
+            MainWindow.ChangeProgressBarValue(0);
+            fileToDownload.ForEach(delegate (FileDownloadInformation libFile)
+            {
+                /* Create dir if not exist */
+                if (!Directory.Exists(Path.GetDirectoryName(libFile.outputPath)))
+                {
+                    Directory.CreateDirectory(Path.GetDirectoryName(libFile.outputPath));
+                }
+
+                /* Download file asset */
+                webClient.DownloadFile(libFile.url, libFile.outputPath);
+
+                MainWindow.ChangeProgressBarValue(++currentAsset * 100.0 / fileToDownload.Count);
+            });
+        }
+
+        private static void downloadForgeLibrairies()
+        {
+
         }
 
         private static void DownloadProgressCallback(object sender, DownloadProgressChangedEventArgs e)
