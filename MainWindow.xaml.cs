@@ -1,0 +1,187 @@
+﻿using AramisLauncher.Common;
+using AramisLauncher.Download;
+using AramisLauncher.JSON;
+using AramisLauncher.Logger;
+using AramisLauncher.Minecraft;
+using System;
+using System.Net.NetworkInformation;
+using System.Runtime.CompilerServices;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Threading;
+using static AramisLauncher.Minecraft.Authenticator;
+
+namespace AramisLauncher
+{
+    /// <summary>
+    /// Logique d'interaction pour MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public static ComboBox menuVersion;
+        public static ProgressBar downloadProgress;
+        public static Label downloadDescriptor;
+        public static PasswordBox passwordUserBox;
+        public static TextBox userNameBox;
+        public static Label connectionStateLabel;
+        public static Button connectionButton;
+        public static WebBrowser webBrowser;
+
+        private ManifestManager manifestManager;
+        private DownloadManager donwloaderManager;
+        private MinecraftManager minecraftManager;
+
+        private Thread thread = new Thread(ExecuteInForeground);
+        public MainWindow()
+        {
+            InitializeComponent();
+
+            menuVersion = (ComboBox)FindName("versionBox");
+            downloadProgress = (ProgressBar)FindName("downloadProgression");
+            downloadDescriptor = (Label)FindName("downloadDescription");
+            userNameBox = (TextBox)FindName("usernameBox");
+            passwordUserBox = (PasswordBox)FindName("passwordBox");
+            connectionStateLabel = (Label)FindName("ConnectionStateLabel");
+            connectionButton = (Button)FindName("connectButton");
+            webBrowser = (WebBrowser)FindName("webContent");
+
+            webBrowser.Navigate("https://www.google.fr");
+
+            CommonData.getLauncherProfile();
+
+            if (CommonData.launcherProfileJson.authenticationDatabase != null)
+            {
+                /* file successfully loaded */
+                userNameBox.Visibility = Visibility.Hidden;
+                passwordUserBox.Visibility = Visibility.Hidden;
+                connectionButton.Content = "Disconnect";
+                connectionStateLabel.Content = "Connected as : " + CommonData.launcherProfileJson.authenticationDatabase.selectedProfile.name;
+            }
+            else
+            {
+                connectionStateLabel.Content = "Not connected.";
+            }
+
+            LoggerManager.log("Launcher started at " + DateTime.Now);
+
+            thread.IsBackground = true;
+            downloadProgress.Minimum = 0;
+            downloadProgress.Maximum = 100;
+
+            manifestManager = new ManifestManager();
+            donwloaderManager = new DownloadManager();
+            minecraftManager = new MinecraftManager();
+
+            foreach (JSON.Version version in ManifestManager.minecraftVersions)
+            {
+                menuVersion.Items.Add(version.Id);
+            }
+
+            menuVersion.SelectedIndex = 0;
+        }
+
+        private void downloadButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (CommonData.launcherProfileJson.authenticationDatabase != null)
+            {
+                try
+                {
+                    bool processIsRunning = MinecraftManager.minecraftGame.HasExited;
+                    if (processIsRunning)
+                    {
+                        switch (thread.ThreadState)
+                        {
+                            case ThreadState.Unstarted:
+                                thread.Start();
+                                break;
+                            case ThreadState.Stopped:
+                                thread = new Thread(ExecuteInForeground);
+                                thread.IsBackground = true;
+                                thread.Start();
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                }
+                catch (InvalidOperationException)
+                {
+                    switch(thread.ThreadState)
+                    {
+                        case ThreadState.Background | ThreadState.Unstarted:
+                            thread.Start();
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Merci de se connecter avant.");
+            }
+        }
+
+        private void connectButton_Click(object sender, RoutedEventArgs e)
+        {
+            if(connectionButton.Content.ToString() == "Connect")
+            {
+                CommonData.setAuthenticateProfile(AuthenticateToMinecraft(userNameBox.Text, passwordUserBox.Password));
+                if (CommonData.launcherProfileJson.authenticationDatabase != null)
+                {
+                    MessageBox.Show("Connected !");
+                    CommonData.saveLauncherProfile();
+                    userNameBox.Visibility = Visibility.Hidden;
+                    passwordUserBox.Visibility = Visibility.Hidden;
+                    connectionButton.Content = "Disconnect";
+                    connectionStateLabel.Content = "Connected as : " + CommonData.launcherProfileJson.authenticationDatabase.selectedProfile.name;
+                }
+                else
+                {
+                    MessageBox.Show("Error to connect !");
+                }
+            }
+            else
+            {
+                userNameBox.Visibility = Visibility.Visible;
+                passwordUserBox.Visibility = Visibility.Visible;
+                passwordUserBox.Clear();
+                connectionButton.Content = "Connect";
+                connectionStateLabel.Content = "Not connected";
+                CommonData.launcherProfileJson.authenticationDatabase = null;
+                CommonData.saveLauncherProfile();
+            }
+        }
+
+        public static void ChangeDownLoadDescriptor(string newValue)
+        {
+            Application.Current.Dispatcher.Invoke(() =>
+            {
+                downloadDescriptor.Content = newValue;
+            });
+        }
+
+        public static void ChangeProgressBarValue(double newValue)
+        {
+            Application.Current.Dispatcher.Invoke(() =>
+            {
+                downloadProgress.Value = newValue;
+            });
+        }
+
+        private static void ExecuteInForeground()
+        {
+            int versionIndex = 0;
+            Application.Current.Dispatcher.Invoke(() =>
+            {
+                versionIndex = menuVersion.SelectedIndex;
+            });
+            /* Download the selected version */
+            DownloadManager.startDownload(versionIndex);
+            /* start the selected version */
+            MinecraftManager.StartMinecraft();
+        }
+    }
+}
