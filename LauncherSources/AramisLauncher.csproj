@@ -37,7 +37,7 @@
     <UpdateUrl>https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/AramisLauncherClickOnce/</UpdateUrl>
     <TargetCulture>fr-FR</TargetCulture>
     <PublisherName>Aramis</PublisherName>
-    <ApplicationRevision>18</ApplicationRevision>
+    <ApplicationRevision>20</ApplicationRevision>
     <ApplicationVersion>0.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
