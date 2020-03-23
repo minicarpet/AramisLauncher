@@ -4,6 +4,7 @@ using AramisLauncher.JSON;
 using AramisLauncher.Logger;
 using AramisLauncher.Minecraft;
 using System;
+using System.Deployment.Application;
 using System.Net.NetworkInformation;
 using System.Runtime.CompilerServices;
 using System.Threading;
@@ -27,6 +28,7 @@ namespace AramisLauncher
         public static Label connectionStateLabel;
         public static Button connectionButton;
         public static WebBrowser webBrowser;
+        public static Label versionLabel;
 
         private ManifestManager manifestManager;
         private DownloadManager donwloaderManager;
@@ -44,6 +46,10 @@ namespace AramisLauncher
             connectionStateLabel = (Label)FindName("ConnectionStateLabel");
             connectionButton = (Button)FindName("connectButton");
             webBrowser = (WebBrowser)FindName("webContent");
+            versionLabel = (Label)FindName("version");
+
+            if (ApplicationDeployment.IsNetworkDeployed)
+                versionLabel.Content += " " + ApplicationDeployment.CurrentDeployment.CurrentVersion;
 
             webBrowser.Navigate("https://www.google.fr");
 
