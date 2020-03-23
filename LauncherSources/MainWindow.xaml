@@ -13,7 +13,7 @@
         <ProgressBar x:Name="downloadProgression" HorizontalAlignment="Left" Height="20" Margin="119,295,0,0" VerticalAlignment="Top" Width="579"/>
         <Label x:Name="downloadDescription" Content="" HorizontalAlignment="Left" Margin="119,269,0,0" VerticalAlignment="Top" Width="579"/>
         <TextBox x:Name="usernameBox" HorizontalAlignment="Left" Height="18" Margin="119,158,0,0" TextWrapping="Wrap" Text="UserName" VerticalAlignment="Top" Width="209"/>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="119,176,0,0" VerticalAlignment="Top" Width="209"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="119,176,0,0" VerticalAlignment="Top" Width="209" Password="Password"/>
         <Button x:Name="connectButton" Content="Connect" HorizontalAlignment="Left" Margin="119,194,0,0" VerticalAlignment="Top" Width="75" Height="18" Click="connectButton_Click"/>
         <Label x:Name="ConnectionStateLabel" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="215"/>
         <Label x:Name="Copyright" Content="Designed by Aramis inc. in Naveil&#xD;&#xA;Assembled in Naveil" HorizontalAlignment="Left" Margin="10,489,0,0" VerticalAlignment="Top" Width="215"/>
