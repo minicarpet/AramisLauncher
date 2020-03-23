@@ -23,7 +23,7 @@
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <PublishUrl>C:\Users\minik\Google Drive\AramisLauncher\</PublishUrl>
+    <PublishUrl>C:\Users\minik\Documents\GitHub\AramisLauncher\AramisLauncherClickOnce\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
