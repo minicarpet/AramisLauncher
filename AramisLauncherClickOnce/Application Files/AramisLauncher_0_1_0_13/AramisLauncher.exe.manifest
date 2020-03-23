@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="AramisLauncher.exe" version="0.1.0.13" publicKeyToken="bccb9ad10384945f" language="fr-FR" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="AramisLauncher" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="AramisLauncher.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- Options du manifeste de contrôle de compte d'utilisateur
+             Si vous souhaitez modifier le niveau du contrôle de compte d'utilisateur Windows, remplacez le 
+             nœud requestedExecutionLevel par l'une des propositions suivantes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            La spécification de l'élément requestedExecutionLevel désactive la virtualisation de fichiers et du Registre. 
+            Supprimez cet élément si votre application a besoin de la virtualisation pour des
+            raisons de compatibilité descendante.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AramisLauncher.exe" size="85984">
+      <assemblyIdentity name="AramisLauncher" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/2UAqMeScJbllvjFxKwxUMqGp/Od0Cve9Ev+I4J4bNM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="700336">
+      <assemblyIdentity name="Newtonsoft.Json" version="12.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>f5ErKKB8Im4L46z7L1fwUFOKugEA+h8L8sOfGh8dqBQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="AramisLauncher.exe.config" size="184">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FihlZtVNgcNyH37Pf0Jtll3jZOm+L55ijXNjtoS2/mo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Liste des versions de Windows pour lesquelles cette application a été testée,
+           et sur lesquelles elle doit fonctionner. Décommentez éléments appropriés,
+           et Windows va automatiquement sélectionner l'environnement le plus compatible. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=DESKTOP-TBOTPIT\minik" issuerKeyHash="553962ffa506dfb2f1f485178ef7b79862c30447" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>yIH6UFbMzZPSE3wg7xK02Wa8cjswYjAvRyxsCp1+gug=</DigestValue></Reference></SignedInfo><SignatureValue>VaLrmEPYtQ+9wMHf8Tq1nvRhibVwod/gb9NY8SfOMod1yyqXzu2BMVeB/SzlUukTYnx89pRmsXpWlDG6ttXE+XPJKsaSZOZ8Ms5pc/OXpDmgxU1T8xupODADqcepk+iHLj0FFwUTEGh5JOjeqzuHfIq9fQzXkCMDkqLnS/bAqHw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tiBHLFWa4SNCTejT/gB6m8NyqXPivtNy1/8wXmuYo0Py0NMt6ZN8r5DBnyYSUHCWQvdr8kWlHt1htZbIruyBFVupcN/hxIpOe0T7f9yypU80hkPD3jqQZuTxPxTmhciLWastXiQ6Vp91PqV/gyN5DxHXczU9DVz4Rj1AQI85XK0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e8827e9d0a6c2c472f3062303b72bc66d9b412ef207c13d293cdcc5650fa81c8" Description="" Url=""><as:assemblyIdentity name="AramisLauncher.exe" version="0.1.0.13" publicKeyToken="bccb9ad10384945f" language="fr-FR" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-TBOTPIT\minik</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>txTq1OzLE8WU91vfUJT8JKS3INHnS/S94838b+BQQ90=</DigestValue></Reference></SignedInfo><SignatureValue>UPcd/u3wtSUkwWKtHjxk6mEt7aMpFpJK7T3yiqmbMNsnJkeIr4zLuvzt/mm0z8Y7kg9thfloclWoaw9kH8uUrgeR4NsDCA3KstI00MQV9WD3svAzR+g7Tl5MJggeN2aLsfwJFpSOlQbsfKUS74M3VnLhMWj3HD9A22holnGAuEo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tiBHLFWa4SNCTejT/gB6m8NyqXPivtNy1/8wXmuYo0Py0NMt6ZN8r5DBnyYSUHCWQvdr8kWlHt1htZbIruyBFVupcN/hxIpOe0T7f9yypU80hkPD3jqQZuTxPxTmhciLWastXiQ6Vp91PqV/gyN5DxHXczU9DVz4Rj1AQI85XK0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQGbQI5wncSYxFBapMrzjwzjANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAFQAQgBPAFQAUABJAFQAXABtAGkAbgBpAGswHhcNMjAwMzIzMjE1MDAxWhcNMjEwMzI0MDM1MDAxWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAFQAQgBPAFQAUABJAFQAXABtAGkAbgBpAGswgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALYgRyxVmuEjQk3o0/4AepvDcqlz4r7Tctf/MF5rmKND8tDTLemTfK+QwZ8mElBwlkL3a/JFpR7dYbWWyK7sgRVbqXDf4cSKTntE+3/csqVPNIZDw946kGbk8T8U5oXIi1mrLV4kOlafdT6lf4MjeQ8R13M1PQ1c+EY9QECPOVytAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAcIpEpBgaS+FwMqTf5p97ZoEeFprJkpiw6Fbe6McMG9AU6F/8jcxoGAS9iX6C41ajQFVWoIHVjj4yavzUb3mCnCdQGUcjsRxpaBXqkXXOmxXsDsG/MHd/44cmDMwy7+1DLhjkeHTxG2sz+OkVdxT0UhAUCPmDJMRiYCtPlXGcArw=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

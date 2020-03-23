@@ -34,9 +34,10 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <InstallUrl>https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/AramisLauncherClickOnce/</InstallUrl>
+    <UpdateUrl>https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/AramisLauncherClickOnce/</UpdateUrl>
     <TargetCulture>fr-FR</TargetCulture>
     <PublisherName>Aramis</PublisherName>
-    <ApplicationRevision>12</ApplicationRevision>
+    <ApplicationRevision>13</ApplicationRevision>
     <ApplicationVersion>0.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -64,10 +65,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>false</SignManifests>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>99A672E80B7D91E1B93E4B0AF259B2BE88A01A35</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>A4AF734E676A8FF1AAAD2512BFAE32B99666B69C</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>AramisLauncher_TemporaryKey.pfx</ManifestKeyFile>
@@ -156,6 +157,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="AramisLauncher_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
