@@ -33,10 +33,10 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>https://drive.google.com/drive/folders/1HN8uFTEQFJnLqjNe7ZeE_cGlYbZjbDr2%3fusp=sharing/</InstallUrl>
+    <InstallUrl>https://github.com/minicarpet/AramisLauncher/tree/master/AramisLauncherClickOnce/</InstallUrl>
     <TargetCulture>fr-FR</TargetCulture>
     <PublisherName>Aramis</PublisherName>
-    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationRevision>9</ApplicationRevision>
     <ApplicationVersion>0.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
