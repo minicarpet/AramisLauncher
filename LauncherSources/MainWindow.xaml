@@ -17,7 +17,7 @@
         <Button x:Name="connectButton" Content="Connect" HorizontalAlignment="Left" Margin="119,194,0,0" VerticalAlignment="Top" Width="75" Height="18" Click="connectButton_Click"/>
         <Label x:Name="ConnectionStateLabel" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="215"/>
         <Label x:Name="Copyright" Content="Designed by Aramis inc. in Naveil&#xD;&#xA;Assembled in Naveil" HorizontalAlignment="Left" Margin="10,489,0,0" VerticalAlignment="Top" Width="215"/>
-        <Ellipse x:Name="ConnectionCircle" Stroke="Black" Fill=" Green" StrokeThickness="1" Canvas.Left="135" Canvas.Top="100" Margin="10,36,934,485" />
+        <Ellipse x:Name="ConnectionCircle" Stroke="Black" Fill="Green" StrokeThickness="1" Canvas.Left="135" Canvas.Top="100" Margin="10,36,934,485" />
         <Label x:Name="version" Content="Version :" HorizontalAlignment="Left" Margin="567,505,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.289,0.654" Width="387"/>
     </Grid>
 </Window>

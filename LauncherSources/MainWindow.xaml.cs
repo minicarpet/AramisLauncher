@@ -11,6 +11,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
+using System.Windows.Shapes;
 using System.Windows.Threading;
 using static AramisLauncher.Minecraft.Authenticator;
 
@@ -29,6 +31,7 @@ namespace AramisLauncher
         public static Button connectionButton;
         public static WebBrowser webBrowser;
         public static Label versionLabel;
+        public static Ellipse ellipse;
 
         private ManifestManager manifestManager;
         private DownloadManager donwloaderManager;
@@ -47,6 +50,7 @@ namespace AramisLauncher
             connectionButton = (Button)FindName("connectButton");
             webBrowser = (WebBrowser)FindName("webContent");
             versionLabel = (Label)FindName("version");
+            ellipse = (Ellipse)FindName("ConnectionCircle");
 
             if (ApplicationDeployment.IsNetworkDeployed)
                 versionLabel.Content += " " + ApplicationDeployment.CurrentDeployment.CurrentVersion;
@@ -58,6 +62,7 @@ namespace AramisLauncher
             if (CommonData.launcherProfileJson.authenticationDatabase != null)
             {
                 /* file successfully loaded */
+                ellipse.Fill = new SolidColorBrush(Colors.Green);
                 userNameBox.Visibility = Visibility.Hidden;
                 passwordUserBox.Visibility = Visibility.Hidden;
                 connectionButton.Content = "Disconnect";
@@ -65,6 +70,7 @@ namespace AramisLauncher
             }
             else
             {
+                ellipse.Fill = new SolidColorBrush(Colors.Red);
                 connectionStateLabel.Content = "Not connected.";
             }
 
@@ -130,6 +136,7 @@ namespace AramisLauncher
                 {
                     MessageBox.Show("Connected !");
                     CommonData.saveLauncherProfile();
+                    ellipse.Fill = new SolidColorBrush(Colors.Green);
                     userNameBox.Visibility = Visibility.Hidden;
                     passwordUserBox.Visibility = Visibility.Hidden;
                     connectionButton.Content = "Disconnect";
@@ -142,6 +149,7 @@ namespace AramisLauncher
             }
             else
             {
+                ellipse.Fill = new SolidColorBrush(Colors.Red);
                 userNameBox.Visibility = Visibility.Visible;
                 passwordUserBox.Visibility = Visibility.Visible;
                 passwordUserBox.Clear();
