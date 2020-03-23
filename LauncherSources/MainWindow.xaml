@@ -18,6 +18,6 @@
         <Label x:Name="ConnectionStateLabel" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="215"/>
         <Label x:Name="Copyright" Content="Designed by Aramis inc. in Naveil&#xD;&#xA;Assembled in Naveil" HorizontalAlignment="Left" Margin="10,489,0,0" VerticalAlignment="Top" Width="215"/>
         <Ellipse x:Name="ConnectionCircle" Stroke="Black" Fill="Green" StrokeThickness="1" Canvas.Left="135" Canvas.Top="100" Margin="230,10,714,511" />
-        <Label x:Name="version" Content="Version :" HorizontalAlignment="Left" Margin="567,505,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.289,0.654" Width="387"/>
+        <Label x:Name="version" Content="Version :" HorizontalAlignment="Left" Margin="806,505,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.289,0.654" Width="148"/>
     </Grid>
 </Window>
