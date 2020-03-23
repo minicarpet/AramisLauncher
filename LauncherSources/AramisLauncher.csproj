@@ -33,10 +33,10 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>https://github.com/minicarpet/AramisLauncher/tree/master/AramisLauncherClickOnce/</InstallUrl>
+    <InstallUrl>https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/AramisLauncherClickOnce/</InstallUrl>
     <TargetCulture>fr-FR</TargetCulture>
     <PublisherName>Aramis</PublisherName>
-    <ApplicationRevision>9</ApplicationRevision>
+    <ApplicationRevision>10</ApplicationRevision>
     <ApplicationVersion>0.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>

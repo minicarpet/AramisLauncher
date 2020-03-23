@@ -2,7 +2,7 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <PublishUrlHistory>C:\Users\minik\Documents\GitHub\AramisLauncher\AramisLauncherClickOnce\|C:\Users\minik\Google Drive\AramisLauncher\|https://drive.google.com/open%3fid=1XbiIPAS3lZlxybL6klmlcl2ZO_D-fSGh/|C:\Users\minik\iCloudDrive\AramisLauncher\|ftp://aramiscraft.omgserv.net/AramisLauncher/</PublishUrlHistory>
-    <InstallUrlHistory>https://github.com/minicarpet/AramisLauncher/tree/master/AramisLauncherClickOnce/|https://drive.google.com/drive/folders/1HN8uFTEQFJnLqjNe7ZeE_cGlYbZjbDr2%3fusp=sharing/|https://drive.google.com/drive/folders/1rv4uOa2O2pHMEsc-TeYv20uXwTxAxr03%3fusp=sharing/|https://drive.google.com/drive/folders/1XbiIPAS3lZlxybL6klmlcl2ZO_D-fSGh%3fusp=sharing/|https://drive.google.com/open%3fid=1XbiIPAS3lZlxybL6klmlcl2ZO_D-fSGh/</InstallUrlHistory>
+    <InstallUrlHistory>https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/AramisLauncherClickOnce/|https://github.com/minicarpet/AramisLauncher/tree/master/AramisLauncherClickOnce/|https://drive.google.com/drive/folders/1HN8uFTEQFJnLqjNe7ZeE_cGlYbZjbDr2%3fusp=sharing/|https://drive.google.com/drive/folders/1rv4uOa2O2pHMEsc-TeYv20uXwTxAxr03%3fusp=sharing/|https://drive.google.com/drive/folders/1XbiIPAS3lZlxybL6klmlcl2ZO_D-fSGh%3fusp=sharing/</InstallUrlHistory>
     <SupportUrlHistory />
     <UpdateUrlHistory />
     <BootstrapperUrlHistory />
