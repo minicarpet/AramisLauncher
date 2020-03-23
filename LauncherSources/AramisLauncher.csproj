@@ -37,7 +37,7 @@
     <TargetCulture>fr-FR</TargetCulture>
     <ProductName>AramisLauncher</ProductName>
     <PublisherName>Aramis</PublisherName>
-    <ApplicationRevision>26</ApplicationRevision>
+    <ApplicationRevision>27</ApplicationRevision>
     <ApplicationVersion>0.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -65,7 +65,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>A4AF734E676A8FF1AAAD2512BFAE32B99666B69C</ManifestCertificateThumbprint>
