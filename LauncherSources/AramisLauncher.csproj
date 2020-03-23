@@ -37,8 +37,8 @@
     <TargetCulture>fr-FR</TargetCulture>
     <ProductName>AramisLauncher</ProductName>
     <PublisherName>Aramis</PublisherName>
-    <ApplicationRevision>30</ApplicationRevision>
-    <ApplicationVersion>0.1.0.%2a</ApplicationVersion>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>0.2.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
