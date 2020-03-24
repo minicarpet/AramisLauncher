@@ -60,6 +60,7 @@ namespace AramisLauncher
             else
                 versionLabel.Content += " " + "1.0.0.0";
 
+            webClient.Encoding = System.Text.Encoding.UTF8;
             webBrowser.NavigateToString(webClient.DownloadString("https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/Ressources/actualites/actualite.html"));
 
             CommonData.getLauncherProfile();
