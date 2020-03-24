@@ -194,7 +194,7 @@ namespace AramisLauncher
         {
             if(e.Key == System.Windows.Input.Key.Enter)
             {
-                if(connectionButton.Content.ToString() != "Connect")
+                if(connectionButton.Content.ToString() == "Connect")
                 {
                     connectButton_Click(sender, new RoutedEventArgs());
                 }
