@@ -5,6 +5,7 @@ using AramisLauncher.Logger;
 using AramisLauncher.Minecraft;
 using System;
 using System.Deployment.Application;
+using System.Net;
 using System.Net.NetworkInformation;
 using System.Runtime.CompilerServices;
 using System.Threading;
@@ -33,6 +34,8 @@ namespace AramisLauncher
         public static Label versionLabel;
         public static Ellipse ellipse;
 
+        public static WebClient webClient = new WebClient();
+
         private ManifestManager manifestManager;
         private DownloadManager donwloaderManager;
         private MinecraftManager minecraftManager;
@@ -55,7 +58,7 @@ namespace AramisLauncher
             if (ApplicationDeployment.IsNetworkDeployed)
                 versionLabel.Content += " " + ApplicationDeployment.CurrentDeployment.CurrentVersion;
 
-            webBrowser.Navigate("https://www.google.fr");
+            webBrowser.NavigateToString(webClient.DownloadString("https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/Ressources/actualites/actualite.html"));
 
             CommonData.getLauncherProfile();
 
