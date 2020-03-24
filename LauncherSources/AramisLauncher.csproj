@@ -38,7 +38,7 @@
     <ProductName>AramisLauncher</ProductName>
     <PublisherName>Aramis</PublisherName>
     <ApplicationRevision>2</ApplicationRevision>
-    <ApplicationVersion>0.2.0.%2a</ApplicationVersion>
+    <ApplicationVersion>0.3.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>

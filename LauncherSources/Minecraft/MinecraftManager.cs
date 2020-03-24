@@ -68,6 +68,10 @@ namespace AramisLauncher.Minecraft
 
             arguments.Append("--username ");
             arguments.Append(CommonData.launcherProfileJson.authenticationDatabase.selectedProfile.name + " ");
+            arguments.Append("--server ");
+            arguments.Append("aramiscraft.omgserv.net ");
+            arguments.Append("--port ");
+            arguments.Append("10554 ");
             arguments.Append("--version ");
             arguments.Append(ManifestManager.minecraftVersionJson.Id + " ");
             arguments.Append("--gameDir ");
@@ -85,7 +89,6 @@ namespace AramisLauncher.Minecraft
             arguments.Append("--tweakClass net.minecraftforge.fml.common.launcher.FMLTweaker ");
             arguments.Append("--versionType ");
             arguments.Append("Forge ");
-            arguments.Append("mc.hypixel.net:25565 ");
 
             arguments.Append("--width " + 1920 + " ");
             arguments.Append("--height " + 1080 + " ");
