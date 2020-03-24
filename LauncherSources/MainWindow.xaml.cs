@@ -57,6 +57,8 @@ namespace AramisLauncher
 
             if (ApplicationDeployment.IsNetworkDeployed)
                 versionLabel.Content += " " + ApplicationDeployment.CurrentDeployment.CurrentVersion;
+            else
+                versionLabel.Content += " " + "1.0.0.0";
 
             webBrowser.NavigateToString(webClient.DownloadString("https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/Ressources/actualites/actualite.html"));
 
@@ -185,6 +187,17 @@ namespace AramisLauncher
             DownloadManager.startDownload();
             /* start the selected version */
             MinecraftManager.StartMinecraft();
+        }
+
+        private void Window_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            if(e.Key == System.Windows.Input.Key.Enter)
+            {
+                if(connectionButton.Content.ToString() != "Connect")
+                {
+                    connectButton_Click(sender, new RoutedEventArgs());
+                }
+            }
         }
     }
 }

@@ -21,7 +21,7 @@ namespace AramisLauncher.Minecraft
         public MinecraftManager()
         {
             /* Create new Process and assign parameters */
-            minecraftGame.StartInfo = new ProcessStartInfo("java");
+            minecraftGame.StartInfo = new ProcessStartInfo("javaw");
             minecraftGame.StartInfo.CreateNoWindow = true;
 
             minecraftGame.EnableRaisingEvents = true;
