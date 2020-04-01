@@ -2,16 +2,11 @@
 using AramisLauncher.Download;
 using AramisLauncher.JSON;
 using AramisLauncher.Logger;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace AramisLauncher.Minecraft
 {
