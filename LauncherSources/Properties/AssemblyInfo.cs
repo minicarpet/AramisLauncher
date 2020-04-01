@@ -10,7 +10,7 @@ using System.Windows;
 [assembly: AssemblyTitle("AramisLauncher")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Aramis")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("AramisLauncher")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]

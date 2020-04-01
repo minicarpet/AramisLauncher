@@ -5,16 +5,14 @@ using AramisLauncher.Logger;
 using AramisLauncher.Minecraft;
 using System;
 using System.Deployment.Application;
+using System.IO;
 using System.Net;
-using System.Net.NetworkInformation;
-using System.Runtime.CompilerServices;
+using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
-using System.Windows.Threading;
 using static AramisLauncher.Minecraft.Authenticator;
 
 namespace AramisLauncher
@@ -28,11 +26,14 @@ namespace AramisLauncher
         public static Label downloadDescriptor;
         public static PasswordBox passwordUserBox;
         public static TextBox userNameBox;
-        public static Label connectionStateLabel;
+        public static Label pseudoLabel;
+        public static Label connectionStatus;
         public static Button connectionButton;
-        public static WebBrowser webBrowser;
-        public static Label versionLabel;
-        public static Ellipse ellipse;
+        public static Label versionModpack;
+        public static Label versionLauncher;
+        public static Rectangle connectionStatusShape;
+        public static Canvas canvasConnection;
+        public static RichTextBox richTextBox;
 
         public static WebClient webClient = new WebClient();
 
@@ -49,35 +50,46 @@ namespace AramisLauncher
             downloadDescriptor = (Label)FindName("downloadDescription");
             userNameBox = (TextBox)FindName("usernameBox");
             passwordUserBox = (PasswordBox)FindName("passwordBox");
-            connectionStateLabel = (Label)FindName("ConnectionStateLabel");
+            pseudoLabel = (Label)FindName("pseudo");
+            connectionStatus = (Label)FindName("connection_status");
             connectionButton = (Button)FindName("connectButton");
-            webBrowser = (WebBrowser)FindName("webContent");
-            versionLabel = (Label)FindName("version");
-            ellipse = (Ellipse)FindName("ConnectionCircle");
+            versionLauncher = (Label)FindName("version_launcher");
+            versionModpack = (Label)FindName("version_modpack");
+            connectionStatusShape = (Rectangle)FindName("connection_status_shape");
+            canvasConnection = (Canvas)FindName("canvas_connection");
+            richTextBox = (RichTextBox)FindName("actualites");
 
             if (ApplicationDeployment.IsNetworkDeployed)
-                versionLabel.Content += " " + ApplicationDeployment.CurrentDeployment.CurrentVersion;
+                versionLauncher.Content += " " + ApplicationDeployment.CurrentDeployment.CurrentVersion;
             else
-                versionLabel.Content += " " + "1.0.0.0";
+                versionLauncher.Content += " " + "1.0.0.0";
 
-            webClient.Encoding = System.Text.Encoding.UTF8;
-            webBrowser.NavigateToString(webClient.DownloadString("https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/Ressources/actualites/actualite.html"));
+            var document = System.IO.File.ReadAllText("C:/Users/minik/Documents/GitHub/AramisLauncher/Ressources/actualites/test.rtf");
+            var documentBytes = Encoding.UTF8.GetBytes(document);
+            using (MemoryStream memoryStream = new MemoryStream(documentBytes))
+            {
+                richTextBox.Selection.Load(memoryStream, DataFormats.Rtf);
+            }
 
             CommonData.getLauncherProfile();
 
             if (CommonData.launcherProfileJson.authenticationDatabase != null)
             {
                 /* file successfully loaded */
-                ellipse.Fill = new SolidColorBrush(Colors.Green);
+                connectionStatusShape.Fill = new SolidColorBrush(Colors.Green);
                 userNameBox.Visibility = Visibility.Hidden;
                 passwordUserBox.Visibility = Visibility.Hidden;
                 connectionButton.Content = "Disconnect";
-                connectionStateLabel.Content = "Connected as : " + CommonData.launcherProfileJson.authenticationDatabase.selectedProfile.name;
+                Canvas.SetTop(connectionButton, 66);
+                canvasConnection.Height = 94;
+                pseudoLabel.Content = CommonData.launcherProfileJson.authenticationDatabase.selectedProfile.name;
+                connectionStatus.Content = "Connecté";
             }
             else
             {
-                ellipse.Fill = new SolidColorBrush(Colors.Red);
-                connectionStateLabel.Content = "Not connected.";
+                connectionStatusShape.Fill = new SolidColorBrush(Colors.Red);
+                pseudoLabel.Content = "";
+                connectionStatus.Content = "Non connecté";
             }
 
             LoggerManager.log("Launcher started at " + DateTime.Now);
@@ -135,18 +147,21 @@ namespace AramisLauncher
 
         private void connectButton_Click(object sender, RoutedEventArgs e)
         {
-            if(connectionButton.Content.ToString() == "Connect")
+            if(connectionButton.Content.ToString() == "Connexion")
             {
                 CommonData.setAuthenticateProfile(AuthenticateToMinecraft(userNameBox.Text, passwordUserBox.Password));
                 if (CommonData.launcherProfileJson.authenticationDatabase != null)
                 {
                     MessageBox.Show("Connected !");
                     CommonData.saveLauncherProfile();
-                    ellipse.Fill = new SolidColorBrush(Colors.Green);
+                    connectionStatusShape.Fill = new SolidColorBrush(Colors.Green);
                     userNameBox.Visibility = Visibility.Hidden;
                     passwordUserBox.Visibility = Visibility.Hidden;
-                    connectionButton.Content = "Disconnect";
-                    connectionStateLabel.Content = "Connected as : " + CommonData.launcherProfileJson.authenticationDatabase.selectedProfile.name;
+                    connectionButton.Content = "Déconnexion";
+                    Canvas.SetTop(connectionButton, 66);
+                    canvasConnection.Height = 94;
+                    pseudoLabel.Content = CommonData.launcherProfileJson.authenticationDatabase.selectedProfile.name;
+                    connectionStatus.Content = "Connecté";
                 }
                 else
                 {
@@ -155,12 +170,16 @@ namespace AramisLauncher
             }
             else
             {
-                ellipse.Fill = new SolidColorBrush(Colors.Red);
+                connectionStatusShape.Fill = new SolidColorBrush(Colors.Red);
+                userNameBox.Text = "Adresse mail";
                 userNameBox.Visibility = Visibility.Visible;
                 passwordUserBox.Visibility = Visibility.Visible;
                 passwordUserBox.Clear();
-                connectionButton.Content = "Connect";
-                connectionStateLabel.Content = "Not connected";
+                Canvas.SetTop(connectionButton, 117);
+                canvasConnection.Height = 147;
+                connectionButton.Content = "Connexion";
+                pseudoLabel.Content = "";
+                connectionStatus.Content = "Non connecté";
                 CommonData.launcherProfileJson.authenticationDatabase = null;
                 CommonData.saveLauncherProfile();
             }
@@ -194,10 +213,18 @@ namespace AramisLauncher
         {
             if(e.Key == System.Windows.Input.Key.Enter)
             {
-                if(connectionButton.Content.ToString() == "Connect")
+                if(connectionButton.Content.ToString() == "Connexion")
                 {
                     connectButton_Click(sender, new RoutedEventArgs());
                 }
+            }
+        }
+
+        private void usernameBox_GetFocus(object sender, RoutedEventArgs e)
+        {
+            if(userNameBox.Text == "Adresse mail")
+            {
+                userNameBox.Text = "";
             }
         }
     }

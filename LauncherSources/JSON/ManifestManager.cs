@@ -40,6 +40,9 @@ namespace AramisLauncher.JSON
                     minecraftVersions.Add(version);
                 }
             }
+
+            MainWindow.versionModpack.Content += " " + aramisPackageJson.Manifest.Version;
+
             MainWindow.downloadDescriptor.Content = "Manifests récupérés";
         }
 

@@ -6,24 +6,54 @@
         xmlns:local="clr-namespace:AramisLauncher"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="AramisLauncher" Height="570" Width="970"
-        KeyDown="Window_KeyDown">
+        Title="AramisCraft Launcher" Height="570" Width="970"
+        KeyDown="Window_KeyDown" BorderBrush="Black">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" BorderThickness="1" BorderBrush="Black" Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Opacity" Value="0.8" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.Background>
-            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowFrameColorKey}}"/>
+            <ImageBrush ImageSource="Ressources/fondlauncher.png" Stretch="UniformToFill"/>
         </Grid.Background>
-        <WebBrowser x:Name="webContent" HorizontalAlignment="Left" Height="412" Margin="367,10,0,0" VerticalAlignment="Top" Width="587"/>
-        <Button x:Name="downloadButton" Content="Start Minecraft" HorizontalAlignment="Left" Margin="703,448,0,0" VerticalAlignment="Top" Width="120" Click="downloadButton_Click"/>
-        <ProgressBar x:Name="downloadProgression" HorizontalAlignment="Left" Height="20" Margin="119,448,0,0" VerticalAlignment="Top" Width="579"/>
-        <Label x:Name="downloadDescription" Content="" HorizontalAlignment="Left" Margin="119,422,0,0" VerticalAlignment="Top" Width="579"/>
-        <TextBox x:Name="usernameBox" HorizontalAlignment="Left" Height="18" Margin="10,234,0,0" TextWrapping="Wrap" Text="Remplacer ici le username" VerticalAlignment="Top" Width="209"/>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="10,252,0,0" VerticalAlignment="Top" Width="209"/>
-        <Button x:Name="connectButton" Content="Connect" HorizontalAlignment="Left" Margin="10,270,0,0" VerticalAlignment="Top" Width="209" Height="18" Click="connectButton_Click"/>
-        <Label x:Name="ConnectionStateLabel" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="162" Height="24"/>
-        <Label x:Name="Copyright" Content="Designed by Aramis inc. in Naveil&#xD;&#xA;Assembled in Naveil" HorizontalAlignment="Left" Margin="10,489,0,0" VerticalAlignment="Top" Width="215"/>
-        <Label x:Name="version" Content="Version :" HorizontalAlignment="Left" Margin="860,505,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.289,0.654" Width="94"/>
-        <Canvas HorizontalAlignment="Left" Height="24" Margin="177,10,0,0" VerticalAlignment="Top" Width="24">
-            <Ellipse x:Name="ConnectionCircle" Stroke="Black" Fill="Green" StrokeThickness="1" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="24" Width="24" />
+        <Canvas x:Name="canvas_connection" HorizontalAlignment="Left" Height="147" Margin="10,10,0,0" VerticalAlignment="Top" Width="230" Background="#99000000">
+            <TextBox x:Name="usernameBox" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="Adresse mail" VerticalAlignment="Top" Width="210" FontFamily="Lucida Calligraphy" GotFocus="usernameBox_GetFocus" Canvas.Left="10" Canvas.Top="67"/>
+            <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="210" Height="20" FontFamily="Lucida Calligraphy" Canvas.Left="10" Canvas.Top="92"/>
+            <Button x:Name="connectButton" Content="Connexion" HorizontalAlignment="Left" VerticalAlignment="Top" Width="210" Height="20" Click="connectButton_Click" Foreground="White" Background="#99006E80" BorderBrush="Black" FontFamily="Lucida Calligraphy" Canvas.Left="10" Canvas.Top="117"/>
+            <Label x:Name="pseudo" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="210" Height="24" Foreground="White" FontFamily="Lucida Calligraphy" Padding="-4,5,5,5" FontSize="20" Canvas.Left="10" Canvas.Top="10"/>
+            <Canvas HorizontalAlignment="Left" Height="10" Margin="10,34,0,0" VerticalAlignment="Top" Width="10">
+                <Rectangle x:Name="connection_status_shape" Height="10" Width="10"/>
+            </Canvas>
+            <Label x:Name="connection_status" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="10" Width="192" FontFamily="Lucida Calligraphy" Foreground="White" FontSize="10" Padding="0" VerticalContentAlignment="Center" Canvas.Left="28" Canvas.Top="34"/>
         </Canvas>
+        <Button x:Name="downloadButton" Content="Lancer AramisCraft" HorizontalAlignment="Left" Margin="703,447,0,0" VerticalAlignment="Top" Width="162" Click="downloadButton_Click" Foreground="White" Background="#99006E80" BorderBrush="Black" FontFamily="Lucida Calligraphy" Height="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <ProgressBar x:Name="downloadProgression" HorizontalAlignment="Left" Height="20" Margin="119,448,0,0" VerticalAlignment="Top" Width="579" Foreground="#FF006E80" BorderBrush="Black" BorderThickness="0" Padding="0"/>
+        <Label x:Name="downloadDescription" Content="" HorizontalAlignment="Left" Margin="119,417,0,0" VerticalAlignment="Top" Width="579" Foreground="White" FontFamily="Lucida Calligraphy"/>
+        <Canvas HorizontalAlignment="Left" Height="39.7" Margin="0,489,0,0" VerticalAlignment="Top" Width="964" Background="#99000000">
+            <Label x:Name="Copyright" Content="Designed by Aramis inc. in Naveil&#xD;&#xA;Assembled in Naveil" HorizontalAlignment="Left" VerticalAlignment="Top" Width="244" Foreground="White" FontFamily="Lucida Calligraphy" Height="40" Canvas.Left="10"/>
+            <Label x:Name="version_modpack" Content="Version modpack :" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="2.289,0.654" Width="180" Foreground="White" FontFamily="Lucida Calligraphy" Canvas.Left="774" Height="20" Padding="0" VerticalContentAlignment="Center"/>
+            <Label x:Name="version_launcher" Content="Version launcher :" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="2.289,0.654" Width="180" Foreground="White" FontFamily="Lucida Calligraphy" Canvas.Left="774" Canvas.Top="20" Height="20" Padding="0" VerticalContentAlignment="Center"/>
+        </Canvas>
+        <RichTextBox x:Name="actualites" Height="412" Margin="614,10,10,0" VerticalAlignment="Top" Background="#99000000" Foreground="White" BorderThickness="0" IsReadOnly="True" IsDocumentEnabled="True" Focusable="False" AllowDrop="False" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+            <FlowDocument>
+            </FlowDocument>
+        </RichTextBox>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="118,447,0,0" VerticalAlignment="Top" Width="580"/>
     </Grid>
 </Window>
