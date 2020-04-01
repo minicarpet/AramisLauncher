@@ -4,7 +4,7 @@
     <PublishUrlHistory>C:\Users\minik\Documents\GitHub\AramisLauncher\AramisLauncherClickOnce\|publish\</PublishUrlHistory>
     <InstallUrlHistory>https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/AramisLauncherClickOnce/</InstallUrlHistory>
     <SupportUrlHistory />
-    <UpdateUrlHistory />
+    <UpdateUrlHistory>https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/AramisLauncherClickOnce/</UpdateUrlHistory>
     <BootstrapperUrlHistory />
     <ErrorReportUrlHistory />
     <FallbackCulture>fr-FR</FallbackCulture>

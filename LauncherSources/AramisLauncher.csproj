@@ -26,9 +26,15 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <InstallUrl>https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/AramisLauncherClickOnce/</InstallUrl>
-    <ApplicationRevision>0</ApplicationRevision>
+    <UpdateUrl>https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/AramisLauncherClickOnce/</UpdateUrl>
+    <TargetCulture>fr-FR</TargetCulture>
+    <ProductName>AramisLauncher</ProductName>
+    <PublisherName>Aramis</PublisherName>
+    <SuiteName>AramisLauncher</SuiteName>
+    <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
