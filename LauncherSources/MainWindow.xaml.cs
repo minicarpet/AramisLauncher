@@ -64,9 +64,7 @@ namespace AramisLauncher
             else
                 versionLauncher.Content += " " + "1.0.0.0";
 
-            var document = System.IO.File.ReadAllText("C:/Users/minik/Documents/GitHub/AramisLauncher/Ressources/actualites/test.rtf");
-            var documentBytes = Encoding.UTF8.GetBytes(document);
-            using (MemoryStream memoryStream = new MemoryStream(documentBytes))
+            using (MemoryStream memoryStream = new MemoryStream(webClient.DownloadData("https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/Ressources/actualites/actualites.rtf")))
             {
                 richTextBox.Selection.Load(memoryStream, DataFormats.Rtf);
             }
