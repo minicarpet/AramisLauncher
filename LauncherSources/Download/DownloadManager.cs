@@ -435,7 +435,7 @@ namespace AramisLauncher.Download
 
                 string filePath = scriptFolder + file.FileName;
                 fileDownloadInformation.outputPath = filePath;
-                fileDownloadInformation.url = ""; /* TBD */
+                fileDownloadInformation.url = "https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/Ressources/scripts/" + file.FileName;
 
                 if (System.IO.File.Exists(filePath))
                 {

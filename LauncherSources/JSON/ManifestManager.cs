@@ -91,8 +91,8 @@ namespace AramisLauncher.JSON
             /* To get the recommended version */
             //https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
 
-            aramisPackageJson = AramisPackageJson.FromJson(webClient.DownloadString("https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/aramisPackage.json"));
-            aramisConfigurationJson = AramisConfigurationJson.FromJson(webClient.DownloadString("https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/aramisPackage.json"));
+            aramisPackageJson = AramisPackageJson.FromJson(webClient.DownloadString("https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/Ressources/downloadInfos/aramisPackage.json"));
+            aramisConfigurationJson = AramisConfigurationJson.FromJson(webClient.DownloadString("https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/Ressources/downloadInfos/config.json"));
             forgeVersionJson = ForgeVersionJson.FromJson(aramisPackageJson.BaseModLoader.VersionJson);
         }
     }
