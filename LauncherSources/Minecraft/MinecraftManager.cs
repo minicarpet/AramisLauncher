@@ -28,7 +28,8 @@ namespace AramisLauncher.Minecraft
             LoggerManager.log("Start Minecraft !");
             MainWindow.ChangeDownLoadDescriptor("Démarrage de minecraft...");
             CreateNatives();
-            
+
+            minecraftGame.StartInfo.WorkingDirectory = CommonData.aramisFolder;
             minecraftGame.StartInfo.Arguments = CreateCommand();
             minecraftGame.Start();
             MainWindow.ChangeDownLoadDescriptor("Minecraft is running...");

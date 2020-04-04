@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace AramisLauncher.JSON
 {
-    class AramisConfigurationJson
+    public partial class AramisConfigurationJson
     {
         [JsonProperty("name")]
         public string Name { get; set; }
