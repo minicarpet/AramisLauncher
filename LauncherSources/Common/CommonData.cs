@@ -37,6 +37,11 @@ namespace AramisLauncher.Common
             launcherProfileJson.authenticationDatabase = authResponse;
         }
 
+        public static void setPropertyProfile(Property newProperty)
+        {
+            launcherProfileJson.property = newProperty;
+        }
+
         public static void getLauncherProfile()
         {
             if (File.Exists(launcherProfileFilePath))

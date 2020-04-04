@@ -1,0 +1,21 @@
+{
+    "name" : "Configurations",
+    "files" : [
+        {
+            "fileName" : "altar_recipes.zs",
+            "fileSize" : 6777
+        },
+        {
+            "fileName" : "dragonforge_recipes.zs",
+            "fileSize" : 707
+        },
+        {
+            "fileName" : "hide_jei.zs",
+            "fileSize" : 68
+        },
+        {
+            "fileName" : "remove_recipes.zs",
+            "fileSize" : 7855
+        }
+    ]
+}

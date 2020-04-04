@@ -13,6 +13,7 @@ namespace AramisLauncher.JSON
     class ManifestManager
     {
         public static AramisPackageJson aramisPackageJson = new AramisPackageJson();
+        public static AramisConfigurationJson aramisConfigurationJson = new AramisConfigurationJson();
 
         public static List<Version> minecraftVersions = new List<Version>();
         public static Uri minecrafetVersionAssets;
@@ -91,6 +92,7 @@ namespace AramisLauncher.JSON
             //https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
 
             aramisPackageJson = AramisPackageJson.FromJson(webClient.DownloadString("https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/aramisPackage.json"));
+            aramisConfigurationJson = AramisConfigurationJson.FromJson(webClient.DownloadString("https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/aramisPackage.json"));
             forgeVersionJson = ForgeVersionJson.FromJson(aramisPackageJson.BaseModLoader.VersionJson);
         }
     }

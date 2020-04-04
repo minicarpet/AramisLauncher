@@ -2,6 +2,7 @@
 using AramisLauncher.Download;
 using AramisLauncher.JSON;
 using AramisLauncher.Logger;
+using Newtonsoft.Json;
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -37,8 +38,7 @@ namespace AramisLauncher.Minecraft
         {
             StringBuilder arguments = new StringBuilder();
 
-            arguments.Append("-Xms" + 5120 + "M ");
-            arguments.Append("-Xmx" + 8192 + "M ");
+            arguments.Append("-Xmx" + 8 + "G ");
 
             arguments.Append("-Djava.library.path=" + CommonData.nativeFolder + " ");
             arguments.Append("-Dorg.lwjgl.librarypath=" + CommonData.nativeFolder + " ");
@@ -60,9 +60,11 @@ namespace AramisLauncher.Minecraft
 
             //arguments.Append(ManifestManager.minecraftVersionJson.MainClass + " ");
             arguments.Append(ManifestManager.forgeVersionJson.MainClass + " ");
-
+            
             arguments.Append("--username ");
             arguments.Append(CommonData.launcherProfileJson.authenticationDatabase.selectedProfile.name + " ");
+            //arguments.Append("--userProperties ");
+            //arguments.Append(JsonConvert.SerializeObject(CommonData.launcherProfileJson.property));
             arguments.Append("--server ");
             arguments.Append("aramiscraft.omgserv.net ");
             arguments.Append("--port ");
@@ -76,7 +78,8 @@ namespace AramisLauncher.Minecraft
             arguments.Append("--assetIndex ");
             arguments.Append(ManifestManager.minecraftVersionJson.Assets + " ");
             arguments.Append("--uuid ");
-            arguments.Append(CommonData.launcherProfileJson.authenticationDatabase.selectedProfile.id + " ");
+            Guid guid = new Guid(CommonData.launcherProfileJson.authenticationDatabase.selectedProfile.id);
+            arguments.Append(guid + " ");
             arguments.Append("--accessToken ");
             arguments.Append(CommonData.launcherProfileJson.authenticationDatabase.accessToken + " ");
             arguments.Append("--userType ");

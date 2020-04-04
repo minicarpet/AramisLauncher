@@ -18,6 +18,7 @@ namespace AramisLauncher.Download
     {
         public static string libraryFolder = CommonData.aramisFolder + "libraries/";
         public static string modsFolder = CommonData.aramisFolder + "mods/";
+        public static string scriptFolder = CommonData.aramisFolder + "scripts/";
 
         public static List<string> nativesToExtract = new List<string>();
 
@@ -48,6 +49,7 @@ namespace AramisLauncher.Download
             downloadMinecraft();
             downloadForgeLibrairies();
             downloadForgeMods();
+            downloadConfigs();
         }
 
         private static void downloadAssets()
@@ -66,7 +68,7 @@ namespace AramisLauncher.Download
             string assetsManifest = webClient.DownloadString(ManifestManager.minecrafetVersionAssets);
             System.IO.File.WriteAllText(assetsIndexFolder + ManifestManager.minecraftVersionJson.Assets + ".json", assetsManifest);
 
-            MainWindow.ChangeDownLoadDescriptor("Step 1/10 : Vérification des assets...");
+            MainWindow.ChangeDownLoadDescriptor("Étape 1/12 : Vérification des assets...");
             fileToDownload.Clear();
             MainWindow.ChangeProgressBarValue(0);
             ManifestManager.assetsInformation.ForEach(delegate (AssetInformation assetInformation)
@@ -97,7 +99,7 @@ namespace AramisLauncher.Download
             });
 
             /* download assets */
-            MainWindow.ChangeDownLoadDescriptor("Step 2/10 : Téléchargement des assets...");
+            MainWindow.ChangeDownLoadDescriptor("Étape 2/12 : Téléchargement des assets...");
             currentAsset = 0;
             MainWindow.ChangeProgressBarValue(0);
             fileToDownload.ForEach(delegate (FileDownloadInformation assetFile)
@@ -130,7 +132,7 @@ namespace AramisLauncher.Download
                 Directory.CreateDirectory(libraryFolder);
             }
 
-            MainWindow.ChangeDownLoadDescriptor("Step 3/10 : Vérification des Librairies...");
+            MainWindow.ChangeDownLoadDescriptor("Étape 3/12 : Vérification des Librairies...");
             currentAsset = 0;
             MainWindow.ChangeProgressBarValue(0);
             foreach (Library library in ManifestManager.minecraftVersionJson.Libraries)
@@ -211,7 +213,7 @@ namespace AramisLauncher.Download
                 MainWindow.ChangeProgressBarValue(++currentAsset * 100.0 / ManifestManager.minecraftVersionJson.Libraries.Length);
             }
 
-            MainWindow.ChangeDownLoadDescriptor("Step 4/10 : Téléchargement des Librairies...");
+            MainWindow.ChangeDownLoadDescriptor("Étape 4/12 : Téléchargement des Librairies...");
             currentAsset = 0;
             MainWindow.ChangeProgressBarValue(0);
             fileToDownload.ForEach(delegate (FileDownloadInformation libFile)
@@ -241,7 +243,7 @@ namespace AramisLauncher.Download
                 Directory.CreateDirectory(versionFolder + ManifestManager.minecraftVersionJson.Id);
             }
 
-            MainWindow.ChangeDownLoadDescriptor("Step 5/10 : Vérification des fichiers du jeu...");
+            MainWindow.ChangeDownLoadDescriptor("Étape 5/12 : Vérification des fichiers du jeu...");
             string gameFilePath = versionFolder + ManifestManager.minecraftVersionJson.Id + "/" + ManifestManager.minecraftVersionJson.Id + ".jar";
             gameDownloadInformation.url = ManifestManager.minecraftVersionJson.Downloads.Client.Url.AbsoluteUri;
             gameDownloadInformation.outputPath = gameFilePath;
@@ -286,7 +288,7 @@ namespace AramisLauncher.Download
                 }
             }
 
-            MainWindow.ChangeDownLoadDescriptor("Step 6/10 : Téléchargement des fichiers du jeu...");
+            MainWindow.ChangeDownLoadDescriptor("Étape 6/12 : Téléchargement des fichiers du jeu...");
             /* record json into this same path if not exist */
             string gameJSONFilePath = versionFolder + ManifestManager.minecraftVersionJson.Id + "/" + ManifestManager.minecraftVersionJson.Id + ".json";
 
@@ -318,7 +320,7 @@ namespace AramisLauncher.Download
         {
             LoggerManager.log("Start Forge Download !");
             fileToDownload.Clear();
-            MainWindow.ChangeDownLoadDescriptor("Step 7/10 : Vérification des fichiers forge...");
+            MainWindow.ChangeDownLoadDescriptor("Étape 7/12 : Vérification des fichiers forge...");
             int currentAsset = 0;
             MainWindow.ChangeProgressBarValue(0);
             foreach (ForgeLibrary library in ManifestManager.forgeVersionJson.Libraries)
@@ -352,7 +354,7 @@ namespace AramisLauncher.Download
                 MainWindow.ChangeProgressBarValue(++currentAsset * 100.0 / ManifestManager.forgeVersionJson.Libraries.Length);
             }
 
-            MainWindow.ChangeDownLoadDescriptor("Step 8/10 : Téléchargement des fichiers forge...");
+            MainWindow.ChangeDownLoadDescriptor("Étape 8/12 : Téléchargement des fichiers forge...");
             currentAsset = 0;
             MainWindow.ChangeProgressBarValue(0);
             fileToDownload.ForEach(delegate (FileDownloadInformation libFile)
@@ -374,7 +376,7 @@ namespace AramisLauncher.Download
         {
             LoggerManager.log("Start Mods Download !");
             fileToDownload.Clear();
-            MainWindow.ChangeDownLoadDescriptor("Step 9/10 : Vérification des mods forge...");
+            MainWindow.ChangeDownLoadDescriptor("Étape 9/12 : Vérification des mods forge...");
             int currentAsset = 0;
             MainWindow.ChangeProgressBarValue(0);
             foreach (InstalledAddon addon in ManifestManager.aramisPackageJson.InstalledAddons)
@@ -403,7 +405,7 @@ namespace AramisLauncher.Download
 
             int test = ManifestManager.aramisPackageJson.CachedScans.Length;
 
-            MainWindow.ChangeDownLoadDescriptor("Step 10/10 : Téléchargement des mods forge...");
+            MainWindow.ChangeDownLoadDescriptor("Étape 10/12 : Téléchargement des mods forge...");
             currentAsset = 0;
             MainWindow.ChangeProgressBarValue(0);
             fileToDownload.ForEach(delegate (FileDownloadInformation libFile)
@@ -418,6 +420,54 @@ namespace AramisLauncher.Download
                 webClient.DownloadFile(libFile.url, libFile.outputPath);
 
                 MainWindow.ChangeProgressBarValue(++currentAsset * 100.0 / fileToDownload.Count);
+            });
+        }
+
+        private static void downloadConfigs()
+        {
+            LoggerManager.log("Start Configs Download !");
+            fileToDownload.Clear();
+            MainWindow.ChangeDownLoadDescriptor("Étape 11/12 : Vérification des configurations...");
+            MainWindow.ChangeProgressBarValue(0);
+            foreach (FileProperty file in ManifestManager.aramisConfigurationJson.FileProperties)
+            {
+                FileDownloadInformation fileDownloadInformation = new FileDownloadInformation();
+
+                string filePath = scriptFolder + file.FileName;
+                fileDownloadInformation.outputPath = filePath;
+                fileDownloadInformation.url = ""; /* TBD */
+
+                if (System.IO.File.Exists(filePath))
+                {
+                    /* Compare size */
+                    if (new FileInfo(filePath).Length != file.FileSize)
+                    {
+                        /* Size is incorrect, add to download list */
+                        fileToDownload.Add(fileDownloadInformation);
+                    }
+                }
+                else
+                {
+                    /* add to download list */
+                    fileToDownload.Add(fileDownloadInformation);
+                }
+            }
+
+            MainWindow.ChangeDownLoadDescriptor("Étape 12/12 : Téléchargement des configurations...");
+            int currentConfig = 0;
+            MainWindow.ChangeProgressBarValue(0);
+            fileToDownload.ForEach(delegate (FileDownloadInformation libFile)
+            {
+                /* Create dir if not exist */
+                if (!Directory.Exists(Path.GetDirectoryName(libFile.outputPath)))
+                {
+                    Directory.CreateDirectory(Path.GetDirectoryName(libFile.outputPath));
+                }
+
+                /* Download file asset */
+                webClient.DownloadFile(libFile.url, libFile.outputPath);
+
+                MainWindow.ChangeProgressBarValue(++currentConfig * 100.0 / fileToDownload.Count);
             });
         }
 

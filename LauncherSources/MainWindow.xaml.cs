@@ -74,14 +74,7 @@ namespace AramisLauncher
             if (CommonData.launcherProfileJson.authenticationDatabase != null)
             {
                 /* file successfully loaded */
-                connectionStatusShape.Fill = new SolidColorBrush(Colors.Green);
-                userNameBox.Visibility = Visibility.Hidden;
-                passwordUserBox.Visibility = Visibility.Hidden;
-                connectionButton.Content = "Disconnect";
-                Canvas.SetTop(connectionButton, 66);
-                canvasConnection.Height = 94;
-                pseudoLabel.Content = CommonData.launcherProfileJson.authenticationDatabase.selectedProfile.name;
-                connectionStatus.Content = "Connecté";
+                ValidateToken(CommonData.launcherProfileJson.authenticationDatabase.accessToken, CommonData.launcherProfileJson.authenticationDatabase.clientToken);
             }
             else
             {
@@ -147,24 +140,35 @@ namespace AramisLauncher
         {
             if(connectionButton.Content.ToString() == "Connexion")
             {
-                CommonData.setAuthenticateProfile(AuthenticateToMinecraft(userNameBox.Text, passwordUserBox.Password));
+                AuthenticateToMinecraft(userNameBox.Text, passwordUserBox.Password);
                 if (CommonData.launcherProfileJson.authenticationDatabase != null)
                 {
-                    MessageBox.Show("Connected !");
-                    CommonData.saveLauncherProfile();
-                    connectionStatusShape.Fill = new SolidColorBrush(Colors.Green);
-                    userNameBox.Visibility = Visibility.Hidden;
-                    passwordUserBox.Visibility = Visibility.Hidden;
-                    connectionButton.Content = "Déconnexion";
-                    Canvas.SetTop(connectionButton, 66);
-                    canvasConnection.Height = 94;
-                    pseudoLabel.Content = CommonData.launcherProfileJson.authenticationDatabase.selectedProfile.name;
-                    connectionStatus.Content = "Connecté";
+                    ChangeConnectionState(true);
                 }
                 else
                 {
                     MessageBox.Show("Error to connect !");
                 }
+            }
+            else
+            {
+                ChangeConnectionState(false);
+            }
+        }
+
+        public static void ChangeConnectionState(bool connected)
+        {
+            if(connected)
+            {
+                CommonData.saveLauncherProfile();
+                connectionStatusShape.Fill = new SolidColorBrush(Colors.Green);
+                userNameBox.Visibility = Visibility.Hidden;
+                passwordUserBox.Visibility = Visibility.Hidden;
+                connectionButton.Content = "Déconnexion";
+                Canvas.SetTop(connectionButton, 66);
+                canvasConnection.Height = 94;
+                pseudoLabel.Content = CommonData.launcherProfileJson.authenticationDatabase.selectedProfile.name;
+                connectionStatus.Content = "Connecté";
             }
             else
             {

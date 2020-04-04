@@ -9,22 +9,10 @@ namespace AramisLauncher.Minecraft
 {
     class LauncherProfile
     {
-        public class AppVersion
-        {
-            public int major = 0;
-            public int minor = 1;
-            public int build = 0;
-        }
-        public class LauncherVersion
-        {
-            public string name = "AramisLauncher";
-            public AppVersion verison = new AppVersion();
-        }
-
         public class LauncherProfileJson
         {
             public AuthResponse authenticationDatabase;
-            public LauncherVersion launcherVersion = new LauncherVersion();
+            public Property property;
         }
     }
 }
