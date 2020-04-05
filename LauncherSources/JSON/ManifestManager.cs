@@ -27,7 +27,7 @@ namespace AramisLauncher.JSON
 
         public ManifestManager()
         {
-            MainWindow.downloadDescriptor.Content = "Récupération des manifests...";
+            MainWindow.ChangeDownLoadDescriptor("Récupération des manifests...");
             AramisManifest();
 
             string manifestData = webClient.DownloadString(mojangMinecraftManifestUrl);
@@ -44,7 +44,7 @@ namespace AramisLauncher.JSON
 
             MainWindow.versionModpack.Content += " " + aramisPackageJson.Manifest.Version;
 
-            MainWindow.downloadDescriptor.Content = "Manifests récupérés";
+            MainWindow.ChangeDownLoadDescriptor("Manifests récupérés");
         }
 
         public static void GetManifestVersion()

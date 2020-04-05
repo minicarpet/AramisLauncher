@@ -13,7 +13,7 @@ namespace AramisLauncher.Minecraft
 {
     class MinecraftManager
     {
-        public static Process minecraftGame = new Process();
+        private static Process minecraftGame = new Process();
         public MinecraftManager()
         {
             /* Create new Process and assign parameters */
@@ -23,6 +23,12 @@ namespace AramisLauncher.Minecraft
             minecraftGame.EnableRaisingEvents = true;
             minecraftGame.Exited += Process_Exited;
         }
+
+        public static bool MinecraftIsRunning()
+        {
+            return !minecraftGame.HasExited;
+        }
+
         public static void StartMinecraft()
         {
             LoggerManager.log("Start Minecraft !");
@@ -32,7 +38,7 @@ namespace AramisLauncher.Minecraft
             minecraftGame.StartInfo.WorkingDirectory = CommonData.aramisFolder;
             minecraftGame.StartInfo.Arguments = CreateCommand();
             minecraftGame.Start();
-            MainWindow.ChangeDownLoadDescriptor("Minecraft is running...");
+            MainWindow.ChangeDownLoadDescriptor("Minecraft est lancé...");
         }
 
         private static string CreateCommand()

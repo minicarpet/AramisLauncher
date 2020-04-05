@@ -100,7 +100,7 @@ namespace AramisLauncher
             {
                 try
                 {
-                    bool processIsRunning = MinecraftManager.minecraftGame.HasExited;
+                    bool processIsRunning = MinecraftManager.MinecraftIsRunning();
                     if (processIsRunning)
                     {
                         switch (thread.ThreadState)
