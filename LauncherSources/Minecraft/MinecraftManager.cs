@@ -95,8 +95,8 @@ namespace AramisLauncher.Minecraft
             arguments.Append("--versionType ");
             arguments.Append("Forge ");
 
-            arguments.Append("--width " + 1920 + " ");
-            arguments.Append("--height " + 1080 + " ");
+            arguments.Append("--width " + 800 + " ");
+            arguments.Append("--height " + 600 + " ");
 
             LoggerManager.log("Using arguments : " + arguments.ToString());
             return arguments.ToString();
