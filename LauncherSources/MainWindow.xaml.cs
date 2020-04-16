@@ -98,36 +98,21 @@ namespace AramisLauncher
         {
             if (CommonData.launcherProfileJson.authenticationDatabase != null)
             {
-                try
+                switch (thread.ThreadState)
                 {
-                    bool processIsRunning = MinecraftManager.MinecraftIsRunning();
-                    if (processIsRunning)
-                    {
-                        switch (thread.ThreadState)
-                        {
-                            case ThreadState.Unstarted:
-                                thread.Start();
-                                break;
-                            case ThreadState.Stopped:
-                                thread = new Thread(ExecuteInBackground);
-                                thread.IsBackground = true;
-                                thread.Start();
-                                break;
-                            default:
-                                break;
-                        }
-                    }
-                }
-                catch (InvalidOperationException)
-                {
-                    switch(thread.ThreadState)
-                    {
-                        case ThreadState.Background | ThreadState.Unstarted:
-                            thread.Start();
-                            break;
-                        default:
-                            break;
-                    }
+                    case ThreadState.Background | ThreadState.Unstarted:
+                        thread.Start();
+                        break;
+                    case ThreadState.Unstarted:
+                        thread.Start();
+                        break;
+                    case ThreadState.Stopped:
+                        thread = new Thread(ExecuteInBackground);
+                        thread.IsBackground = true;
+                        thread.Start();
+                        break;
+                    default:
+                        break;
                 }
             }
             else
