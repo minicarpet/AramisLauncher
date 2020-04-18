@@ -20,6 +20,7 @@ Ice and Fire
 ///////////////////////////////////////////////////////////////
 */
 
+	recipes.removeByMod("iceandfire");
 	recipes.remove(<iceandfire:dragonforge_fire_brick>);
 	recipes.remove(<iceandfire:dragonforge_fire_input>);
 	recipes.remove(<iceandfire:dragonforge_fire_core_disabled>);
@@ -88,57 +89,11 @@ mods.iceandfire.recipes.removeIceDragonForgeRecipe(<iceandfire:dragonsteel_ice_i
 	
 /*
 ///////////////////////////////////////////////////////////////
-Spartan fire
+Harvestcraft
 ///////////////////////////////////////////////////////////////
 */
 
-	recipes.removeByMod("spartanfire");
-	
-	recipes.remove(<spartanfire:longsword_ice_dragonsteel>);
-	recipes.remove(<spartanfire:katana_ice_dragonsteel>);
-	recipes.remove(<spartanfire:greatsword_ice_dragonsteel>);
-	recipes.remove(<spartanfire:saber_ice_dragonsteel>);
-	recipes.remove(<spartanfire:rapier_ice_dragonsteel>);
-	recipes.remove(<spartanfire:dagger_ice_dragonsteel>);
-	recipes.remove(<spartanfire:spear_ice_dragonsteel>);
-	recipes.remove(<spartanfire:pike_ice_dragonsteel>);
-	recipes.remove(<spartanfire:lance_ice_dragonsteel>);
-	recipes.remove(<spartanfire:halberd_ice_dragonsteel>);
-	recipes.remove(<spartanfire:warhammer_ice_dragonsteel>);
-	recipes.remove(<spartanfire:hammer_ice_dragonsteel>);
-	recipes.remove(<spartanfire:throwing_axe_ice_dragonsteel>);
-	recipes.remove(<spartanfire:throwing_knife_ice_dragonsteel>);
-	recipes.remove(<spartanfire:longbow_ice_dragonsteel>);
-	recipes.remove(<spartanfire:crossbow_ice_dragonsteel>);
-	recipes.remove(<spartanfire:javelin_ice_dragonsteel>);
-	recipes.remove(<spartanfire:battleaxe_ice_dragonsteel>);
-	recipes.remove(<spartanfire:boomerang_ice_dragonsteel>);
-	recipes.remove(<spartanfire:mace_ice_dragonsteel>);
-	recipes.remove(<spartanfire:staff_ice_dragonsteel>);
-	recipes.remove(<spartanfire:glaive_ice_dragonsteel>);
-
-	recipes.remove(<spartanfire:longsword_fire_dragonsteel>);
-	recipes.remove(<spartanfire:katana_fire_dragonsteel>);
-	recipes.remove(<spartanfire:greatsword_fire_dragonsteel>);
-	recipes.remove(<spartanfire:saber_fire_dragonsteel>);
-	recipes.remove(<spartanfire:rapier_fire_dragonsteel>);
-	recipes.remove(<spartanfire:dagger_fire_dragonsteel>);
-	recipes.remove(<spartanfire:spear_fire_dragonsteel>);
-	recipes.remove(<spartanfire:pike_fire_dragonsteel>);
-	recipes.remove(<spartanfire:lance_fire_dragonsteel>);
-	recipes.remove(<spartanfire:halberd_fire_dragonsteel>);
-	recipes.remove(<spartanfire:warhammer_fire_dragonsteel>);
-	recipes.remove(<spartanfire:hammer_fire_dragonsteel>);
-	recipes.remove(<spartanfire:throwing_axe_fire_dragonsteel>);
-	recipes.remove(<spartanfire:throwing_knife_fire_dragonsteel>);
-	recipes.remove(<spartanfire:longbow_fire_dragonsteel>);
-	recipes.remove(<spartanfire:crossbow_fire_dragonsteel>);
-	recipes.remove(<spartanfire:javelin_fire_dragonsteel>);
-	recipes.remove(<spartanfire:battleaxe_fire_dragonsteel>);
-	recipes.remove(<spartanfire:boomerang_fire_dragonsteel>);
-	recipes.remove(<spartanfire:mace_fire_dragonsteel>);
-	recipes.remove(<spartanfire:staff_fire_dragonsteel>);
-	recipes.remove(<spartanfire:glaive_fire_dragonsteel>);
+    recipes.removeByMod("harvestcraft");
 	
 /*
 ///////////////////////////////////////////////////////////////
@@ -146,7 +101,8 @@ Botania
 ///////////////////////////////////////////////////////////////
 */
 
-
+    recipes.removeByMod("botania");
+	
 	mods.botania.RuneAltar.removeRecipe(<botania:rune>);
 	mods.botania.RuneAltar.removeRecipe(<botania:rune:1>);
 	mods.botania.RuneAltar.removeRecipe(<botania:rune:2>);
@@ -167,6 +123,36 @@ Botania
 	
 	mods.botania.RuneAltar.removeRecipe(<botania:rune:8>);
 	mods.botania.RuneAltar.removeRecipe(<minecraft:skull:3>);
+	
+//	mods.botania.ElvenTrade.removeRecipe();
+//	mods.botania.Brew.removeRecipe();
+//	mods.botania.Apothecary.removeRecipe();
+//   mods.botania.ManaInfusion.removeRecipe();
+//	mods.botania.PureDaisy.removeRecipe();
+
+/*
+///////////////////////////////////////////////////////////////
+Thaumcraft
+///////////////////////////////////////////////////////////////
+*/
+
+
+
+
+//  mods.thaumcraft.ArcaneWorkbench.removeRecipe("recipeName");
+//	mods.thaumcraft.Crucible.removeRecipe("recipeName");
+//	mods.thaumcraft.Infusion.removeRecipe("recipeName");
+//	mods.thaumcraft.SalisMundus.removeSingleConversion(<*>);
+	
+/*
+///////////////////////////////////////////////////////////////
+Rats
+///////////////////////////////////////////////////////////////
+*/
+    recipes.removeByMod("rats");
+	
+//  mods.rats.recipes.removeChefRatRecipe();
+//	mods.rats.recipes.removeChefRatRecipe
 
 /*
 ///////////////////////////////////////////////////////////////
@@ -179,11 +165,24 @@ test
 	recipes.removeByMod("fusion");
 	recipes.removeByMod("wings");
 	recipes.removeByMod("embers");
-	recipes.removeByMod("iceandfire");
 	recipes.removeByMod("crystals_of_sao");
 	recipes.removeByMod("waystones");
-
-
-
+    recipes.removeByMod("tconstruct");
+	recipes.removeByMod("craftingautomat");
+	recipes.removeByMod("hopperducts");
+	recipes.removeByMod("enderstorage");
+	recipes.removeByMod("chococraft");
+	recipes.removeByMod("mocreatures");
+	recipes.removeByMod("drpmedieval");
+	recipes.removeByMod("colossalchests");
+	recipes.removeByMod("thebetweenlands");
+	recipes.removeByMod("thaumcraft");
+	recipes.removeByMod("extrabotany");
+    recipes.removeByMod("tinymobfarm");
+	recipes.removeByMod("chisel");
+	recipes.removeByMod("unlimitedchiselworks");
+	recipes.removeByMod("rustic");
+	recipes.removeByMod("conarm");
+	recipes.removeByMod("cfm");
 
 
