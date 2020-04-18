@@ -20,7 +20,7 @@ Ice and Fire
 ///////////////////////////////////////////////////////////////
 */
 
-	recipes.removeByMod("iceandfire");
+//	  recipes.removeByMod("iceandfire");
 	recipes.remove(<iceandfire:dragonforge_fire_brick>);
 	recipes.remove(<iceandfire:dragonforge_fire_input>);
 	recipes.remove(<iceandfire:dragonforge_fire_core_disabled>);
@@ -93,7 +93,7 @@ Harvestcraft
 ///////////////////////////////////////////////////////////////
 */
 
-    recipes.removeByMod("harvestcraft");
+//    recipes.removeByMod("harvestcraft");
 	
 /*
 ///////////////////////////////////////////////////////////////
@@ -101,7 +101,7 @@ Botania
 ///////////////////////////////////////////////////////////////
 */
 
-    recipes.removeByMod("botania");
+//    recipes.removeByMod("botania");
 	
 	mods.botania.RuneAltar.removeRecipe(<botania:rune>);
 	mods.botania.RuneAltar.removeRecipe(<botania:rune:1>);
@@ -124,11 +124,11 @@ Botania
 	mods.botania.RuneAltar.removeRecipe(<botania:rune:8>);
 	mods.botania.RuneAltar.removeRecipe(<minecraft:skull:3>);
 	
-//	mods.botania.ElvenTrade.removeRecipe();
-//	mods.botania.Brew.removeRecipe();
-//	mods.botania.Apothecary.removeRecipe();
-//   mods.botania.ManaInfusion.removeRecipe();
-//	mods.botania.PureDaisy.removeRecipe();
+//	  mods.botania.ElvenTrade.removeRecipe();
+//	  mods.botania.Brew.removeRecipe();
+//	  mods.botania.Apothecary.removeRecipe();
+//    mods.botania.ManaInfusion.removeRecipe();
+//	  mods.botania.PureDaisy.removeRecipe();
 
 /*
 ///////////////////////////////////////////////////////////////
@@ -136,7 +136,7 @@ Thaumcraft
 ///////////////////////////////////////////////////////////////
 */
 
-
+//    recipes.removeByMod("thaumcraft");
 
 
 //  mods.thaumcraft.ArcaneWorkbench.removeRecipe("recipeName");
@@ -149,22 +149,59 @@ Thaumcraft
 Rats
 ///////////////////////////////////////////////////////////////
 */
-    recipes.removeByMod("rats");
+
+//   recipes.removeByMod("rats");
 	
 //  mods.rats.recipes.removeChefRatRecipe();
 //	mods.rats.recipes.removeChefRatRecipe
 
 /*
 ///////////////////////////////////////////////////////////////
-test
+netherrocks
 ///////////////////////////////////////////////////////////////
 */
 
-	recipes.removeByMod("netherrocks");
-	recipes.removeByMod("simpleores");
-	recipes.removeByMod("fusion");
-	recipes.removeByMod("wings");
-	recipes.removeByMod("embers");
+//    recipes.removeByMod("netherrocks");
+	
+/*
+///////////////////////////////////////////////////////////////
+simpleores
+///////////////////////////////////////////////////////////////
+*/
+
+//    recipes.removeByMod("simpleores");
+	
+/*
+///////////////////////////////////////////////////////////////
+fusion
+///////////////////////////////////////////////////////////////
+*/
+
+//    recipes.removeByMod("fusion");
+	
+/*
+///////////////////////////////////////////////////////////////
+wings
+///////////////////////////////////////////////////////////////
+*/
+
+//    recipes.removeByMod("wings");
+	
+/*
+///////////////////////////////////////////////////////////////
+embers
+///////////////////////////////////////////////////////////////
+*/
+
+//    recipes.removeByMod("embers");
+	
+/*
+///////////////////////////////////////////////////////////////
+crystals of sao
+///////////////////////////////////////////////////////////////
+*/
+
+/*
 	recipes.removeByMod("crystals_of_sao");
 	recipes.removeByMod("waystones");
     recipes.removeByMod("tconstruct");
@@ -176,7 +213,7 @@ test
 	recipes.removeByMod("drpmedieval");
 	recipes.removeByMod("colossalchests");
 	recipes.removeByMod("thebetweenlands");
-	recipes.removeByMod("thaumcraft");
+
 	recipes.removeByMod("extrabotany");
     recipes.removeByMod("tinymobfarm");
 	recipes.removeByMod("chisel");
@@ -184,5 +221,5 @@ test
 	recipes.removeByMod("rustic");
 	recipes.removeByMod("conarm");
 	recipes.removeByMod("cfm");
-
+*/
 
