@@ -4,6 +4,7 @@ using AramisLauncher.Logger;
 using AramisLauncher.Minecraft;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.IO;
 using System.Net;
 
@@ -19,6 +20,7 @@ namespace AramisLauncher.Download
         public static string libraryFolder = CommonData.aramisFolder + "libraries/";
         public static string modsFolder = CommonData.aramisFolder + "mods/";
         public static string scriptFolder = CommonData.aramisFolder + "scripts/";
+        private static string assetsFolder = CommonData.aramisFolder + "assets/";
 
         public static List<string> nativesToExtract = new List<string>();
 
@@ -42,6 +44,24 @@ namespace AramisLauncher.Download
             LoggerManager.log("Start Download !");
 
             ManifestManager.GetManifestVersion();
+
+            if(CommonData.launcherProfileJson.installedVersion != null && CommonData.launcherProfileJson.installedVersion != ManifestManager.aramisPackageJson.Manifest.Version)
+            {
+                /* package version does not correspond to the recorded one, delete files */
+                foreach (string filePath in Directory.GetFiles(CommonData.aramisFolder))
+                {
+                    if(!filePath.Contains("launcher_profile.json") && !filePath.Contains("launcher_log.txt"))
+                        System.IO.File.Delete(filePath);
+                }
+
+                foreach (string path in Directory.GetDirectories(CommonData.aramisFolder))
+                {
+                    Directory.Delete(path, true);
+                }
+
+                CommonData.launcherProfileJson.installedVersion = null;
+                CommonData.saveLauncherProfile();
+            }
 
             /* download necessary files step by step */
             downloadAssets();
@@ -469,6 +489,9 @@ namespace AramisLauncher.Download
 
                 MainWindow.ChangeProgressBarValue(++currentConfig * 100.0 / fileToDownload.Count);
             });
+
+            CommonData.launcherProfileJson.installedVersion = ManifestManager.aramisPackageJson.Manifest.Version;
+            CommonData.saveLauncherProfile();
         }
 
         private static void DownloadProgressCallback(object sender, DownloadProgressChangedEventArgs e)

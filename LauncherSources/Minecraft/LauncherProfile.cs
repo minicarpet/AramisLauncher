@@ -13,6 +13,7 @@ namespace AramisLauncher.Minecraft
         {
             public AuthResponse authenticationDatabase;
             public Property property;
+            public string installedVersion;
         }
     }
 }
