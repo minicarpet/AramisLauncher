@@ -84,8 +84,6 @@ namespace AramisLauncher
             }
 
             LoggerManager.log("Launcher started at " + DateTime.Now);
-            if (ApplicationDeployment.IsNetworkDeployed && ApplicationDeployment.CurrentDeployment.IsFirstRun)
-                LoggerManager.log("First Launch version : " + versionLauncher.Content);
 
             thread.IsBackground = true;
             downloadProgress.Minimum = 0;
