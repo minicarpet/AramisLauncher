@@ -2,17 +2,6 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
 
-var itemArray as IItemStack[] = [
-    <iceandfire:dragonforge_fire_brick>,
-    <iceandfire:dragonforge_fire_input>,
-    <iceandfire:dragonforge_fire_core>,
-    <iceandfire:dragonsteel_fire_block>,
-];
-
-for item in itemArray {
-    # The most common way of recipe
-    recipes.remove(item);
-}
 
 /*
 ///////////////////////////////////////////////////////////////
@@ -21,7 +10,7 @@ Ice and Fire
 */
 
 //	  recipes.removeByMod("iceandfire");
-	recipes.remove(<iceandfire:dragonforge_fire_brick>);
+/*	recipes.remove(<iceandfire:dragonforge_fire_brick>);
 	recipes.remove(<iceandfire:dragonforge_fire_input>);
 	recipes.remove(<iceandfire:dragonforge_fire_core_disabled>);
 	recipes.remove(<iceandfire:dragonsteel_fire_block>);
@@ -84,7 +73,7 @@ mods.iceandfire.recipes.removeIceDragonForgeRecipe(<iceandfire:dragonsteel_ice_i
 	recipes.remove(<iceandfire:dragonarmor_silver:0>);
 	recipes.remove(<iceandfire:dragonarmor_silver:1>);
 	recipes.remove(<iceandfire:dragonarmor_silver:2>);
-	recipes.remove(<iceandfire:dragonarmor_silver:3>);
+*/	recipes.remove(<iceandfire:dragonarmor_silver:3>);
 	
 	
 /*
@@ -103,6 +92,7 @@ Botania
 
 //    recipes.removeByMod("botania");
 	
+/*
 	mods.botania.RuneAltar.removeRecipe(<botania:rune>);
 	mods.botania.RuneAltar.removeRecipe(<botania:rune:1>);
 	mods.botania.RuneAltar.removeRecipe(<botania:rune:2>);
@@ -124,6 +114,8 @@ Botania
 	mods.botania.RuneAltar.removeRecipe(<botania:rune:8>);
 	mods.botania.RuneAltar.removeRecipe(<minecraft:skull:3>);
 	
+*/
+
 //	  mods.botania.ElvenTrade.removeRecipe();
 //	  mods.botania.Brew.removeRecipe();
 //	  mods.botania.Apothecary.removeRecipe();

@@ -15,16 +15,16 @@ Pour l'altar
 //rune elementaire
 
 //Rune de l'eau
-mods.botania.RuneAltar.addRecipe(<botania:rune>, [<ore:powderMana>, <ore:ingotManasteel>, <variedcommodities:element_water>], 5200);
+//mods.botania.RuneAltar.addRecipe(<botania:rune>, [<ore:powderMana>, <ore:ingotManasteel>, <variedcommodities:element_water>], 5200);
 
 //Rune du feu
-mods.botania.RuneAltar.addRecipe(<botania:rune:1>, [<ore:powderMana>, <ore:ingotManasteel>, <variedcommodities:element_fire>], 5200);
+//mods.botania.RuneAltar.addRecipe(<botania:rune:1>, [<ore:powderMana>, <ore:ingotManasteel>, <variedcommodities:element_fire>], 5200);
 
 //Rune de la terre
-mods.botania.RuneAltar.addRecipe(<botania:rune:2>, [<ore:powderMana>, <ore:ingotManasteel>, <variedcommodities:element_earth>], 5200);
+//mods.botania.RuneAltar.addRecipe(<botania:rune:2>, [<ore:powderMana>, <ore:ingotManasteel>, <variedcommodities:element_earth>], 5200);
 
 // Rune de l'air
-mods.botania.RuneAltar.addRecipe(<botania:rune:3>, [<ore:powderMana>, <ore:ingotManasteel>, <variedcommodities:element_air>], 5200);
+//mods.botania.RuneAltar.addRecipe(<botania:rune:3>, [<ore:powderMana>, <ore:ingotManasteel>, <variedcommodities:element_air>], 5200);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

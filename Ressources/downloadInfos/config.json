@@ -3,11 +3,11 @@
     "files" : [
         {
             "fileName" : "altar_recipes.zs",
-            "fileSize" : 6777
+            "fileSize" : 6785
         },
         {
             "fileName" : "dragonforge_recipes.zs",
-            "fileSize" : 707
+            "fileSize" : 701
         },
         {
             "fileName" : "hide_jei.zs",
@@ -15,7 +15,7 @@
         },
         {
             "fileName" : "remove_recipes.zs",
-            "fileSize" : 7715
+            "fileSize" : 7429
         }
     ]
 }
