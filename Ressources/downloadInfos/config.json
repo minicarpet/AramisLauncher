@@ -3,7 +3,7 @@
     "files" : [
         {
             "fileName" : "altar_recipes.zs",
-            "fileSize" : 6785
+            "fileSize" : 6777
         },
         {
             "fileName" : "dragonforge_recipes.zs",
@@ -16,6 +16,10 @@
         {
             "fileName" : "remove_recipes.zs",
             "fileSize" : 7429
+        },
+		{
+            "fileName" : "add_recipes.zs",
+            "fileSize" : 46
         }
     ]
 }

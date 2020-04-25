@@ -73,8 +73,8 @@ mods.iceandfire.recipes.removeIceDragonForgeRecipe(<iceandfire:dragonsteel_ice_i
 	recipes.remove(<iceandfire:dragonarmor_silver:0>);
 	recipes.remove(<iceandfire:dragonarmor_silver:1>);
 	recipes.remove(<iceandfire:dragonarmor_silver:2>);
-*/	recipes.remove(<iceandfire:dragonarmor_silver:3>);
-	
+	recipes.remove(<iceandfire:dragonarmor_silver:3>);
+*/	
 	
 /*
 ///////////////////////////////////////////////////////////////
