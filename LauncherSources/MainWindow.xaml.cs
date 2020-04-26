@@ -330,6 +330,7 @@ namespace AramisLauncher
             MessageBoxResult dr = MessageBox.Show("The application has been updated. Restart? (If you do not restart now, the new version will not take effect until after you quit and launch the application again.)", "Restart Application", MessageBoxButton.OKCancel);
             if (MessageBoxResult.OK == dr)
             {
+                LoggerManager.log("The application has been updated. Restart.");
                 Process.Start(ApplicationDeployment.CurrentDeployment.UpdatedApplicationFullName);
                 Application.Current.Shutdown();
             }
