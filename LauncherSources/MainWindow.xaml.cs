@@ -265,11 +265,13 @@ namespace AramisLauncher
             LoggerManager.log("Check for update completed");
             if (e.Error != null)
             {
+                LoggerManager.log("ERROR: Could not retrieve new version of the application. Reason: \n" + e.Error.Message + "\nPlease report this error to the system administrator.");
                 MessageBox.Show("ERROR: Could not retrieve new version of the application. Reason: \n" + e.Error.Message + "\nPlease report this error to the system administrator.");
                 return;
             }
             else if (e.Cancelled == true)
             {
+                LoggerManager.log("The update was cancelled.");
                 MessageBox.Show("The update was cancelled.");
             }
 
@@ -280,6 +282,7 @@ namespace AramisLauncher
 
                 if (!e.IsUpdateRequired)
                 {
+                    LoggerManager.log("An update is available.");
                     MessageBoxResult result = MessageBox.Show("An update is available. Would you like to update the application now?\n\nEstimated Download Time: ", "Update Available", MessageBoxButton.OKCancel);
                     if (MessageBoxResult.OK == result)
                     {
@@ -288,12 +291,14 @@ namespace AramisLauncher
                 }
                 else
                 {
+                    LoggerManager.log("A mandatory update is available.");
                     MessageBox.Show("A mandatory update is available for your application. We will install the update now, after which we will save all of your in-progress data and restart your application.");
                     BeginUpdate();
                 }
             }
             else
             {
+                LoggerManager.log("No update is available.");
                 MessageBox.Show("No update is available.", "No new update", MessageBoxButton.OK);
             }
         }
