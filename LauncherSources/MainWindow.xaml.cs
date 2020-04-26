@@ -4,7 +4,9 @@ using AramisLauncher.JSON;
 using AramisLauncher.Logger;
 using AramisLauncher.Minecraft;
 using System;
+using System.ComponentModel;
 using System.Deployment.Application;
+using System.Diagnostics;
 using System.IO;
 using System.Net;
 using System.Text;
@@ -102,13 +104,13 @@ namespace AramisLauncher
             {
                 switch (thread.ThreadState)
                 {
-                    case ThreadState.Background | ThreadState.Unstarted:
+                    case System.Threading.ThreadState.Background | System.Threading.ThreadState.Unstarted:
                         thread.Start();
                         break;
-                    case ThreadState.Unstarted:
+                    case System.Threading.ThreadState.Unstarted:
                         thread.Start();
                         break;
-                    case ThreadState.Stopped:
+                    case System.Threading.ThreadState.Stopped:
                         thread = new Thread(ExecuteInBackground);
                         thread.IsBackground = true;
                         thread.Start();
@@ -214,6 +216,110 @@ namespace AramisLauncher
             if(userNameBox.Text == "Adresse mail")
             {
                 userNameBox.Text = "";
+            }
+        }
+
+        private void updateButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (ApplicationDeployment.IsNetworkDeployed)
+            {
+                ApplicationDeployment ad = ApplicationDeployment.CurrentDeployment;
+
+                ad.CheckForUpdateCompleted += new CheckForUpdateCompletedEventHandler(ad_CheckForUpdateCompleted);
+                ad.CheckForUpdateProgressChanged += new DeploymentProgressChangedEventHandler(ad_CheckForUpdateProgressChanged);
+
+                ad.CheckForUpdateAsync();
+            }
+        }
+
+        void ad_CheckForUpdateProgressChanged(object sender, DeploymentProgressChangedEventArgs e)
+        {
+            downloadStatus.Content = String.Format("Downloading: {0}. {1:D}K of {2:D}K downloaded.", GetProgressString(e.State), e.BytesCompleted / 1024, e.BytesTotal / 1024);
+        }
+
+        string GetProgressString(DeploymentProgressState state)
+        {
+            if (state == DeploymentProgressState.DownloadingApplicationFiles)
+            {
+                return "application files";
+            }
+            else if (state == DeploymentProgressState.DownloadingApplicationInformation)
+            {
+                return "application manifest";
+            }
+            else
+            {
+                return "deployment manifest";
+            }
+        }
+
+        void ad_CheckForUpdateCompleted(object sender, CheckForUpdateCompletedEventArgs e)
+        {
+            if (e.Error != null)
+            {
+                MessageBox.Show("ERROR: Could not retrieve new version of the application. Reason: \n" + e.Error.Message + "\nPlease report this error to the system administrator.");
+                return;
+            }
+            else if (e.Cancelled == true)
+            {
+                MessageBox.Show("The update was cancelled.");
+            }
+
+            // Ask the user if they would like to update the application now.
+            if (e.UpdateAvailable)
+            {
+                long sizeOfUpdate = e.UpdateSizeBytes;
+
+                if (!e.IsUpdateRequired)
+                {
+                    MessageBoxResult result = MessageBox.Show("An update is available. Would you like to update the application now?\n\nEstimated Download Time: ", "Update Available", MessageBoxButton.OKCancel);
+                    if (MessageBoxResult.OK == result)
+                    {
+                        BeginUpdate();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("A mandatory update is available for your application. We will install the update now, after which we will save all of your in-progress data and restart your application.");
+                    BeginUpdate();
+                }
+            }
+        }
+
+        private void BeginUpdate()
+        {
+            ApplicationDeployment ad = ApplicationDeployment.CurrentDeployment;
+            ad.UpdateCompleted += new AsyncCompletedEventHandler(ad_UpdateCompleted);
+
+            // Indicate progress in the application's status bar.
+            ad.UpdateProgressChanged += new DeploymentProgressChangedEventHandler(ad_UpdateProgressChanged);
+            ad.UpdateAsync();
+        }
+
+        void ad_UpdateProgressChanged(object sender, DeploymentProgressChangedEventArgs e)
+        {
+            String progressText = String.Format("{0:D}K out of {1:D}K downloaded - {2:D}% complete", e.BytesCompleted / 1024, e.BytesTotal / 1024, e.ProgressPercentage);
+            downloadStatus.Content = progressText;
+        }
+
+        void ad_UpdateCompleted(object sender, AsyncCompletedEventArgs e)
+        {
+            if (e.Cancelled)
+            {
+                MessageBox.Show("The update of the application's latest version was cancelled.");
+                return;
+            }
+            else if (e.Error != null)
+            {
+                MessageBox.Show("ERROR: Could not install the latest version of the application. Reason: \n" + e.Error.Message + "\nPlease report this error to the system administrator.");
+                return;
+            }
+
+            MessageBoxResult dr = MessageBox.Show("The application has been updated. Restart? (If you do not restart now, the new version will not take effect until after you quit and launch the application again.)", "Restart Application", MessageBoxButton.OKCancel);
+            if (MessageBoxResult.OK == dr)
+            {
+                Process.Start(Application.ResourceAssembly.Location);
+                Application.Current.Shutdown();
             }
         }
     }
