@@ -55,7 +55,7 @@
             </FlowDocument>
         </RichTextBox>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="118,447,0,0" VerticalAlignment="Top" Width="580"/>
-        <Label x:Name="downloadStatus" Margin="262,329,355,193"/>
+        <Label x:Name="downloadStatus" Margin="262,329,355,119" Content="Label"/>
         <Button x:Name="updateButton" Content="Mise à jour" HorizontalAlignment="Left" Margin="262,302,0,0" VerticalAlignment="Top" Width="162" Click="updateButton_Click" Foreground="White" Background="#99006E80" BorderBrush="Black" FontFamily="Lucida Calligraphy" Height="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
     </Grid>
 </Window>

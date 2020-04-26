@@ -331,7 +331,7 @@ namespace AramisLauncher
             if (MessageBoxResult.OK == dr)
             {
                 LoggerManager.log("The application has been updated. Restart.");
-                Process.Start(ApplicationDeployment.CurrentDeployment.UpdatedApplicationFullName);
+                Process.Start(Application.ResourceAssembly.Location);
                 Application.Current.Shutdown();
             }
         }
