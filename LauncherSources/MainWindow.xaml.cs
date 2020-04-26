@@ -284,6 +284,10 @@ namespace AramisLauncher
                     BeginUpdate();
                 }
             }
+            else
+            {
+                MessageBox.Show("No update is available.", "No new update", MessageBoxButton.OK);
+            }
         }
 
         private void BeginUpdate()

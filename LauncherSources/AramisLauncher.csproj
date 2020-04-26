@@ -30,7 +30,7 @@
     <ProductName>AramisLauncher</ProductName>
     <PublisherName>Aramis</PublisherName>
     <SuiteName>AramisLauncher</SuiteName>
-    <ApplicationRevision>12</ApplicationRevision>
+    <ApplicationRevision>13</ApplicationRevision>
     <ApplicationVersion>1.0.2.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
