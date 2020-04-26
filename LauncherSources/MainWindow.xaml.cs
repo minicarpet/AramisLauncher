@@ -62,9 +62,17 @@ namespace AramisLauncher
             richTextBox = (RichTextBox)FindName("actualites");
 
             if (ApplicationDeployment.IsNetworkDeployed)
+            {
                 versionLauncher.Content += " " + ApplicationDeployment.CurrentDeployment.CurrentVersion;
+                ApplicationDeployment.CurrentDeployment.UpdateCompleted += new AsyncCompletedEventHandler(ad_UpdateCompleted);
+
+                // Indicate progress in the application's status bar.
+                ApplicationDeployment.CurrentDeployment.UpdateProgressChanged += new DeploymentProgressChangedEventHandler(ad_UpdateProgressChanged);
+            }
             else
+            {
                 versionLauncher.Content += " " + "1.0.0.0";
+            }
 
             using (MemoryStream memoryStream = new MemoryStream(webClient.DownloadData("https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/Ressources/actualites/actualites.rtf")))
             {
@@ -223,12 +231,7 @@ namespace AramisLauncher
         {
             if (ApplicationDeployment.IsNetworkDeployed)
             {
-                ApplicationDeployment ad = ApplicationDeployment.CurrentDeployment;
-
-                ad.CheckForUpdateCompleted += new CheckForUpdateCompletedEventHandler(ad_CheckForUpdateCompleted);
-                ad.CheckForUpdateProgressChanged += new DeploymentProgressChangedEventHandler(ad_CheckForUpdateProgressChanged);
-
-                ad.CheckForUpdateAsync();
+                ApplicationDeployment.CurrentDeployment.CheckForUpdateAsync();
             }
         }
 
@@ -292,12 +295,7 @@ namespace AramisLauncher
 
         private void BeginUpdate()
         {
-            ApplicationDeployment ad = ApplicationDeployment.CurrentDeployment;
-            ad.UpdateCompleted += new AsyncCompletedEventHandler(ad_UpdateCompleted);
-
-            // Indicate progress in the application's status bar.
-            ad.UpdateProgressChanged += new DeploymentProgressChangedEventHandler(ad_UpdateProgressChanged);
-            ad.UpdateAsync();
+            ApplicationDeployment.CurrentDeployment.UpdateAsync();
         }
 
         void ad_UpdateProgressChanged(object sender, DeploymentProgressChangedEventArgs e)
