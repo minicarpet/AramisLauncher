@@ -64,8 +64,11 @@ namespace AramisLauncher
             if (ApplicationDeployment.IsNetworkDeployed)
             {
                 versionLauncher.Content += " " + ApplicationDeployment.CurrentDeployment.CurrentVersion;
-                ApplicationDeployment.CurrentDeployment.UpdateCompleted += new AsyncCompletedEventHandler(ad_UpdateCompleted);
 
+                /* Configure callback */
+                ApplicationDeployment.CurrentDeployment.CheckForUpdateCompleted += new CheckForUpdateCompletedEventHandler(ad_CheckForUpdateCompleted);
+                ApplicationDeployment.CurrentDeployment.CheckForUpdateProgressChanged += new DeploymentProgressChangedEventHandler(ad_CheckForUpdateProgressChanged);
+                ApplicationDeployment.CurrentDeployment.UpdateCompleted += new AsyncCompletedEventHandler(ad_UpdateCompleted);
                 // Indicate progress in the application's status bar.
                 ApplicationDeployment.CurrentDeployment.UpdateProgressChanged += new DeploymentProgressChangedEventHandler(ad_UpdateProgressChanged);
             }
