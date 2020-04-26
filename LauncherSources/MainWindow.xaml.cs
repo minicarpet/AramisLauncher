@@ -231,6 +231,7 @@ namespace AramisLauncher
         {
             if (ApplicationDeployment.IsNetworkDeployed)
             {
+                LoggerManager.log("Check for update");
                 ApplicationDeployment.CurrentDeployment.CheckForUpdateAsync();
             }
         }
@@ -258,6 +259,7 @@ namespace AramisLauncher
 
         void ad_CheckForUpdateCompleted(object sender, CheckForUpdateCompletedEventArgs e)
         {
+            LoggerManager.log("Check for update completed");
             if (e.Error != null)
             {
                 MessageBox.Show("ERROR: Could not retrieve new version of the application. Reason: \n" + e.Error.Message + "\nPlease report this error to the system administrator.");
