@@ -1,10 +1,9 @@
 {
-    "name" : "Configurations",
     "packages" : [
         {
             "packageName" : "aramis",
             "version" : "5.5",
-            "imageurl" : ""
+            "needSpecificConfig" : true
         }
     ]
 }
