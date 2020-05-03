@@ -2,8 +2,7 @@
     "packages" : [
         {
             "packageName" : "aramis",
-            "version" : "5.5",
-            "needSpecificConfig" : true
+            "version" : "5.5"
         }
     ]
 }

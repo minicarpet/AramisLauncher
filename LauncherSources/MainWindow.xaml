@@ -43,6 +43,7 @@
             <Label x:Name="connection_status" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="10" Width="192" FontFamily="Lucida Calligraphy" Foreground="White" FontSize="10" Padding="0" VerticalContentAlignment="Center" Canvas.Left="28" Canvas.Top="34"/>
         </Canvas>
         <Button x:Name="downloadButton" Content="Lancer AramisCraft" HorizontalAlignment="Left" Margin="703,447,0,0" VerticalAlignment="Top" Width="162" Click="downloadButton_Click" Foreground="White" Background="#99006E80" BorderBrush="Black" FontFamily="Lucida Calligraphy" Height="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="118,447,0,0" VerticalAlignment="Top" Width="580"/>
         <ProgressBar x:Name="downloadProgression" HorizontalAlignment="Left" Height="20" Margin="119,448,0,0" VerticalAlignment="Top" Width="579" Foreground="#FF006E80" BorderBrush="Black" BorderThickness="0" Padding="0"/>
         <Label x:Name="downloadDescription" Content="" HorizontalAlignment="Left" Margin="119,417,0,0" VerticalAlignment="Top" Width="579" Foreground="White" FontFamily="Lucida Calligraphy"/>
         <Canvas HorizontalAlignment="Left" Height="39.7" Margin="0,489,0,0" VerticalAlignment="Top" Width="964" Background="#99000000">
@@ -54,7 +55,6 @@
             <FlowDocument>
             </FlowDocument>
         </RichTextBox>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="118,447,0,0" VerticalAlignment="Top" Width="580"/>
         <Label x:Name="downloadStatus" Margin="262,329,355,119" Content=""/>
         <Button x:Name="updateButton" Content="Mise à jour" HorizontalAlignment="Left" Margin="262,302,0,0" VerticalAlignment="Top" Width="162" Click="updateButton_Click" Foreground="White" Background="#99006E80" BorderBrush="Black" FontFamily="Lucida Calligraphy" Height="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
     </Grid>
