@@ -18,6 +18,15 @@ namespace AramisLauncher.Common
         /* Define folders and files */
         public static string aramisFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData).Replace('\\', '/') + "/.aramis/";
         public static string nativeFolder = aramisFolder + "bin/natives/";
+        public static string libraryFolder = aramisFolder + "libraries/";
+        public static string modsFolder = aramisFolder + "mods/";
+        public static string scriptFolder = aramisFolder + "scripts/";
+        public static string assetsFolder = aramisFolder + "assets/";
+        public static string assetsLogConfigFolder = aramisFolder + "assets/log_configs/";
+        public static string assetsIndexFolder = aramisFolder + "assets/indexes/";
+        public static string assetsObjectFolder = aramisFolder + "assets/objects/";
+        public static string versionFolder = aramisFolder + "versions/";
+
         public static string launcherProfileFilePath = aramisFolder + "launcher_profile.json";
 
         /* Custom link */

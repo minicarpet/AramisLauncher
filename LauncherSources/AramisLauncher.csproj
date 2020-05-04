@@ -30,7 +30,7 @@
     <PublisherName>Aramis</PublisherName>
     <SuiteName>AramisLauncher</SuiteName>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -106,6 +106,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Common\CommonData.cs" />
+    <Compile Include="DownloadManager\DownloadManager.cs" />
     <Compile Include="MojangAuth\Authenticator.cs" />
     <Compile Include="MojangAuth\AuthFormat.cs" />
     <Compile Include="MojangAuth\PlayerProfile.cs" />
@@ -217,9 +218,7 @@
     <Resource Include="Ressources\AramisLauncher.ico" />
     <Resource Include="Ressources\fondlauncher.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DownloadManager\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
       <Visible>False</Visible>
