@@ -44,7 +44,7 @@ namespace AramisLauncher
             foreach(Package.Package package in packageConfiguration.Packages)
             {
                 /* Get the url of package */
-                string currentUrl = CommonData.packageInfoBaseURL + package.PackageName + "/" + package.PackageName + ".png";
+                string currentUrl = CommonData.packageInfoBaseURL + package.PackageName.ToLower() + "/" + package.PackageName.ToLower() + ".png";
 
                 /* Get image stream of package */
                 BitmapImage bi3 = new BitmapImage();

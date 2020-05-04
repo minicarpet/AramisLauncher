@@ -12,10 +12,13 @@ namespace AramisLauncher.Common
 {
     class CommonData
     {
+        /* Custom file to record user profile */
+        public static LauncherProfileJson launcherProfileJson = new LauncherProfileJson();
+
+        /* Define folders and files */
         public static string aramisFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData).Replace('\\', '/') + "/.aramis/";
         public static string nativeFolder = aramisFolder + "bin/natives/";
         public static string launcherProfileFilePath = aramisFolder + "launcher_profile.json";
-        public static LauncherProfileJson launcherProfileJson = new LauncherProfileJson();
 
         /* Custom link */
         public static string actualityURL = "https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/Ressources/actualites/actualites.rtf";
