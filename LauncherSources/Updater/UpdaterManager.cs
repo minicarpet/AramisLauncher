@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
+using System.Windows.Threading;
 using System.Xml;
 using System.Xml.Linq;
 
@@ -41,8 +42,11 @@ namespace AramisLauncher.Updater
         private void ad_CheckForUpdateProgressChanged(object sender, DeploymentProgressChangedEventArgs e)
         {
             /* In case I want to add text or progressBar status */
-            updaterInformation.PopupText.Text = String.Format("Downloading: {0}. {1:D}K of {2:D}K downloaded.", GetProgressString(e.State), e.BytesCompleted / 1024, e.BytesTotal / 1024);
-            updaterInformation.progressBar.Value = e.ProgressPercentage;
+            Dispatcher.CurrentDispatcher.InvokeAsync(() =>
+            {
+                updaterInformation.PopupText.Text = String.Format("Downloading: {0}. {1:D}K of {2:D}K downloaded.", GetProgressString(e.State), e.BytesCompleted / 1024, e.BytesTotal / 1024);
+                updaterInformation.progressBar.Value = e.ProgressPercentage;
+            });
         }
 
         private string GetProgressString(DeploymentProgressState state)
@@ -75,13 +79,12 @@ namespace AramisLauncher.Updater
 
             if (e.UpdateAvailable)
             {
-                if (!e.IsUpdateRequired)
+                Dispatcher.CurrentDispatcher.InvokeAsync(() =>
                 {
                     updateButton.Visibility = Visibility.Visible;
-                }
-                else
+                });
+                if (e.IsUpdateRequired)
                 {
-                    updateButton.Visibility = Visibility.Visible;
                     BeginUpdate();
                 }
             }
@@ -90,8 +93,11 @@ namespace AramisLauncher.Updater
         private void ad_UpdateProgressChanged(object sender, DeploymentProgressChangedEventArgs e)
         {
             String progressText = String.Format("{0:D}K out of {1:D}K downloaded - {2:D}% complete", e.BytesCompleted / 1024, e.BytesTotal / 1024, e.ProgressPercentage);
-            updaterInformation.PopupText.Text = progressText;
-            updaterInformation.progressBar.Value = e.ProgressPercentage;
+            Dispatcher.CurrentDispatcher.InvokeAsync(() =>
+            {
+                updaterInformation.PopupText.Text = progressText;
+                updaterInformation.progressBar.Value = e.ProgressPercentage;
+            });
         }
 
         private void ad_UpdateCompleted(object sender, AsyncCompletedEventArgs e)
