@@ -1,7 +1,7 @@
 {
     "packages" : [
         {
-            "packageName" : "aramis",
+            "packageName" : "Aramis",
             "version" : "5.5"
         }
     ]

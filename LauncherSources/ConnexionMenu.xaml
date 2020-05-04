@@ -1,0 +1,109 @@
+﻿<Window x:Class="AramisLauncher.ConnexionMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:local="clr-namespace:AramisLauncher"
+        mc:Ignorable="d"
+        Title="Connexion" Height="450" Width="380"
+        AllowsTransparency="True" Background="Transparent"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None" ResizeMode="NoResize">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Border CornerRadius="10" Grid.RowSpan="2">
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#1C2F3E" Offset="0.0"/>
+                        <GradientStop Color="Black" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+            <Button x:Name="ExitButton"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Right"
+                    Margin="20" Style="{DynamicResource IconPackButtonStyle}" Click="LeaveButton_Click">
+
+                <!--add image-->
+                <iconPacks:PackIconMaterial Kind="ExitToApp"
+                                            VerticalAlignment="Center" 
+                                            HorizontalAlignment="Center" 
+                                            Foreground="White" Height="20" Width="20"/>
+
+            </Button>
+            <StackPanel VerticalAlignment="Center">
+                <iconPacks:PackIconMaterial Kind="Home"
+                                                VerticalAlignment="Center" 
+                                                HorizontalAlignment="Center" 
+                                                Foreground="White" Height="30" Width="30"/>
+                <TextBlock Text="Connexion"
+                           FontWeight="Light"
+                           FontFamily="helvetica"
+                           FontSize="22"
+                           Foreground="White"
+                           HorizontalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1" >
+                <StackPanel Orientation="Horizontal">
+                    <TextBox FontFamily="Helvetica"
+                             FontWeight="Light"
+                             Text="Username"
+                             Name="UserName"
+                             FontSize="20"
+                             HorizontalAlignment="Center"
+                             Foreground="White"
+                             Background="Transparent"
+                             BorderThickness="0"
+                             Width="235"
+                             HorizontalContentAlignment="Left"
+                             Opacity="0.5"
+                             Height="25"
+                             Margin="63,0,0,0"
+                             GotFocus="UserName_GotFocus"/>
+                    <iconPacks:PackIconMaterial Kind="Account" 
+                                                VerticalAlignment="Center" 
+                                                HorizontalAlignment="Center" 
+                                                Foreground="White"/>
+                </StackPanel>
+                <Border Width="250"
+                        Height="2"
+                        Background="White"
+                        Opacity="0.5"/>
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <PasswordBox FontFamily="Helvetica"
+                             FontWeight="Light"
+                             Password="Password"
+                             Name="PassWord"
+                             FontSize="20"
+                             HorizontalAlignment="Center"
+                             Foreground="White"
+                             Background="Transparent"
+                             BorderThickness="0"
+                             Width="235"
+                             HorizontalContentAlignment="Left"
+                             Opacity="0.5"
+                             Height="25"
+                             Margin="63,0,0,0"
+                             GotFocus="PassWord_GotFocus"/>
+                    <iconPacks:PackIconMaterial Kind="FormTextboxPassword" 
+                                                VerticalAlignment="Center" 
+                                                HorizontalAlignment="Center" 
+                                                Foreground="White"/>
+                </StackPanel>
+                <Border Width="250"
+                        Height="2"
+                        Background="White"
+                        Opacity="0.5"/>
+                <TextBlock x:Name="StatusText" Text="Erreur de connexion..." Width="250" HorizontalAlignment="Center" Background="DarkRed" Visibility="Hidden"/>
+                <Button x:Name="ConnectButton" Style="{StaticResource ModernButton}" Width="100" Height="40" Content="LOGIN" Margin="0,50,0,0" Click="ConnexionButton_Click"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="AramisLauncher.HomeUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             xmlns:local="clr-namespace:AramisLauncher"
+             mc:Ignorable="d" 
+             d:DesignHeight="640" d:DesignWidth="1300">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Ressources/fondlauncher.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <ListView x:Name="listView" Height="640" Width="65" HorizontalAlignment="Left" BorderThickness="0" HorizontalContentAlignment="Center">
+            <ListView.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#003366" Offset="0"/>
+                    <GradientStop Color="#006699" Offset="1"/>
+                </LinearGradientBrush>
+            </ListView.Background>
+        </ListView>
+        <RichTextBox x:Name="Actualities" Height="500" Margin="600,10,10,0" VerticalAlignment="Top" Background="#99000000" Foreground="White" BorderThickness="0" IsReadOnly="True" IsDocumentEnabled="True" Focusable="False" AllowDrop="False" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto"/>
+        <Border BorderBrush="Black" BorderThickness="1" Height="32" Width="900" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="100, 40"/>
+        <ProgressBar x:Name="downloadProgression" Height="30" Width="898" Foreground="#FF006E80" BorderBrush="Black" BorderThickness="0" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="101, 41"/>
+        <Button x:Name="downloadButton" Content="Lancer AramisCraft" VerticalAlignment="Bottom" HorizontalAlignment="Right" Height="32" Width="162" Margin="100, 40" Foreground="White" Background="#99006E80" BorderBrush="Black" FontFamily="Lucida Calligraphy" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="downloadButton_Click"/>
+
+        <!--add the popup user control-->
+        <Popup x:Name="packageInformationPopup"
+               AllowsTransparency="True">
+            <local:PackageInformation x:Name="packageInformation" Foreground="#E0FFFF"/>
+        </Popup>
+    </Grid>
+</UserControl>

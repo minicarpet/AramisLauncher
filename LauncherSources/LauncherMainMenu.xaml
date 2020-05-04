@@ -1,0 +1,149 @@
+﻿<Window x:Class="AramisLauncher.LauncherMainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AramisLauncher"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        mc:Ignorable="d"
+        Title="LauncherMainMenu" Height="800" Width="1400"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent">
+    <Grid>
+        <!--create a new grid-->
+        <Grid>
+            <Border CornerRadius="10" Grid.RowSpan="2">
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#1C2F3E" Offset="0.0"/>
+                        <GradientStop Color="Black" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+
+            <!-- Not use for now we don't have menu -->
+            <!--add a stack panel to the left of the grid-->
+            <StackPanel Width="100"
+                        HorizontalAlignment="Left"
+                        Background="#14212B"
+                        Visibility="Collapsed">
+
+                <!--add 3 buttons - Home, Profile and Settings-->
+                <Button x:Name="Home"
+                        Height="100"
+                        Background="Transparent"
+                        BorderBrush="Transparent"
+                        Margin="0,180,0,20" Style="{DynamicResource IconPackButtonStyle}" Click="Home_Click">
+
+                    <!--add image-->
+                    <iconPacks:PackIconModern Kind="HomeEmpty"
+                                              VerticalAlignment="Center" 
+                                              HorizontalAlignment="Center" 
+                                              Foreground="White" Height="60" Width="60"/>
+                </Button>
+
+                <Button x:Name="Profile"
+                        Height="100"
+                        Background="Transparent"
+                        BorderBrush="Transparent"
+
+                        Margin="0,0,0,10" Style="{DynamicResource IconPackButtonStyle}" Click="Profile_Click">
+
+                    <!--add image-->
+                    <iconPacks:PackIconMaterial Kind="Account"
+                                                VerticalAlignment="Center" 
+                                                HorizontalAlignment="Center" 
+                                                Foreground="White" Height="60" Width="60"/>
+                </Button>
+
+                <Button x:Name="Settings"
+                        Height="100"
+                        Background="Transparent"
+                        BorderBrush="Transparent"
+                        Margin="0,10,0,0" Style="{DynamicResource IconPackButtonStyle}" Click="Settings_Click">
+
+                    <!--add image-->
+                    <iconPacks:PackIconModern Kind="Settings"
+                                              VerticalAlignment="Center" 
+                                              HorizontalAlignment="Center" 
+                                              Foreground="White" Height="60" Width="60"/>
+                </Button>
+            </StackPanel>
+
+            <!--add a header to the grid-->
+            <Grid Height="80"
+                  VerticalAlignment="Top">
+
+                <!--add a header title-->
+                <TextBlock Text="Aramis Launcher"
+                           FontFamily="open sans condensed"
+                           FontSize="26"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Foreground="#E0FFFF">
+                </TextBlock>
+
+                <!--add an exit button-->
+                <Button x:Name="LeaveButton"
+                        Height="40"
+                        Width="40"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Right"
+                        Margin="0,0,20,0" Style="{DynamicResource IconPackButtonStyle}" Click="LeaveButton_Click">
+
+                    <!--add image-->
+                    <iconPacks:PackIconMaterial Kind="ExitToApp"
+                                                VerticalAlignment="Center" 
+                                                HorizontalAlignment="Center" 
+                                                Foreground="White" Height="30" Width="30"/>
+
+                </Button>
+
+                <!--add an update button-->
+                <Button x:Name="UpdateButton"
+                        Height="40"
+                        Width="40"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Right"
+                        Margin="0,0,80,0" Style="{DynamicResource IconPackButtonStyle}"
+                        Visibility="Hidden"
+                        Click="UpdateButton_Click"
+                        MouseEnter="UpdateButton_MouseEnter"
+                        MouseLeave="UpdateButton_MouseLeave">
+
+                    <!--add image-->
+                    <iconPacks:PackIconMaterial Kind="Download"
+                                                VerticalAlignment="Center" 
+                                                HorizontalAlignment="Center" 
+                                                Foreground="White" Height="30" Width="30"/>
+
+                </Button>
+
+            </Grid>
+
+            <Grid x:Name="Content"
+                  Height="640"
+                  Width="1400"
+                  VerticalAlignment="Center"
+                  HorizontalAlignment="Right">
+                <local:HomeUserControl x:Name="homeUserControlDefault"/>
+            </Grid>
+
+            <!--add a footer-->
+            <Grid Height="80"
+                  VerticalAlignment="Bottom">
+                <TextBlock x:Name="copyrightText" Text="Designed by Aramis inc. in Naveil&#xD;&#xA;Assembled in Naveil" HorizontalAlignment="Left" VerticalAlignment="Center" Width="400" Foreground="White" FontFamily="Lucida Calligraphy" Height="60" Canvas.Left="10" Margin="10" FontSize="20"/>
+                <TextBlock x:Name="launcherVersionText" Text="Version launcher :" HorizontalAlignment="Right" VerticalAlignment="Center" Width="275" Foreground="White" FontFamily="Lucida Calligraphy" Height="30" Canvas.Left="10" Margin="10" FontSize="20"/>
+            </Grid>
+
+            <!--add the popup user control-->
+            <Popup x:Name="updaterInformationPopup" IsOpen="False" PlacementTarget="{Binding ElementName=UpdateButton}" Placement="Bottom" HorizontalOffset="-50" AllowsTransparency="True">
+                <local:UpdaterInformation x:Name="updaterInformation" Foreground="#E0FFFF"></local:UpdaterInformation>
+            </Popup>
+        </Grid>
+    </Grid>
+</Window>
