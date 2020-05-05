@@ -22,6 +22,7 @@ namespace AramisLauncher.Updater
         private UpdaterInformation updaterInformation;
         public UpdaterManager(Button button, UpdaterInformation newUpdaterInformation)
         {
+            updateButton = button;
             updaterInformation = newUpdaterInformation;
             /* Configure callback */
             ApplicationDeployment.CurrentDeployment.CheckForUpdateCompleted += new CheckForUpdateCompletedEventHandler(ad_CheckForUpdateCompleted);
@@ -42,7 +43,7 @@ namespace AramisLauncher.Updater
         private void ad_CheckForUpdateProgressChanged(object sender, DeploymentProgressChangedEventArgs e)
         {
             /* In case I want to add text or progressBar status */
-            Dispatcher.CurrentDispatcher.InvokeAsync(() =>
+            Dispatcher.CurrentDispatcher.Invoke(() =>
             {
                 updaterInformation.PopupText.Text = String.Format("Downloading: {0}. {1:D}K of {2:D}K downloaded.", GetProgressString(e.State), e.BytesCompleted / 1024, e.BytesTotal / 1024);
                 updaterInformation.progressBar.Value = e.ProgressPercentage;
@@ -79,7 +80,7 @@ namespace AramisLauncher.Updater
 
             if (e.UpdateAvailable)
             {
-                Dispatcher.CurrentDispatcher.InvokeAsync(() =>
+                Dispatcher.CurrentDispatcher.Invoke(() =>
                 {
                     updateButton.Visibility = Visibility.Visible;
                 });
@@ -93,7 +94,7 @@ namespace AramisLauncher.Updater
         private void ad_UpdateProgressChanged(object sender, DeploymentProgressChangedEventArgs e)
         {
             String progressText = String.Format("{0:D}K out of {1:D}K downloaded - {2:D}% complete", e.BytesCompleted / 1024, e.BytesTotal / 1024, e.ProgressPercentage);
-            Dispatcher.CurrentDispatcher.InvokeAsync(() =>
+            Dispatcher.CurrentDispatcher.Invoke(() =>
             {
                 updaterInformation.PopupText.Text = progressText;
                 updaterInformation.progressBar.Value = e.ProgressPercentage;
