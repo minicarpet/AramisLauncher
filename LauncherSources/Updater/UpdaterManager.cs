@@ -5,7 +5,9 @@ using System.Deployment.Application;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -18,10 +20,12 @@ namespace AramisLauncher.Updater
 {
     class UpdaterManager
     {
+        private Mutex instanceMutex;
         private Button updateButton;
         private UpdaterInformation updaterInformation;
         public UpdaterManager(Button button, UpdaterInformation newUpdaterInformation)
         {
+            instanceMutex = new Mutex(true, @"Local\" + Assembly.GetExecutingAssembly().GetType().GUID);
             updateButton = button;
             updaterInformation = newUpdaterInformation;
             /* Configure callback */
@@ -45,7 +49,7 @@ namespace AramisLauncher.Updater
             /* In case I want to add text or progressBar status */
             Dispatcher.CurrentDispatcher.Invoke(() =>
             {
-                updaterInformation.PopupText.Text = String.Format("Downloading: {0}. {1:D}K of {2:D}K downloaded.", GetProgressString(e.State), e.BytesCompleted / 1024, e.BytesTotal / 1024);
+                updaterInformation.PopupText.Text = String.Format("Téléchargement: {0}. {1:D}K de {2:D}K téléchargé.", GetProgressString(e.State), e.BytesCompleted / 1024, e.BytesTotal / 1024);
                 updaterInformation.progressBar.Value = e.ProgressPercentage;
             });
         }
@@ -82,6 +86,7 @@ namespace AramisLauncher.Updater
             {
                 Dispatcher.CurrentDispatcher.Invoke(() =>
                 {
+                    updaterInformation.PopupText.Text = "Nouvelle version disponible !";
                     updateButton.Visibility = Visibility.Visible;
                 });
                 if (e.IsUpdateRequired)
@@ -93,7 +98,7 @@ namespace AramisLauncher.Updater
 
         private void ad_UpdateProgressChanged(object sender, DeploymentProgressChangedEventArgs e)
         {
-            String progressText = String.Format("{0:D}K out of {1:D}K downloaded - {2:D}% complete", e.BytesCompleted / 1024, e.BytesTotal / 1024, e.ProgressPercentage);
+            String progressText = String.Format("{0:D}K sur {1:D}K téléchargé - {2:D}%", e.BytesCompleted / 1024, e.BytesTotal / 1024, e.ProgressPercentage);
             Dispatcher.CurrentDispatcher.Invoke(() =>
             {
                 updaterInformation.PopupText.Text = progressText;
@@ -114,15 +119,25 @@ namespace AramisLauncher.Updater
                 return;
             }
 
-            MessageBoxResult dr = MessageBox.Show("The application has been updated. Restart? (If you do not restart now, the new version will not take effect until after you quit and launch the application again.)", "Restart Application", MessageBoxButton.OKCancel);
+            MessageBoxResult dr = MessageBox.Show("L'application vient d'être mise à jour. Redémarrer ? (Si vous ne redémarrer pas maintenant, la nouvelle version pendra effet au prochain démarrage.)", "Recharger Launcher", MessageBoxButton.OKCancel);
             if (MessageBoxResult.OK == dr)
             {
                 string shortcutFile = GetShortcutPath();
                 Process proc = new Process { StartInfo = { FileName = shortcutFile, UseShellExecute = true } };
 
+                ReleaseMutex();
                 proc.Start();
                 Application.Current.Shutdown();
             }
+        }
+
+        private void ReleaseMutex()
+        {
+            if (instanceMutex == null)
+                return;
+            instanceMutex.ReleaseMutex();
+            instanceMutex.Close();
+            instanceMutex = null;
         }
 
         private static string GetShortcutPath()

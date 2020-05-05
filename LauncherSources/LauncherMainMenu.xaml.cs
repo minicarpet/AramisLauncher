@@ -40,7 +40,6 @@ namespace AramisLauncher
             }
             else
             {
-                updaterManager = new UpdaterManager(UpdateButton, updaterInformation);
                 launcherVersionText.Text += " " + "1.0.0.0";
             }
         }
