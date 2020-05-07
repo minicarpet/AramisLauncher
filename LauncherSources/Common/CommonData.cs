@@ -16,6 +16,9 @@ namespace AramisLauncher.Common
         public static LauncherProfileJson launcherProfileJson = new LauncherProfileJson();
 
         /* Define folders and files */
+        public static string appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData).Replace('\\', '/');
+        public static string packageName;
+        public static string packageVersion;
         public static string aramisFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData).Replace('\\', '/') + "/.aramis/";
         public static string nativeFolder = aramisFolder + "bin/natives/";
         public static string libraryFolder = aramisFolder + "libraries/";
@@ -40,6 +43,9 @@ namespace AramisLauncher.Common
         public static string authServerAuthenticateURL = "https://authserver.mojang.com/authenticate";
 
         public static string playerSessionURL = "https://sessionserver.mojang.com/session/minecraft/profile/";
+
+        /* Manifest link */
+        public static string mojangMinecraftManifestUrl = "https://launchermeta.mojang.com/mc/game/version_manifest.json";
 
         public class LauncherProfileJson
         {

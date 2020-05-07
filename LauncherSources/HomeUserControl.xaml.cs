@@ -1,5 +1,8 @@
 ﻿using AramisLauncher.Common;
+using AramisLauncher.JSON;
+using AramisLauncher.Minecraft;
 using AramisLauncher.Package;
+using AramisLauncher.Download;
 using MahApps.Metro.IconPacks;
 using System;
 using System.Collections.Generic;
@@ -7,6 +10,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -18,6 +22,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace AramisLauncher
 {
@@ -26,11 +31,19 @@ namespace AramisLauncher
     /// </summary>
     public partial class HomeUserControl : UserControl
     {
-        private PackageConfiguration packageConfiguration;
+        private MinecraftManager minecraftManager;
+        private Thread thread = new Thread(new ParameterizedThreadStart(ExecuteInBackground));
+        private static PackageConfiguration packageConfiguration;
+        public static Button downloadButtonStatic;
+        public static ProgressBar downloadProgress;
+        public static TextBlock downloadDescriptorStatic;
         public HomeUserControl()
         {
             InitializeComponent();
 
+            downloadProgress = (ProgressBar)FindName("downloadProgression");
+            downloadDescriptorStatic = (TextBlock)FindName("downloadDescriptor");
+            downloadButtonStatic = (Button)FindName("downloadButton");
             WebClient webClient = new WebClient();
 
             /* Get news */
@@ -65,7 +78,9 @@ namespace AramisLauncher
                 listViewItem.MouseEnter += ListViewItem_MouseEnter;
                 listViewItem.MouseLeave += ListViewItem_MouseLeave;
                 listView.Items.Add(listViewItem);
+                listViewItem.IsSelected = true;
             }
+            (listView.Items.GetItemAt(0) as ListViewItem).IsSelected = true;
         }
 
         private void ListViewItem_MouseLeave(object sender, MouseEventArgs e)
@@ -83,7 +98,74 @@ namespace AramisLauncher
 
         private void downloadButton_Click(object sender, RoutedEventArgs e)
         {
+            switch (thread.ThreadState)
+            {
+                case ThreadState.Background:
+                case ThreadState.Unstarted:
+                    (sender as Button).Content = "Stopper le téléchargement";
+                    thread.Start(listView.SelectedIndex);
+                    break;
+                case ThreadState.Stopped:
+                case ThreadState.Aborted:
+                    thread = new Thread(ExecuteInBackground);
+                    thread.IsBackground = true;
+                    (sender as Button).Content = "Stopper le téléchargement";
+                    thread.Start(listView.SelectedIndex);
+                    break;
+                case ThreadState.Running:
+                    (sender as Button).Content = "Lancer AramisCraft";
+                    downloadDescriptor.Text = "Stoppé";
+                    downloadProgression.Value = 0;
+                    thread.Abort();
+                    break;
+                default:
+                    break;
+            }
+        }
 
+        private static void ExecuteInBackground(object index)
+        {
+            CommonData.packageName = packageConfiguration.Packages[(int)index].PackageName.ToLower();
+            CommonData.packageVersion = packageConfiguration.Packages[(int)index].Version;
+            ManifestManager.GetAllManifests();
+            /* Download the selected version */
+            DownloadManager.startDownload();
+            /* start the selected version */
+            MinecraftManager.StartMinecraft();
+            ChangeDownloadButtonContent("Lancer AramisCraft");
+            ChangeDownloadButtonVisibility(Visibility.Hidden);
+        }
+        
+        public static void ChangeDownloadButtonContent(string newContent)
+        {
+            Application.Current.Dispatcher.Invoke(() =>
+            {
+                downloadButtonStatic.Content = newContent;
+            });
+        }
+
+        public static void ChangeDownloadButtonVisibility(Visibility visibility)
+        {
+            Application.Current.Dispatcher.Invoke(() =>
+            {
+                downloadButtonStatic.Visibility = visibility;
+            });
+        }
+
+        public static void ChangeDownLoadDescriptor(string newValue)
+        {
+            Application.Current.Dispatcher.Invoke(() =>
+            {
+                downloadDescriptorStatic.Text = newValue;
+            });
+        }
+
+        public static void ChangeProgressBarValue(double newValue)
+        {
+            Application.Current.Dispatcher.Invoke(() =>
+            {
+                downloadProgress.Value = newValue;
+            });
         }
     }
 }

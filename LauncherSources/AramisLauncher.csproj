@@ -86,6 +86,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -106,7 +107,16 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Common\CommonData.cs" />
-    <Compile Include="DownloadManager\DownloadManager.cs" />
+    <Compile Include="Download\DownloadManager.cs" />
+    <Compile Include="Manifest\PackageConfigurationJson.cs" />
+    <Compile Include="Manifest\PackageJson.cs" />
+    <Compile Include="Manifest\ForgeVersionJson.cs" />
+    <Compile Include="Manifest\ManifestManager.cs" />
+    <Compile Include="Manifest\MinecraftVersionJson.cs" />
+    <Compile Include="Manifest\MojangMinecraftManifest.cs" />
+    <Compile Include="Minecraft\AssetInformation.cs" />
+    <Compile Include="Minecraft\Metadata.cs" />
+    <Compile Include="Minecraft\MinecraftManager.cs" />
     <Compile Include="MojangAuth\Authenticator.cs" />
     <Compile Include="MojangAuth\AuthFormat.cs" />
     <Compile Include="MojangAuth\PlayerProfile.cs" />
