@@ -1,0 +1,5 @@
+{
+    "progressBarColor": [255, 0, 110, 128],
+    "downloadButtonColor": [255, 0, 110, 128],
+    "downloadButtonText" : "Lancer AramisCraft"
+}
