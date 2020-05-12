@@ -16,8 +16,8 @@ namespace AramisLauncher.Package
         public string PackageName { get; set; }
         [JsonProperty("version")]
         public string Version { get; set; }
-        [JsonProperty("needSpecificConfig")]
-        public bool NeedSpecificConfig { get; set; }
+        [JsonProperty("address")]
+        public string ServerAddress { get; set; }
     }
 
     public partial class PackageConfiguration

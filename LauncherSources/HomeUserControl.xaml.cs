@@ -77,9 +77,8 @@ namespace AramisLauncher
                 listViewItem.MouseEnter += ListViewItem_MouseEnter;
                 listViewItem.MouseLeave += ListViewItem_MouseLeave;
                 listView.Items.Add(listViewItem);
-                listViewItem.IsSelected = true;
             }
-            (listView.Items.GetItemAt(0) as ListViewItem).IsSelected = true;
+            listView.SelectedItem = listView.Items.GetItemAt(0);
         }
 
         private void ListViewItem_MouseLeave(object sender, MouseEventArgs e)
@@ -126,6 +125,7 @@ namespace AramisLauncher
         {
             CommonData.packageName = packageConfiguration.Packages[(int)index].PackageName.ToLower();
             CommonData.packageVersion = packageConfiguration.Packages[(int)index].Version;
+            CommonData.packageServerAddress = packageConfiguration.Packages[(int)index].ServerAddress;
             CommonData.updatePackageName();
             ManifestManager.GetAllManifests();
             /* Download the selected version */

@@ -82,9 +82,9 @@ namespace AramisLauncher.Minecraft
             //arguments.Append("--userProperties ");
             //arguments.Append(JsonConvert.SerializeObject(CommonData.launcherProfileJson.property));
             arguments.Append("--server ");
-            arguments.Append("aramiscraft.omgserv.net ");
+            arguments.Append(CommonData.packageServerAddress.Split(':')[0] + " ");
             arguments.Append("--port ");
-            arguments.Append("10554 ");
+            arguments.Append(CommonData.packageServerAddress.Split(':')[1] + " ");
             arguments.Append("--version ");
             arguments.Append(ManifestManager.minecraftVersionJson.Id + " ");
             arguments.Append("--gameDir ");

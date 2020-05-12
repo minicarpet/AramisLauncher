@@ -103,7 +103,8 @@ namespace AramisLauncher.JSON
             }
             catch(Exception)
             {
-
+                /* No configuration */
+                packageConfigurationJson = null;
             }
         }
     }

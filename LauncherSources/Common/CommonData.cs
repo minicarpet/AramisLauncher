@@ -29,6 +29,7 @@ namespace AramisLauncher.Common
         /* Package folder */
         public static string packageName;
         public static string packageVersion;
+        public static string packageServerAddress;
         public static string packageFolder;
         public static string nativeFolder;
         public static string libraryFolder;

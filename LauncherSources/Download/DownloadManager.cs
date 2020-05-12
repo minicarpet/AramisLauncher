@@ -34,32 +34,39 @@ namespace AramisLauncher.Download
 
         public static void startDownload()
         {
-            InsalledPackage insalledPackage = null;
-            try
+            if (CommonData.launcherProfileJson.installedPackageVersion != null)
             {
-                insalledPackage = CommonData.launcherProfileJson.installedPackageVersion.Find(x => x.packageName == CommonData.packageName);
-            }
-            catch(Exception)
-            {
-
-            }
-
-            if (insalledPackage != null && insalledPackage.packageVersion != CommonData.packageVersion)
-            {
-                /* package version does not correspond to the recorded one, delete files */
-                foreach (string filePath in Directory.GetFiles(CommonData.packageFolder))
+                InsalledPackage insalledPackage = null;
+                try
                 {
-                    if (!filePath.Contains("launcher_profile.json") && !filePath.Contains("launcher_log.txt"))
-                        System.IO.File.Delete(filePath);
+                    insalledPackage = CommonData.launcherProfileJson.installedPackageVersion.Find(x => x.packageName == CommonData.packageName);
+                }
+                catch (Exception)
+                {
+
                 }
 
-                foreach (string path in Directory.GetDirectories(CommonData.packageFolder))
+                if (insalledPackage != null && insalledPackage.packageVersion != CommonData.packageVersion)
                 {
-                    Directory.Delete(path, true);
-                }
+                    /* package version does not correspond to the recorded one, delete files */
+                    foreach (string filePath in Directory.GetFiles(CommonData.packageFolder))
+                    {
+                        if (!filePath.Contains("launcher_profile.json") && !filePath.Contains("launcher_log.txt"))
+                            System.IO.File.Delete(filePath);
+                    }
 
-                CommonData.launcherProfileJson.installedPackageVersion = null;
-                CommonData.saveLauncherProfile();
+                    foreach (string path in Directory.GetDirectories(CommonData.packageFolder))
+                    {
+                        Directory.Delete(path, true);
+                    }
+
+                    CommonData.launcherProfileJson.installedPackageVersion.Remove(insalledPackage);
+                    CommonData.saveLauncherProfile();
+                }
+            }
+            else
+            {
+                CommonData.launcherProfileJson.installedPackageVersion = new List<InsalledPackage>();
             }
 
             /* download necessary files step by step */
@@ -442,48 +449,51 @@ namespace AramisLauncher.Download
             fileToDownload.Clear();
             HomeUserControl.ChangeDownLoadDescriptor("Étape 11/12 : Vérification des configurations...");
             HomeUserControl.ChangeProgressBarValue(0);
-            foreach (FileProperty file in ManifestManager.packageConfigurationJson.FileProperties)
+            if (ManifestManager.packageConfigurationJson != null)
             {
-                FileDownloadInformation fileDownloadInformation = new FileDownloadInformation();
-
-                string filePath = CommonData.scriptFolder + file.FileName;
-                fileDownloadInformation.outputPath = filePath;
-                fileDownloadInformation.url = CommonData.packageInfoBaseURL + CommonData.packageName + "/scripts/" + file.FileName;
-
-                if (System.IO.File.Exists(filePath))
+                foreach (FileProperty file in ManifestManager.packageConfigurationJson.FileProperties)
                 {
-                    /* Compare size */
-                    if (new FileInfo(filePath).Length != file.FileSize)
+                    FileDownloadInformation fileDownloadInformation = new FileDownloadInformation();
+
+                    string filePath = CommonData.scriptFolder + file.FileName;
+                    fileDownloadInformation.outputPath = filePath;
+                    fileDownloadInformation.url = CommonData.packageInfoBaseURL + CommonData.packageName + "/scripts/" + file.FileName;
+
+                    if (System.IO.File.Exists(filePath))
                     {
-                        /* Size is incorrect, add to download list */
+                        /* Compare size */
+                        if (new FileInfo(filePath).Length != file.FileSize)
+                        {
+                            /* Size is incorrect, add to download list */
+                            fileToDownload.Add(fileDownloadInformation);
+                        }
+                    }
+                    else
+                    {
+                        /* add to download list */
                         fileToDownload.Add(fileDownloadInformation);
                     }
                 }
-                else
-                {
-                    /* add to download list */
-                    fileToDownload.Add(fileDownloadInformation);
-                }
-            }
 
-            HomeUserControl.ChangeDownLoadDescriptor("Étape 12/12 : Téléchargement des configurations...");
-            HomeUserControl.ChangeProgressBarValue(0);
-            int currentConfig = 0;
-            fileToDownload.ForEach(delegate (FileDownloadInformation libFile)
-            {
-                /* Create dir if not exist */
-                if (!Directory.Exists(Path.GetDirectoryName(libFile.outputPath)))
+                HomeUserControl.ChangeDownLoadDescriptor("Étape 12/12 : Téléchargement des configurations...");
+                HomeUserControl.ChangeProgressBarValue(0);
+                int currentConfig = 0;
+                fileToDownload.ForEach(delegate (FileDownloadInformation libFile)
                 {
-                    Directory.CreateDirectory(Path.GetDirectoryName(libFile.outputPath));
-                }
+                /* Create dir if not exist */
+                    if (!Directory.Exists(Path.GetDirectoryName(libFile.outputPath)))
+                    {
+                        Directory.CreateDirectory(Path.GetDirectoryName(libFile.outputPath));
+                    }
 
                 /* Download file asset */
-                webClient.DownloadFile(libFile.url, libFile.outputPath);
+                    webClient.DownloadFile(libFile.url, libFile.outputPath);
 
-                HomeUserControl.ChangeProgressBarValue(++currentConfig * 100.0 / fileToDownload.Count);
-            });
+                    HomeUserControl.ChangeProgressBarValue(++currentConfig * 100.0 / fileToDownload.Count);
+                });
+            }
 
-            InsalledPackage newInstalledPackage = null;
+            InsalledPackage newInstalledPackage = new InsalledPackage();
             newInstalledPackage.packageName = CommonData.packageName;
             newInstalledPackage.packageVersion = CommonData.packageVersion;
 
