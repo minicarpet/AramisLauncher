@@ -2,11 +2,13 @@
     "packages" : [
         {
             "packageName" : "Aramis",
-            "version" : "5.5"
+            "version" : "5.5",
+            "address" : "aramiscraft.omgserv.net"
         },
 		{
             "packageName" : "Pixelmon",
-            "version" : "1.0"
+            "version" : "1.0",
+            "address" : "aramiscraft.test.net:10554"
         }
     ]
 }
