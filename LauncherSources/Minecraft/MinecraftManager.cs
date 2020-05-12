@@ -29,7 +29,7 @@ namespace AramisLauncher.Minecraft
 
             minecraftGame.EnableRaisingEvents = true;
             minecraftGame.Exited += Process_Exited;
-            minecraftGame.StartInfo.WorkingDirectory = CommonData.aramisFolder;
+            minecraftGame.StartInfo.WorkingDirectory = CommonData.packageFolder;
             minecraftGame.StartInfo.Arguments = CreateCommand();
             minecraftGame.Start();
             HomeUserControl.ChangeDownLoadDescriptor("Minecraft est lancé...");
@@ -72,7 +72,7 @@ namespace AramisLauncher.Minecraft
                 shouldAddComma = true;
             });
 
-            arguments.Append(";" + CommonData.aramisFolder + "versions/" + ManifestManager.minecraftVersionJson.Id + "/" + ManifestManager.minecraftVersionJson.Id + ".jar ");
+            arguments.Append(";" + CommonData.packageFolder + "versions/" + ManifestManager.minecraftVersionJson.Id + "/" + ManifestManager.minecraftVersionJson.Id + ".jar ");
 
             //arguments.Append(ManifestManager.minecraftVersionJson.MainClass + " ");
             arguments.Append(ManifestManager.forgeVersionJson.MainClass + " ");
@@ -88,9 +88,9 @@ namespace AramisLauncher.Minecraft
             arguments.Append("--version ");
             arguments.Append(ManifestManager.minecraftVersionJson.Id + " ");
             arguments.Append("--gameDir ");
-            arguments.Append(CommonData.aramisFolder + " ");
+            arguments.Append(CommonData.packageFolder + " ");
             arguments.Append("--assetsDir ");
-            arguments.Append(CommonData.aramisFolder + "assets/ ");
+            arguments.Append(CommonData.packageFolder + "assets/ ");
             arguments.Append("--assetIndex ");
             arguments.Append(ManifestManager.minecraftVersionJson.Assets + " ");
             arguments.Append("--uuid ");
@@ -214,7 +214,7 @@ namespace AramisLauncher.Minecraft
                                 shouldAddComma = true;
                             });
 
-                            arguments.Append(";" + CommonData.aramisFolder + "versions/" + ManifestManager.minecraftVersionJson.Id + "/" + ManifestManager.minecraftVersionJson.Id + ".jar ");
+                            arguments.Append(";" + CommonData.packageFolder + "versions/" + ManifestManager.minecraftVersionJson.Id + "/" + ManifestManager.minecraftVersionJson.Id + ".jar ");
 
                             arguments.Append(ManifestManager.minecraftVersionJson.MainClass + " ");
                         }
@@ -248,10 +248,10 @@ namespace AramisLauncher.Minecraft
                                 arguments.Append(ManifestManager.minecraftVersionJson.Id + " ");
                                 break;
                             case "${game_directory}":
-                                arguments.Append(CommonData.aramisFolder + " ");
+                                arguments.Append(CommonData.packageFolder + " ");
                                 break;
                             case "${assets_root}":
-                                arguments.Append(CommonData.aramisFolder + "assets/ ");
+                                arguments.Append(CommonData.packageFolder + "assets/ ");
                                 break;
                             case "${assets_index_name}":
                                 arguments.Append(ManifestManager.minecraftVersionJson.Assets + " ");

@@ -10,6 +10,12 @@ using static AramisLauncher.MojangAuth.PlayerProfile;
 
 namespace AramisLauncher.Common
 {
+    public class InsalledPackage
+    {
+        public string packageName;
+        public string packageVersion;
+    }
+
     class CommonData
     {
         /* Custom file to record user profile */
@@ -17,23 +23,24 @@ namespace AramisLauncher.Common
 
         /* Define folders and files */
         public static string appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData).Replace('\\', '/');
-        public static string packageName;
-        public static string packageVersion;
         public static string aramisFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData).Replace('\\', '/') + "/.aramis/";
-        public static string nativeFolder = aramisFolder + "bin/natives/";
-        public static string libraryFolder = aramisFolder + "libraries/";
-        public static string modsFolder = aramisFolder + "mods/";
-        public static string scriptFolder = aramisFolder + "scripts/";
-        public static string assetsFolder = aramisFolder + "assets/";
-        public static string assetsLogConfigFolder = aramisFolder + "assets/log_configs/";
-        public static string assetsIndexFolder = aramisFolder + "assets/indexes/";
-        public static string assetsObjectFolder = aramisFolder + "assets/objects/";
-        public static string versionFolder = aramisFolder + "versions/";
-
         public static string launcherProfileFilePath = aramisFolder + "launcher_profile.json";
 
+        /* Package folder */
+        public static string packageName;
+        public static string packageVersion;
+        public static string packageFolder;
+        public static string nativeFolder;
+        public static string libraryFolder;
+        public static string modsFolder;
+        public static string scriptFolder;
+        public static string assetsFolder;
+        public static string assetsLogConfigFolder;
+        public static string assetsIndexFolder;
+        public static string assetsObjectFolder;
+        public static string versionFolder;
+
         /* Custom link */
-        public static string actualityURL = "https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/Ressources/actualites/actualites.rtf";
         public static string packageInfoJsonURL = "https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/Ressources/downloadInfos/packageInfos.json";
         public static string packageInfoBaseURL = "https://raw.githubusercontent.com/minicarpet/AramisLauncher/master/Ressources/downloadInfos/";
 
@@ -51,8 +58,22 @@ namespace AramisLauncher.Common
         {
             public AuthResponse authenticationDatabase;
             public Property userProperty;
-            public string installedPackageVersion;
+            public List<InsalledPackage> installedPackageVersion;
         }
+
+        public static void updatePackageName()
+        {
+            packageFolder = appDataFolder + "/." + packageName + "/";
+            nativeFolder = packageFolder + "bin/natives/";
+            libraryFolder = packageFolder + "libraries/";
+            modsFolder = packageFolder + "mods/";
+            scriptFolder = packageFolder + "scripts/";
+            assetsFolder = packageFolder + "assets/";
+            assetsLogConfigFolder = packageFolder + "assets/log_configs/";
+            assetsIndexFolder = packageFolder + "assets/indexes/";
+            assetsObjectFolder = packageFolder + "assets/objects/";
+            versionFolder = packageFolder + "versions/";
+    }
 
         public static void saveLauncherProfile()
         {

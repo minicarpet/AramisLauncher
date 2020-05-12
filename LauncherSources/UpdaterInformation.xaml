@@ -27,12 +27,12 @@
               
                     L10,10
                     z"            
-              Fill="#3A6180"
+              Fill="DimGray"
               Height="65"
               Width="195"
-              Stroke="#3A6180"
+              Stroke="Black"
               Stretch="Fill"
-              Margin="10" Style="{DynamicResource FocusVisual}">
+              Margin="10">
 
         </Path>
 
@@ -40,6 +40,7 @@
             <!--reusable text-->
             <TextBlock x:Name="PopupText"
                    FontSize="20"
+                   Foreground="White"
                    Panel.ZIndex="1"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center">

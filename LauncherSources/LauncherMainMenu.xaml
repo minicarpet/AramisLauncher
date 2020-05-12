@@ -15,7 +15,7 @@
             <Border CornerRadius="10" Grid.RowSpan="2">
                 <Border.Background>
                     <LinearGradientBrush>
-                        <GradientStop Color="#1C2F3E" Offset="0.0"/>
+                        <GradientStop Color="#FF3E3E3E" Offset="0.0"/>
                         <GradientStop Color="Black" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
@@ -31,42 +31,35 @@
                 <!--add 3 buttons - Home, Profile and Settings-->
                 <Button x:Name="Home"
                         Height="100"
-                        Background="Transparent"
-                        BorderBrush="Transparent"
                         Margin="0,180,0,20" Style="{DynamicResource IconPackButtonStyle}" Click="Home_Click">
 
                     <!--add image-->
                     <iconPacks:PackIconModern Kind="HomeEmpty"
                                               VerticalAlignment="Center" 
                                               HorizontalAlignment="Center" 
-                                              Foreground="White" Height="60" Width="60"/>
+                                              Height="60" Width="60"/>
                 </Button>
 
                 <Button x:Name="Profile"
                         Height="100"
-                        Background="Transparent"
-                        BorderBrush="Transparent"
-
                         Margin="0,0,0,10" Style="{DynamicResource IconPackButtonStyle}" Click="Profile_Click">
 
                     <!--add image-->
                     <iconPacks:PackIconMaterial Kind="Account"
                                                 VerticalAlignment="Center" 
                                                 HorizontalAlignment="Center" 
-                                                Foreground="White" Height="60" Width="60"/>
+                                                Height="60" Width="60"/>
                 </Button>
 
                 <Button x:Name="Settings"
                         Height="100"
-                        Background="Transparent"
-                        BorderBrush="Transparent"
                         Margin="0,10,0,0" Style="{DynamicResource IconPackButtonStyle}" Click="Settings_Click">
 
                     <!--add image-->
                     <iconPacks:PackIconModern Kind="Settings"
                                               VerticalAlignment="Center" 
                                               HorizontalAlignment="Center" 
-                                              Foreground="White" Height="60" Width="60"/>
+                                              Height="60" Width="60"/>
                 </Button>
             </StackPanel>
 
@@ -80,15 +73,13 @@
                            FontSize="26"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Center"
-                           Foreground="#E0FFFF">
+                           Foreground="White">
                 </TextBlock>
 
                 <!--add an exit button-->
                 <Button x:Name="LeaveButton"
                         Height="40"
                         Width="40"
-                        Background="Transparent"
-                        BorderThickness="0"
                         VerticalAlignment="Center"
                         HorizontalAlignment="Right"
                         Margin="0,0,20,0" Style="{DynamicResource IconPackButtonStyle}" Click="LeaveButton_Click">
@@ -97,7 +88,7 @@
                     <iconPacks:PackIconMaterial Kind="ExitToApp"
                                                 VerticalAlignment="Center" 
                                                 HorizontalAlignment="Center" 
-                                                Foreground="White" Height="30" Width="30"/>
+                                                Height="30" Width="30"/>
 
                 </Button>
 
@@ -105,8 +96,6 @@
                 <Button x:Name="UpdateButton"
                         Height="40"
                         Width="40"
-                        Background="Transparent"
-                        BorderThickness="0"
                         VerticalAlignment="Center"
                         HorizontalAlignment="Right"
                         Margin="0,0,80,0" Style="{DynamicResource IconPackButtonStyle}"
@@ -119,7 +108,7 @@
                     <iconPacks:PackIconMaterial Kind="Download"
                                                 VerticalAlignment="Center" 
                                                 HorizontalAlignment="Center" 
-                                                Foreground="White" Height="30" Width="30"/>
+                                                Height="30" Width="30"/>
 
                 </Button>
 

@@ -31,9 +31,12 @@ namespace AramisLauncher
     /// </summary>
     public partial class HomeUserControl : UserControl
     {
-        private MinecraftManager minecraftManager;
+        private WebClient webClient = new WebClient();
+
         private Thread thread = new Thread(new ParameterizedThreadStart(ExecuteInBackground));
         private static PackageConfiguration packageConfiguration;
+        private static List<PackageStyle> packageStyles = new List<PackageStyle>();
+
         public static Button downloadButtonStatic;
         public static ProgressBar downloadProgress;
         public static TextBlock downloadDescriptorStatic;
@@ -44,13 +47,6 @@ namespace AramisLauncher
             downloadProgress = (ProgressBar)FindName("downloadProgression");
             downloadDescriptorStatic = (TextBlock)FindName("downloadDescriptor");
             downloadButtonStatic = (Button)FindName("downloadButton");
-            WebClient webClient = new WebClient();
-
-            /* Get news */
-            using (MemoryStream memoryStream = new MemoryStream(webClient.DownloadData(CommonData.actualityURL)))
-            {
-                Actualities.Selection.Load(memoryStream, DataFormats.Rtf);
-            }
 
             /* GetPackage info */
             packageConfiguration = PackageConfiguration.FromJson(webClient.DownloadString(CommonData.packageInfoJsonURL));
@@ -58,6 +54,9 @@ namespace AramisLauncher
             {
                 /* Get the url of package */
                 string currentUrl = CommonData.packageInfoBaseURL + package.PackageName.ToLower() + "/" + package.PackageName.ToLower() + ".png";
+                string currentStyleUrl = CommonData.packageInfoBaseURL + package.PackageName.ToLower() + "/" + "style.json";
+
+                packageStyles.Add(PackageStyle.FromJson(webClient.DownloadString(currentStyleUrl)));
 
                 /* Get image stream of package */
                 BitmapImage bi3 = new BitmapImage();
@@ -127,6 +126,7 @@ namespace AramisLauncher
         {
             CommonData.packageName = packageConfiguration.Packages[(int)index].PackageName.ToLower();
             CommonData.packageVersion = packageConfiguration.Packages[(int)index].Version;
+            CommonData.updatePackageName();
             ManifestManager.GetAllManifests();
             /* Download the selected version */
             DownloadManager.startDownload();
@@ -166,6 +166,27 @@ namespace AramisLauncher
             {
                 downloadProgress.Value = newValue;
             });
+        }
+
+        private void listView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            int index = listView.Items.IndexOf(e.AddedItems[0]);
+            string selectedPackageName = packageConfiguration.Packages[index].PackageName.ToLower();
+            /* Get background color */
+            backgroundBrush.ImageSource = new BitmapImage(new Uri(CommonData.packageInfoBaseURL + selectedPackageName + "/background.png"));
+            byte a = packageStyles[index].DownloadButtonColor[0];
+            byte r = packageStyles[index].DownloadButtonColor[1];
+            byte g = packageStyles[index].DownloadButtonColor[2];
+            byte b = packageStyles[index].DownloadButtonColor[3];
+            SolidColorBrush solidColorBrush = new SolidColorBrush(Color.FromArgb(a, r, g, b));
+            downloadProgress.Foreground = solidColorBrush;
+            downloadButton.Background = solidColorBrush;
+            downloadButton.Content = packageStyles[index].DownloadButtonText;
+            /* Get news */
+            using (MemoryStream memoryStream = new MemoryStream(webClient.DownloadData(CommonData.packageInfoBaseURL + selectedPackageName + "/actualites.rtf")))
+            {
+                Actualities.Selection.Load(memoryStream, DataFormats.Rtf);
+            }
         }
     }
 }

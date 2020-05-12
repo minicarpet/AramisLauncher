@@ -4,7 +4,6 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
-        xmlns:local="clr-namespace:AramisLauncher"
         mc:Ignorable="d"
         Title="Connexion" Height="450" Width="380"
         AllowsTransparency="True" Background="Transparent"
@@ -19,14 +18,12 @@
             <Border CornerRadius="10" Grid.RowSpan="2">
                 <Border.Background>
                     <LinearGradientBrush>
-                        <GradientStop Color="#1C2F3E" Offset="0.0"/>
+                        <GradientStop Color="#FF3E3E3E" Offset="0.0"/>
                         <GradientStop Color="Black" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
             </Border>
             <Button x:Name="ExitButton"
-                    Background="Transparent"
-                    BorderBrush="Transparent"
                     VerticalAlignment="Top"
                     HorizontalAlignment="Right"
                     Margin="20" Style="{DynamicResource IconPackButtonStyle}" Click="LeaveButton_Click">
@@ -34,8 +31,8 @@
                 <!--add image-->
                 <iconPacks:PackIconMaterial Kind="ExitToApp"
                                             VerticalAlignment="Center" 
-                                            HorizontalAlignment="Center" 
-                                            Foreground="White" Height="20" Width="20"/>
+                                            HorizontalAlignment="Center"
+                                            Height="20" Width="20"/>
 
             </Button>
             <StackPanel VerticalAlignment="Center">

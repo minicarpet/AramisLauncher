@@ -34,16 +34,26 @@ namespace AramisLauncher.Download
 
         public static void startDownload()
         {
-            if (CommonData.launcherProfileJson.installedPackageVersion != null && CommonData.launcherProfileJson.installedPackageVersion != CommonData.packageVersion)
+            InsalledPackage insalledPackage = null;
+            try
+            {
+                insalledPackage = CommonData.launcherProfileJson.installedPackageVersion.Find(x => x.packageName == CommonData.packageName);
+            }
+            catch(Exception)
+            {
+
+            }
+
+            if (insalledPackage != null && insalledPackage.packageVersion != CommonData.packageVersion)
             {
                 /* package version does not correspond to the recorded one, delete files */
-                foreach (string filePath in Directory.GetFiles(CommonData.aramisFolder))
+                foreach (string filePath in Directory.GetFiles(CommonData.packageFolder))
                 {
                     if (!filePath.Contains("launcher_profile.json") && !filePath.Contains("launcher_log.txt"))
                         System.IO.File.Delete(filePath);
                 }
 
-                foreach (string path in Directory.GetDirectories(CommonData.aramisFolder))
+                foreach (string path in Directory.GetDirectories(CommonData.packageFolder))
                 {
                     Directory.Delete(path, true);
                 }
@@ -473,7 +483,11 @@ namespace AramisLauncher.Download
                 HomeUserControl.ChangeProgressBarValue(++currentConfig * 100.0 / fileToDownload.Count);
             });
 
-            CommonData.launcherProfileJson.installedPackageVersion = CommonData.packageVersion;
+            InsalledPackage newInstalledPackage = null;
+            newInstalledPackage.packageName = CommonData.packageName;
+            newInstalledPackage.packageVersion = CommonData.packageVersion;
+
+            CommonData.launcherProfileJson.installedPackageVersion.Add(newInstalledPackage);
             CommonData.saveLauncherProfile();
         }
 
