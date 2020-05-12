@@ -4,5 +4,9 @@
             "packageName" : "Aramis",
             "version" : "5.5"
         }
+		{
+            "packageName" : "Pixelmon",
+            "version" : "1.0"
+        }
     ]
 }
