@@ -1,7 +1,7 @@
 {
     "packages" : [
         {
-            "packageName" : "Aramis",
+            "packageName" : "Aramiscraft",
             "version" : "5.5",
             "address" : "aramiscraft.omgserv.net"
         },
