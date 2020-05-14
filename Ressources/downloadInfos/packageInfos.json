@@ -3,7 +3,7 @@
         {
             "packageName" : "Aramiscraft",
             "version" : "5.5",
-            "address" : "aramiscraft.omgserv.net"
+            "address" : "aramiscraft.omgserv.net:10554"
         },
 		{
             "packageName" : "Pixelmon",
