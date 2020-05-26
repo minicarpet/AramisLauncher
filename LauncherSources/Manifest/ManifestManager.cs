@@ -7,6 +7,7 @@ using System;
 using System.IO;
 using System.Text;
 using AramisLauncher.Common;
+using AramisLauncher.Manifest;
 
 namespace AramisLauncher.JSON
 {
@@ -19,6 +20,8 @@ namespace AramisLauncher.JSON
         public static List<AssetInformation> assetsInformation = new List<AssetInformation>();
         public static MinecraftVersionJson minecraftVersionJson = new MinecraftVersionJson();
         public static ForgeVersionJson forgeVersionJson = new ForgeVersionJson();
+        public static NewForgeVersionJson newForgeVersionJson = new NewForgeVersionJson();
+        public static ForgeInstallationProfile forgeInstallationProfile = new ForgeInstallationProfile();
         public static string manifestVersionData;
         public static string minecrafetVersionAssetsData;
 
@@ -52,7 +55,19 @@ namespace AramisLauncher.JSON
             }
 
             /* Download forge manifest */
-            forgeVersionJson = ForgeVersionJson.FromJson(packageJson.BaseModLoader.VersionJson);
+            int result = packageJson.BaseModLoader.MinecraftVersion.CompareTo("1.13.0");
+            if (result >= 0)
+            {
+                newForgeVersionJson = NewForgeVersionJson.FromJson(packageJson.BaseModLoader.VersionJson);
+                forgeInstallationProfile = ForgeInstallationProfile.FromJson(packageJson.BaseModLoader.InstallProfileJson);
+                forgeVersionJson = null;
+            }
+            else
+            {
+                forgeVersionJson = ForgeVersionJson.FromJson(packageJson.BaseModLoader.VersionJson);
+                newForgeVersionJson = null;
+                forgeInstallationProfile = null;
+            }
         }
 
         public static void GetManifestVersion()

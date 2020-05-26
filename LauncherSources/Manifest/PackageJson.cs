@@ -12,6 +12,7 @@ namespace AramisLauncher.JSON
     using System.Collections.Generic;
 
     using System.Globalization;
+    using AramisLauncher.Manifest;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
 
@@ -202,6 +203,9 @@ namespace AramisLauncher.JSON
 
         [JsonProperty("mcGameVersionTypeStatus")]
         public long McGameVersionTypeStatus { get; set; }
+
+        [JsonProperty("installProfileJson")]
+        public string InstallProfileJson { get; set; }
     }
 
     public partial class CachedScan
@@ -453,13 +457,13 @@ namespace AramisLauncher.JSON
         public object ProjectId { get; set; }
 
         [JsonProperty("files")]
-        public File[] Files { get; set; }
+        public ManifestFile[] Files { get; set; }
 
         [JsonProperty("overrides")]
         public string Overrides { get; set; }
     }
 
-    public partial class File
+    public partial class ManifestFile
     {
         [JsonProperty("projectID")]
         public long ProjectId { get; set; }

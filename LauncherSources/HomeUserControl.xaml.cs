@@ -1,28 +1,20 @@
 ﻿using AramisLauncher.Common;
+using AramisLauncher.Download;
+using AramisLauncher.Forge;
 using AramisLauncher.JSON;
 using AramisLauncher.Minecraft;
 using AramisLauncher.Package;
-using AramisLauncher.Download;
-using MahApps.Metro.IconPacks;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Windows.Threading;
 
 namespace AramisLauncher
 {
@@ -40,6 +32,7 @@ namespace AramisLauncher
         public static Button downloadButtonStatic;
         public static ProgressBar downloadProgress;
         public static TextBlock downloadDescriptorStatic;
+        public static ListView listViewStatic;
         public HomeUserControl()
         {
             InitializeComponent();
@@ -47,6 +40,7 @@ namespace AramisLauncher
             downloadProgress = (ProgressBar)FindName("downloadProgression");
             downloadDescriptorStatic = (TextBlock)FindName("downloadDescriptor");
             downloadButtonStatic = (Button)FindName("downloadButton");
+            listViewStatic = (ListView)FindName("listView");
 
             /* GetPackage info */
             packageConfiguration = PackageConfiguration.FromJson(webClient.DownloadString(CommonData.packageInfoJsonURL));
@@ -98,7 +92,6 @@ namespace AramisLauncher
         {
             switch (thread.ThreadState)
             {
-                case ThreadState.Background:
                 case ThreadState.Unstarted:
                     (sender as Button).Content = "Stopper le téléchargement";
                     thread.Start(listView.SelectedIndex);
@@ -111,7 +104,9 @@ namespace AramisLauncher
                     thread.Start(listView.SelectedIndex);
                     break;
                 case ThreadState.Running:
-                    (sender as Button).Content = "Lancer AramisCraft";
+                case ThreadState.WaitSleepJoin:
+                case ThreadState.Background:
+                    (sender as Button).Content = packageStyles[listView.SelectedIndex].DownloadButtonText;
                     downloadDescriptor.Text = "Stoppé";
                     downloadProgression.Value = 0;
                     thread.Abort();
@@ -128,11 +123,20 @@ namespace AramisLauncher
             CommonData.packageServerAddress = packageConfiguration.Packages[(int)index].ServerAddress;
             CommonData.updatePackageName();
             ManifestManager.GetAllManifests();
-            /* Download the selected version */
-            DownloadManager.startDownload();
-            /* start the selected version */
-            MinecraftManager.StartMinecraft();
-            ChangeDownloadButtonContent("Lancer AramisCraft");
+            if (DownloadManager.startDownload())
+            {
+                ForgeInstaller.installForge();
+                /* start the selected version */
+                MinecraftManager.StartMinecraft();
+                ChangeDownloadButtonContent(null);
+                ChangeDownloadButtonVisibility(Visibility.Hidden);
+            }
+            else
+            {
+                MessageBox.Show("Erreur lors du téléchargement...", "Erreur", MessageBoxButton.OK);
+                ChangeDownloadButtonContent(null);
+            }
+            ChangeDownloadButtonContent(null);
             ChangeDownloadButtonVisibility(Visibility.Hidden);
         }
         
@@ -140,7 +144,14 @@ namespace AramisLauncher
         {
             Application.Current.Dispatcher.Invoke(() =>
             {
-                downloadButtonStatic.Content = newContent;
+                if(newContent == null)
+                {
+                    downloadButtonStatic.Content = packageStyles[listViewStatic.SelectedIndex].DownloadButtonText;
+                }
+                else
+                {
+                    downloadButtonStatic.Content = newContent;
+                }
             });
         }
 

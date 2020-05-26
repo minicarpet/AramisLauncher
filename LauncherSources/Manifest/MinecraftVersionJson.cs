@@ -25,7 +25,7 @@ namespace AramisLauncher.JSON
         public string Id { get; set; }
 
         [JsonProperty("libraries")]
-        public Library[] Libraries { get; set; }
+        public MinecraftLibrary[] Libraries { get; set; }
 
         [JsonProperty("logging")]
         public Logging Logging { get; set; }
@@ -172,7 +172,7 @@ namespace AramisLauncher.JSON
         public Uri Url { get; set; }
     }
 
-    public partial class Library
+    public partial class MinecraftLibrary
     {
         [JsonProperty("downloads")]
         public LibraryDownloads Downloads { get; set; }
@@ -280,13 +280,13 @@ namespace AramisLauncher.JSON
         public string Argument { get; set; }
 
         [JsonProperty("file")]
-        public File File { get; set; }
+        public ClientFile File { get; set; }
 
         [JsonProperty("type")]
         public string Type { get; set; }
     }
 
-    public partial class File
+    public partial class ClientFile
     {
         [JsonProperty("id")]
         public string Id { get; set; }

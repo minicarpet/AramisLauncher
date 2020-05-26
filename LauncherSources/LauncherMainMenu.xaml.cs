@@ -1,7 +1,9 @@
-﻿using AramisLauncher.Updater;
+﻿using AramisLauncher.Common;
+using AramisLauncher.Updater;
 using System;
 using System.Collections.Generic;
 using System.Deployment.Application;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,10 +39,36 @@ namespace AramisLauncher
             {
                 launcherVersionText.Text += " " + ApplicationDeployment.CurrentDeployment.CurrentVersion;
                 updaterManager = new UpdaterManager(UpdateButton, updaterInformation);
+                if(ApplicationDeployment.CurrentDeployment.IsFirstRun)
+                {
+                    /* Show release notes */
+
+
+                    if (Directory.Exists(CommonData.aramisFolder))
+                    {
+                        Directory.Delete(CommonData.aramisFolder);
+                    }
+                    if (Directory.Exists(CommonData.appDataFolder + ".freebuild"))
+                    {
+                        Directory.Delete(CommonData.appDataFolder + ".freebuild");
+                    }
+                    if (Directory.Exists(CommonData.appDataFolder + ".aramiscraft"))
+                    {
+                        Directory.Delete(CommonData.appDataFolder + ".aramiscraft");
+                    }
+                    if (Directory.Exists(CommonData.appDataFolder + ".eventis"))
+                    {
+                        Directory.Delete(CommonData.appDataFolder + ".eventis");
+                    }
+                    if (Directory.Exists(CommonData.appDataFolder + ".pixelmon"))
+                    {
+                        Directory.Delete(CommonData.appDataFolder + ".pixelmon");
+                    }
+                }
             }
             else
             {
-                launcherVersionText.Text += " " + "1.0.0.0";
+                launcherVersionText.Text += " " + "1.0.0.000";
             }
         }
 

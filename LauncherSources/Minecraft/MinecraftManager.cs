@@ -3,6 +3,7 @@ using AramisLauncher.Download;
 using AramisLauncher.JSON;
 using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
@@ -29,8 +30,15 @@ namespace AramisLauncher.Minecraft
 
             minecraftGame.EnableRaisingEvents = true;
             minecraftGame.Exited += Process_Exited;
-            minecraftGame.StartInfo.WorkingDirectory = CommonData.packageFolder;
-            minecraftGame.StartInfo.Arguments = CreateCommand();
+            minecraftGame.StartInfo.WorkingDirectory = CommonData.minecraftFolder;
+            if (ManifestManager.forgeVersionJson != null)
+            {
+                minecraftGame.StartInfo.Arguments = CreateCommand();
+            }
+            else
+            {
+                minecraftGame.StartInfo.Arguments = ParseArguments();
+            }
             minecraftGame.Start();
             HomeUserControl.ChangeDownLoadDescriptor("Minecraft est lancé...");
         }
@@ -44,7 +52,7 @@ namespace AramisLauncher.Minecraft
                     minecraftGame.Kill();
                 }
             }
-            catch(Exception)
+            catch (Exception)
             {
 
             }
@@ -72,25 +80,21 @@ namespace AramisLauncher.Minecraft
                 shouldAddComma = true;
             });
 
-            arguments.Append(";" + CommonData.packageFolder + "versions/" + ManifestManager.minecraftVersionJson.Id + "/" + ManifestManager.minecraftVersionJson.Id + ".jar ");
+            arguments.Append(";" + CommonData.minecraftFolder + "versions/" + ManifestManager.minecraftVersionJson.Id + "/" + ManifestManager.minecraftVersionJson.Id + ".jar ");
 
             //arguments.Append(ManifestManager.minecraftVersionJson.MainClass + " ");
             arguments.Append(ManifestManager.forgeVersionJson.MainClass + " ");
-            
+
             arguments.Append("--username ");
             arguments.Append(CommonData.launcherProfileJson.authenticationDatabase.selectedProfile.name + " ");
             //arguments.Append("--userProperties ");
             //arguments.Append(JsonConvert.SerializeObject(CommonData.launcherProfileJson.property));
-            arguments.Append("--server ");
-            arguments.Append(CommonData.packageServerAddress.Split(':')[0] + " ");
-            arguments.Append("--port ");
-            arguments.Append(CommonData.packageServerAddress.Split(':')[1] + " ");
             arguments.Append("--version ");
             arguments.Append(ManifestManager.minecraftVersionJson.Id + " ");
             arguments.Append("--gameDir ");
             arguments.Append(CommonData.packageFolder + " ");
             arguments.Append("--assetsDir ");
-            arguments.Append(CommonData.packageFolder + "assets/ ");
+            arguments.Append(CommonData.minecraftFolder + "assets/ ");
             arguments.Append("--assetIndex ");
             arguments.Append(ManifestManager.minecraftVersionJson.Assets + " ");
             arguments.Append("--uuid ");
@@ -104,8 +108,10 @@ namespace AramisLauncher.Minecraft
             arguments.Append("--versionType ");
             arguments.Append("Forge ");
 
-            arguments.Append("--width " + 800 + " ");
-            arguments.Append("--height " + 600 + " ");
+            arguments.Append("--server ");
+            arguments.Append(CommonData.packageServerAddress.Split(':')[0] + " ");
+            arguments.Append("--port ");
+            arguments.Append(CommonData.packageServerAddress.Split(':')[1] + " ");
 
             return arguments.ToString();
         }
@@ -131,76 +137,73 @@ namespace AramisLauncher.Minecraft
                 }
                 catch (Exception)
                 {
-                    
+
                 }
             }
         }
 
-        private void ParseArguments()
+        private static string ParseArguments()
         {
             /* Actually do not parse command and force use command */
             StringBuilder arguments = new StringBuilder();
+
             Arguments minecraftArguments = ManifestManager.minecraftVersionJson.Arguments;
             if (minecraftArguments == null)
             {
-                /* try to get arguments of old version */
-                string oldMinecraftArguments = ManifestManager.minecraftVersionJson.minecraftArguments;
-                if (oldMinecraftArguments != null)
-                {
-
-                }
+                arguments = new StringBuilder(CreateCommand());
             }
             else
             {
-
-            }
-
-            foreach (JvmElement jvmElement in minecraftArguments.Jvm)
-            {
-                string argumentsToAdd = "";
-
-                argumentsToAdd = jvmElement.String;
-                if (argumentsToAdd == null)
+                foreach (JvmElement jvmElement in minecraftArguments.Jvm)
                 {
-                    /** \todo: Should be parsed... */
-                }
-                else
-                {
-                    if (argumentsToAdd.Contains("$"))
+                    if (jvmElement.String == null)
                     {
-                        if (argumentsToAdd != "${classpath}")
+                        if (jvmElement.JvmClass != null)
                         {
-                            foreach (string argument in argumentsToAdd.Split('$'))
+                            if (jvmElement.JvmClass.Rules[0].Os.Name == "windows" && jvmElement.JvmClass.Rules[0].Action == JSON.Action.Allow)
                             {
-                                if (argument.Contains("Dminecraft"))
+                                if (jvmElement.JvmClass.Rules[0].Os.Version == null || (jvmElement.JvmClass.Rules[0].Os.Version != null && jvmElement.JvmClass.Rules[0].Os.Version.Contains("10")))
                                 {
-
-                                }
-                                else
-                                {
-                                    if (argument.Contains("{"))
+                                    if (jvmElement.JvmClass.Value.String != null)
                                     {
-                                        switch (argument)
-                                        {
-                                            case "{natives_directory}":
-                                                arguments.Append(CommonData.nativeFolder + " ");
-                                                break;
-                                            case "{launcher_name}":
-                                                break;
-                                            case "{launcher_version}":
-                                                break;
-                                            default:
-                                                break;
-                                        }
+                                        arguments.Append(jvmElement.JvmClass.Value.String + " ");
                                     }
                                     else
                                     {
-                                        arguments.Append(argument);
+                                        foreach (string args in jvmElement.JvmClass.Value.StringArray)
+                                        {
+                                            if (args.Contains(" "))
+                                            {
+                                                arguments.Append("\"");
+                                            }
+                                            arguments.Append(args);
+                                            if (args.Contains(" "))
+                                            {
+                                                arguments.Append("\"");
+                                            }
+
+                                            arguments.Append(" ");
+                                        }
                                     }
                                 }
                             }
+                            else if (jvmElement.JvmClass.Rules[0].Os.Arch == "x86")
+                            {
+                                arguments.Append(jvmElement.JvmClass.Value.String + " ");
+                            }
                         }
-                        else
+                    }
+                    else
+                    {
+                        if (jvmElement.String.Contains("${natives_directory}"))
+                        {
+                            arguments.Append(jvmElement.String.Replace("${natives_directory}", CommonData.nativeFolder + " "));
+                        }
+                        else if (jvmElement.String.Contains("-cp"))
+                        {
+                            arguments.Append(jvmElement.String + " ");
+                        }
+                        else if (jvmElement.String.Contains("${classpath}"))
                         {
                             /* add every class */
                             bool shouldAddComma = false;
@@ -214,70 +217,92 @@ namespace AramisLauncher.Minecraft
                                 shouldAddComma = true;
                             });
 
-                            arguments.Append(";" + CommonData.packageFolder + "versions/" + ManifestManager.minecraftVersionJson.Id + "/" + ManifestManager.minecraftVersionJson.Id + ".jar ");
-
-                            arguments.Append(ManifestManager.minecraftVersionJson.MainClass + " ");
+                            arguments.Append(";" + CommonData.versionFolder + ManifestManager.minecraftVersionJson.Id + "/" + ManifestManager.minecraftVersionJson.Id + ".jar ");
                         }
                     }
-                    else
-                    {
-                        arguments.Append(argumentsToAdd + " ");
-                    }
                 }
-            }
 
-            foreach (GameElement gameElement in minecraftArguments.Game)
-            {
-                string argumentsToAdd = "";
+                arguments.Append("-Xmx8G ");
+                arguments.Append("-XX:+UnlockExperimentalVMOptions ");
+                arguments.Append("-XX:+UseG1GC ");
+                arguments.Append("-XX:G1NewSizePercent=20 ");
+                arguments.Append("-XX:G1ReservePercent=20 ");
+                arguments.Append("-XX:MaxGCPauseMillis=50 ");
+                arguments.Append("-XX:G1HeapRegionSize=32M ");
 
-                argumentsToAdd = gameElement.String;
-                if (argumentsToAdd == null)
+                if (ManifestManager.forgeVersionJson != null)
                 {
-                    /** \todo: Should be parsed... */
+                    arguments.Append(ManifestManager.forgeVersionJson.MainClass + " ");
                 }
                 else
                 {
-                    if (argumentsToAdd.Contains("$"))
+                    arguments.Append(ManifestManager.newForgeVersionJson.MainClass + " ");
+                }
+
+                foreach (GameElement gameElement in minecraftArguments.Game)
+                {
+                    if (gameElement.String != null)
                     {
-                        switch (argumentsToAdd)
+                        if (gameElement.String.Contains("--"))
                         {
-                            case "${auth_player_name}":
+                            arguments.Append(gameElement.String + " ");
+                        }
+                        else
+                        {
+                            if (String.Equals(gameElement.String, "${auth_player_name}"))
+                            {
                                 arguments.Append(CommonData.launcherProfileJson.authenticationDatabase.selectedProfile.name + " ");
-                                break;
-                            case "${version_name}":
-                                arguments.Append(ManifestManager.minecraftVersionJson.Id + " ");
-                                break;
-                            case "${game_directory}":
+                            }
+                            else if (String.Equals(gameElement.String, "${version_name}"))
+                            {
+                                arguments.Append(ManifestManager.minecraftVersionJson.Id + "-" + ManifestManager.packageJson.BaseModLoader.Name + " ");
+                            }
+                            else if (String.Equals(gameElement.String, "${game_directory}"))
+                            {
                                 arguments.Append(CommonData.packageFolder + " ");
-                                break;
-                            case "${assets_root}":
-                                arguments.Append(CommonData.packageFolder + "assets/ ");
-                                break;
-                            case "${assets_index_name}":
+                            }
+                            else if (String.Equals(gameElement.String, "${assets_root}"))
+                            {
+                                arguments.Append(CommonData.assetsFolder + " ");
+                            }
+                            else if (String.Equals(gameElement.String, "${assets_index_name}"))
+                            {
                                 arguments.Append(ManifestManager.minecraftVersionJson.Assets + " ");
-                                break;
-                            case "${auth_uuid}":
-                                arguments.Append(CommonData.launcherProfileJson.authenticationDatabase.selectedProfile.id + " ");
-                                break;
-                            case "${auth_access_token}":
+                            }
+                            else if (String.Equals(gameElement.String, "${auth_uuid}"))
+                            {
+                                Guid guid = new Guid(CommonData.launcherProfileJson.authenticationDatabase.selectedProfile.id);
+                                arguments.Append(guid + " ");
+                            }
+                            else if (String.Equals(gameElement.String, "${auth_access_token}"))
+                            {
                                 arguments.Append(CommonData.launcherProfileJson.authenticationDatabase.accessToken + " ");
-                                break;
-                            case "${user_type}":
+                            }
+                            else if (String.Equals(gameElement.String, "${user_type}"))
+                            {
                                 arguments.Append("mojang ");
-                                break;
-                            case "${version_type}":
-                                arguments.Append("Vanilla ");
-                                break;
-                            default:
-                                break;
+                            }
+                            else if (String.Equals(gameElement.String, "${version_type}"))
+                            {
+                                arguments.Append(ManifestManager.minecraftVersionJson.Type + " ");
+                            }
                         }
                     }
-                    else
-                    {
-                        arguments.Append(argumentsToAdd + " ");
-                    }
+                }
+
+                /* Not work with 1.15.2 */
+                //arguments.Append("--server ");
+                //arguments.Append(CommonData.packageServerAddress.Split(':')[0] + " ");
+                //arguments.Append("--port ");
+                //arguments.Append(CommonData.packageServerAddress.Split(':')[1] + " ");
+
+                foreach (string forgeArguments in ManifestManager.newForgeVersionJson.Arguments.Game)
+                {
+                    arguments.Append(forgeArguments + " ");
                 }
             }
+
+            return arguments.ToString();
         }
 
         private static void Process_Exited(object sender, EventArgs e)
@@ -286,7 +311,7 @@ namespace AramisLauncher.Minecraft
             {
                 Directory.Delete(CommonData.nativeFolder, true);
             }
-            catch(Exception)
+            catch (Exception)
             {
 
             }
