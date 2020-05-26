@@ -29,7 +29,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2020-05-23T21:06:10.6553434Z",
+  "lastPlayed": "2020-05-24T19:52:58.1552577Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -503,7 +503,7 @@
       "dateInstalled": "2020-05-12T12:39:08.5350031Z",
       "dateUpdated": "2020-05-12T12:39:08.5439978Z",
       "dateLastUpdateAttempted": "2020-05-12T12:39:08.5439978Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -594,6 +594,79 @@
       "preferenceReleaseType": null,
       "manifestName": null,
       "installedTargets": null
+    },
+    {
+      "addonID": 289380,
+      "gameInstanceID": "254ab742-ac9c-4ac7-9ead-d5aab7c8f8cf",
+      "installedFile": {
+        "id": 2916310,
+        "displayName": "Obfuscate 0.4.2",
+        "fileName": "obfuscate-0.4.2-1.12.2.jar",
+        "fileDate": "2020-03-30T06:57:21.343Z",
+        "fileLength": 129099,
+        "releaseType": 2,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2916/310/obfuscate-0.4.2-1.12.2.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 2499729243,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 1801476902,
+            "type": 0
+          },
+          {
+            "foldername": "coremods",
+            "fingerprint": 2417128246,
+            "type": 0
+          },
+          {
+            "foldername": "obfuscate.png",
+            "fingerprint": 4142413448,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 269336518,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 3824057421,
+        "gameVersion": [
+          "Forge",
+          "1.12.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2017-09-18T05:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "obfuscate-0.4.2-1.12.2.jar"
+      },
+      "dateInstalled": "2020-05-26T15:04:01.4370832Z",
+      "dateUpdated": "2020-05-26T15:04:01.4390355Z",
+      "dateLastUpdateAttempted": "2020-05-26T15:04:01.4390355Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
     },
     {
       "addonID": 242818,
@@ -898,6 +971,88 @@
       "installedTargets": null
     },
     {
+      "addonID": 225608,
+      "gameInstanceID": "254ab742-ac9c-4ac7-9ead-d5aab7c8f8cf",
+      "installedFile": {
+        "id": 2941712,
+        "displayName": "WorldEdit 6.1.10 (For MC 1.12.2)",
+        "fileName": "worldedit-forge-mc1.12.2-6.1.10-dist.jar",
+        "fileDate": "2020-04-27T06:15:13.51Z",
+        "fileLength": 1479535,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2941/712/worldedit-forge-mc1.12.2-6.1.10-dist.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 532767346,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 4019244585,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1834172738,
+            "type": 0
+          },
+          {
+            "foldername": "defaults",
+            "fingerprint": 3361350141,
+            "type": 0
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 764090404,
+            "type": 0
+          },
+          {
+            "foldername": "dummyThing",
+            "fingerprint": 79582461,
+            "type": 0
+          },
+          {
+            "foldername": "net",
+            "fingerprint": 1800938105,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 198975533,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2017-09-18T05:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "worldedit-forge-mc1.12.2-6.1.10-dist.jar"
+      },
+      "dateInstalled": "2020-05-24T19:49:47.4546138Z",
+      "dateUpdated": "2020-05-24T19:49:47.4635648Z",
+      "dateLastUpdateAttempted": "2020-05-24T19:49:47.4635648Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
       "addonID": 245174,
       "gameInstanceID": "254ab742-ac9c-4ac7-9ead-d5aab7c8f8cf",
       "installedFile": {
@@ -1111,6 +1266,98 @@
       "installedTargets": null
     },
     {
+      "addonID": 286660,
+      "gameInstanceID": "254ab742-ac9c-4ac7-9ead-d5aab7c8f8cf",
+      "installedFile": {
+        "id": 2965369,
+        "displayName": "Vehicle Mod 0.44.0",
+        "fileName": "vehicle-mod-0.44.0-1.12.2.jar",
+        "fileDate": "2020-05-25T12:17:02.587Z",
+        "fileLength": 2139828,
+        "releaseType": 2,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2965/369/vehicle-mod-0.44.0-1.12.2.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 317269,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 55438,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 289380,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3125137136,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 853673790,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 4040688268,
+            "type": 0
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 3797766835,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 3273911401,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 4028213070,
+        "gameVersion": [
+          "Forge",
+          "1.12.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2017-09-18T05:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "vehicle-mod-0.44.0-1.12.2.jar"
+      },
+      "dateInstalled": "2020-05-26T15:04:02.7793982Z",
+      "dateUpdated": "2020-05-26T15:04:02.7823914Z",
+      "dateLastUpdateAttempted": "2020-05-26T15:04:02.7823914Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
+    },
+    {
       "addonID": 238222,
       "gameInstanceID": "254ab742-ac9c-4ac7-9ead-d5aab7c8f8cf",
       "installedFile": {
@@ -1181,6 +1428,103 @@
       "preferenceReleaseType": null,
       "manifestName": null,
       "installedTargets": null
+    },
+    {
+      "addonID": 64760,
+      "gameInstanceID": "254ab742-ac9c-4ac7-9ead-d5aab7c8f8cf",
+      "installedFile": {
+        "id": 2961659,
+        "displayName": "[1.12.2] SecurityCraft v1.8.18.2.jar",
+        "fileName": "[1.12.2] SecurityCraft v1.8.18.2.jar",
+        "fileDate": "2020-05-20T17:53:36.97Z",
+        "fileLength": 1655548,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2961/659/[1.12.2] SecurityCraft v1.8.18.2.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 245211,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 238222,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 253449,
+            "type": 2,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 1791856662,
+            "type": 0
+          },
+          {
+            "foldername": "net",
+            "fingerprint": 1482977304,
+            "type": 0
+          },
+          {
+            "foldername": "1.8 Changelog.txt",
+            "fingerprint": 4102203648,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 4130537895,
+            "type": 0
+          },
+          {
+            "foldername": "License.txt",
+            "fingerprint": 1924322117,
+            "type": 0
+          },
+          {
+            "foldername": "scLogo.png",
+            "fingerprint": 1430534995,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 669657553,
+        "gameVersion": [
+          "Forge",
+          "1.12.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "[1.12.2] SecurityCraft v1.8.18.2.jar"
+      },
+      "dateInstalled": "2020-05-26T10:19:27.3174809Z",
+      "dateUpdated": "2020-05-26T10:19:27.3254853Z",
+      "dateLastUpdateAttempted": "2020-05-26T10:19:27.3254853Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
     },
     {
       "addonID": 374704,
@@ -1623,6 +1967,81 @@
       "preferenceReleaseType": null,
       "manifestName": null,
       "installedTargets": null
+    },
+    {
+      "addonID": 373051,
+      "gameInstanceID": "254ab742-ac9c-4ac7-9ead-d5aab7c8f8cf",
+      "installedFile": {
+        "id": 2954890,
+        "displayName": "movingelevators-1.2.16-mc1.12",
+        "fileName": "movingelevators-1.2.16-mc1.12.jar",
+        "fileDate": "2020-05-12T13:33:12.837Z",
+        "fileLength": 203211,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2954/890/movingelevators-1.2.16-mc1.12.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 2601561462,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 62651053,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 3964117143,
+            "type": 0
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 2374343368,
+            "type": 0
+          },
+          {
+            "foldername": "movingelevators.png",
+            "fingerprint": 2073663021,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 1566663566,
+        "gameVersion": [
+          "1.12",
+          "1.12.1",
+          "Forge",
+          "1.12.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2017-06-07T05:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "movingelevators-1.2.16-mc1.12.jar"
+      },
+      "dateInstalled": "2020-05-26T15:03:34.8988511Z",
+      "dateUpdated": "2020-05-26T15:03:34.9078127Z",
+      "dateLastUpdateAttempted": "2020-05-26T15:03:34.9078127Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
     }
   ],
   "isMigrated": false,
