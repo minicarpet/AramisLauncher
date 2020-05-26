@@ -62,7 +62,7 @@ namespace AramisLauncher.Minecraft
         {
             StringBuilder arguments = new StringBuilder();
 
-            arguments.Append("-Xmx" + 8 + "G ");
+            arguments.Append("-Xmx" + 3 + "G ");
 
             arguments.Append("-Djava.library.path=" + CommonData.nativeFolder + " ");
             arguments.Append("-Dorg.lwjgl.librarypath=" + CommonData.nativeFolder + " ");
@@ -222,7 +222,7 @@ namespace AramisLauncher.Minecraft
                     }
                 }
 
-                arguments.Append("-Xmx8G ");
+                arguments.Append("-Xmx3G ");
                 arguments.Append("-XX:+UnlockExperimentalVMOptions ");
                 arguments.Append("-XX:+UseG1GC ");
                 arguments.Append("-XX:G1NewSizePercent=20 ");
