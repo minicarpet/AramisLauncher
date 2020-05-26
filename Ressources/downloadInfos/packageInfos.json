@@ -3,10 +3,10 @@
         {
             "packageName" : "Aramiscraft",
             "version" : "5.5",
-            "address" : "aramiscraft.omgserv.net"
+            "address" : "aramiscraft.omgserv.net:10554"
         },
 		{
-            "packageName" : "Pixelmon",
+            "packageName" : "Eventis",
             "version" : "1.0",
             "address" : "aramis-eventis.omgcraft.fr:10001"
         },
