@@ -29,7 +29,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2020-05-26T23:32:53.2231802Z",
+  "lastPlayed": "2020-05-27T09:54:59.5334262Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -311,7 +311,7 @@
       "dateInstalled": "2020-05-12T12:43:41.8313873Z",
       "dateUpdated": "2020-05-12T12:43:41.8343789Z",
       "dateLastUpdateAttempted": "2020-05-12T12:43:41.8343789Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -666,7 +666,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 242818,
@@ -1128,7 +1128,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 245174,
@@ -1433,7 +1433,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 238222,
@@ -1602,7 +1602,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 374704,
@@ -1744,6 +1744,78 @@
       "preferenceReleaseType": null,
       "manifestName": null,
       "installedTargets": null
+    },
+    {
+      "addonID": 281246,
+      "gameInstanceID": "254ab742-ac9c-4ac7-9ead-d5aab7c8f8cf",
+      "installedFile": {
+        "id": 2821837,
+        "displayName": "ordinarycoins-1.12.2-1.5.jar",
+        "fileName": "ordinarycoins-1.12.2-1.5.jar",
+        "fileDate": "2019-11-04T10:00:15.06Z",
+        "fileLength": 47241,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2821/837/ordinarycoins-1.12.2-1.5.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 1257066134,
+            "type": 0
+          },
+          {
+            "foldername": "ru",
+            "fingerprint": 1543674334,
+            "type": 0
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 4114189852,
+            "type": 0
+          },
+          {
+            "foldername": "logo.png",
+            "fingerprint": 3793231538,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 463795836,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 714612351,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "ordinarycoins-1.12.2-1.5.jar"
+      },
+      "dateInstalled": "2020-05-27T09:54:46.8033461Z",
+      "dateUpdated": "2020-05-27T09:54:46.8103261Z",
+      "dateLastUpdateAttempted": "2020-05-27T09:54:46.8103261Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
     },
     {
       "addonID": 250363,
@@ -2119,7 +2191,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     }
   ],
   "isMigrated": false,
