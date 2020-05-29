@@ -2,9 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using static AramisLauncher.MojangAuth.AuthFormat;
 using static AramisLauncher.MojangAuth.PlayerProfile;
 
@@ -70,7 +67,7 @@ namespace AramisLauncher.Common
             packageFolder = appDataFolder + "/." + packageName + "/";
             modsFolder = packageFolder + "mods/";
             scriptFolder = packageFolder + "scripts/";
-    }
+        }
 
         public static void saveLauncherProfile()
         {

@@ -46,16 +46,7 @@ namespace AramisLauncher.Download
                 if (insalledPackage != null && insalledPackage.packageVersion != CommonData.packageVersion)
                 {
                     /* package version does not correspond to the recorded one, delete files */
-                    foreach (string filePath in Directory.GetFiles(CommonData.packageFolder))
-                    {
-                        if (!filePath.Contains("launcher_profile.json") && !filePath.Contains("launcher_log.txt"))
-                            File.Delete(filePath);
-                    }
-
-                    foreach (string path in Directory.GetDirectories(CommonData.packageFolder))
-                    {
-                        Directory.Delete(CommonData.packageFolder, true);
-                    }
+                    Directory.Delete(CommonData.packageFolder, true);
                 }
                 else if (insalledPackage != null)
                 {

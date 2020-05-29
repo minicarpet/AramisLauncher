@@ -38,11 +38,10 @@ namespace AramisLauncher
             if (ApplicationDeployment.IsNetworkDeployed)
             {
                 launcherVersionText.Text += " " + ApplicationDeployment.CurrentDeployment.CurrentVersion;
-                updaterManager = new UpdaterManager(UpdateButton, updaterInformation);
-                if(ApplicationDeployment.CurrentDeployment.IsFirstRun)
+                if (ApplicationDeployment.CurrentDeployment.IsFirstRun)
                 {
                     /* Show release notes */
-
+                    MessageBox.Show("NEW VERSION", "What's new", MessageBoxButton.OK);
 
                     if (Directory.Exists(CommonData.aramisFolder))
                     {
@@ -65,6 +64,7 @@ namespace AramisLauncher
                         Directory.Delete(CommonData.appDataFolder + ".pixelmon");
                     }
                 }
+                updaterManager = new UpdaterManager(UpdateButton, updaterInformation);
             }
             else
             {

@@ -119,14 +119,15 @@ namespace AramisLauncher.Updater
                 return;
             }
 
-            MessageBoxResult dr = MessageBox.Show("L'application vient d'être mise à jour. Redémarrer ? (Si vous ne redémarrer pas maintenant, la nouvelle version pendra effet au prochain démarrage.)", "Recharger Launcher", MessageBoxButton.OKCancel);
+            //MessageBoxResult dr = MessageBox.Show("L'application vient d'être mise à jour. Redémarrer ? (Si vous ne redémarrer pas maintenant, la nouvelle version pendra effet au prochain démarrage.)", "Recharger Launcher", MessageBoxButton.OKCancel);
+            MessageBoxResult dr = MessageBox.Show("L'application vient d'être mise à jour. Quitter ? (Si vous ne quittez pas maintenant, la nouvelle version pendra effet au prochain démarrage.)", "Quitter Launcher", MessageBoxButton.OKCancel);
             if (MessageBoxResult.OK == dr)
             {
-                string shortcutFile = GetShortcutPath();
-                Process proc = new Process { StartInfo = { FileName = shortcutFile, UseShellExecute = true } };
+                //string shortcutFile = GetShortcutPath();
+                //Process proc = new Process { StartInfo = { FileName = shortcutFile, UseShellExecute = true } };
 
-                ReleaseMutex();
-                proc.Start();
+                //ReleaseMutex();
+                //proc.Start();
                 Application.Current.Shutdown();
             }
         }
