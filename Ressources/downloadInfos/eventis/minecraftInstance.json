@@ -29,7 +29,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2020-05-29T14:43:51.264007Z",
+  "lastPlayed": "2020-05-31T08:32:16.7968539Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -45,49 +45,19 @@
   "name": "Pixelmon",
   "cachedScans": [
     {
-      "folderName": "rustic-1.1.3.jar",
-      "fingerprint": 3852372078,
-      "fileDateHash": 1259927521,
+      "folderName": "ClickMachine-1.12.2-1.2.0.jar",
+      "fingerprint": 2192331120,
+      "fileDateHash": 1862271557,
       "sectionID": 8,
       "individualFingerprints": [
-        3852372078
+        2192331120
       ],
       "status": 1,
-      "timestamp": "2020-05-12T12:47:47.9195288Z",
-      "lastWriteTimeUtc": "2020-05-12T12:43:41.8313873Z",
-      "queryTimestamp": "2020-05-12T12:47:48.3603502Z",
+      "timestamp": "2020-05-12T12:47:47.7749152Z",
+      "lastWriteTimeUtc": "2020-05-12T12:42:12.6418382Z",
+      "queryTimestamp": "2020-05-29T14:49:43.5122676Z",
       "fileCount": 1,
-      "fileSize": 1362194
-    },
-    {
-      "folderName": "AutoRegLib-1.3-32.jar",
-      "fingerprint": 69589181,
-      "fileDateHash": 1233594449,
-      "sectionID": 8,
-      "individualFingerprints": [
-        69589181
-      ],
-      "status": 1,
-      "timestamp": "2020-05-12T12:47:47.7669374Z",
-      "lastWriteTimeUtc": "2020-05-12T12:45:20.1016962Z",
-      "queryTimestamp": "2020-05-12T12:47:48.3603502Z",
-      "fileCount": 1,
-      "fileSize": 108306
-    },
-    {
-      "folderName": "Placebo-1.12.2-1.6.0.jar",
-      "fingerprint": 2862833350,
-      "fileDateHash": 4235245034,
-      "sectionID": 8,
-      "individualFingerprints": [
-        2862833350
-      ],
-      "status": 1,
-      "timestamp": "2020-05-12T12:47:47.8906062Z",
-      "lastWriteTimeUtc": "2020-05-12T12:42:12.469283Z",
-      "queryTimestamp": "2020-05-12T12:47:48.3603502Z",
-      "fileCount": 1,
-      "fileSize": 76902
+      "fileSize": 55819
     },
     {
       "folderName": "jei_1.12.2-4.15.0.291.jar",
@@ -100,84 +70,24 @@
       "status": 1,
       "timestamp": "2020-05-12T12:47:47.883625Z",
       "lastWriteTimeUtc": "2020-05-12T12:38:59.3246444Z",
-      "queryTimestamp": "2020-05-12T12:47:48.3613519Z",
+      "queryTimestamp": "2020-05-29T14:49:43.5132649Z",
       "fileCount": 1,
       "fileSize": 651473
     },
     {
-      "folderName": "CraftingAutomat-MC1.12.2-1.0.5.jar",
-      "fingerprint": 1010396279,
-      "fileDateHash": 1740111981,
+      "folderName": "obfuscate-0.4.2-1.12.2.jar",
+      "fingerprint": 3824057421,
+      "fileDateHash": 2195175663,
       "sectionID": 8,
       "individualFingerprints": [
-        1010396279
+        3824057421
       ],
       "status": 1,
-      "timestamp": "2020-05-12T12:47:47.7809Z",
-      "lastWriteTimeUtc": "2020-05-12T12:40:40.8422521Z",
-      "queryTimestamp": "2020-05-12T12:47:48.3613519Z",
+      "timestamp": "2020-05-29T14:49:42.9549348Z",
+      "lastWriteTimeUtc": "2020-05-26T15:04:01.43704Z",
+      "queryTimestamp": "2020-05-29T14:49:43.5132649Z",
       "fileCount": 1,
-      "fileSize": 94027
-    },
-    {
-      "folderName": "BetterRecords-1.12.2-1.6.2.jar",
-      "fingerprint": 4022999282,
-      "fileDateHash": 1810978853,
-      "sectionID": 8,
-      "individualFingerprints": [
-        4022999282
-      ],
-      "status": 1,
-      "timestamp": "2020-05-12T12:47:47.7689309Z",
-      "lastWriteTimeUtc": "2020-05-12T12:43:20.9342786Z",
-      "queryTimestamp": "2020-05-12T12:47:48.3613519Z",
-      "fileCount": 1,
-      "fileSize": 852156
-    },
-    {
-      "folderName": "CodeChickenLib-1.12.2-3.2.3.358-universal.jar",
-      "fingerprint": 2940918666,
-      "fileDateHash": 3779440426,
-      "sectionID": 8,
-      "individualFingerprints": [
-        2940918666
-      ],
-      "status": 1,
-      "timestamp": "2020-05-12T12:47:47.7759144Z",
-      "lastWriteTimeUtc": "2020-05-12T12:44:09.2002215Z",
-      "queryTimestamp": "2020-05-12T12:47:48.3613519Z",
-      "fileCount": 1,
-      "fileSize": 704330
-    },
-    {
-      "folderName": "Dynmap-3.0-beta-4-forge-1.12.2.jar",
-      "fingerprint": 1501540455,
-      "fileDateHash": 2510495627,
-      "sectionID": 8,
-      "individualFingerprints": [
-        1501540455
-      ],
-      "status": 1,
-      "timestamp": "2020-05-12T12:47:47.7818972Z",
-      "lastWriteTimeUtc": "2020-05-12T12:39:08.5350031Z",
-      "queryTimestamp": "2020-05-12T12:47:48.3613519Z",
-      "fileCount": 1,
-      "fileSize": 5862985
-    },
-    {
-      "folderName": "ClickMachine-1.12.2-1.2.0.jar",
-      "fingerprint": 2192331120,
-      "fileDateHash": 1862271557,
-      "sectionID": 8,
-      "individualFingerprints": [
-        2192331120
-      ],
-      "status": 1,
-      "timestamp": "2020-05-12T12:47:47.7749152Z",
-      "lastWriteTimeUtc": "2020-05-12T12:42:12.6418382Z",
-      "queryTimestamp": "2020-05-12T12:47:48.3613519Z",
-      "fileCount": 1,
-      "fileSize": 55819
+      "fileSize": 129099
     },
     {
       "folderName": "PixelmonGenerations-1.12.2-2.9.4-universal.jar",
@@ -190,24 +100,114 @@
       "status": 1,
       "timestamp": "2020-05-11T14:30:01.4631739Z",
       "lastWriteTimeUtc": "2020-05-11T14:29:55.4802349Z",
-      "queryTimestamp": "2020-05-11T14:30:04.6281005Z",
+      "queryTimestamp": "2020-05-29T14:49:43.5132649Z",
       "fileCount": 1,
       "fileSize": 396489945
     },
     {
-      "folderName": "Forgelin-1.8.4.jar",
-      "fingerprint": 387064965,
-      "fileDateHash": 2867451565,
+      "folderName": "Armourers-Workshop-1.12.2-0.50.1.jar",
+      "fingerprint": 2823698414,
+      "fileDateHash": 2356009534,
       "sectionID": 8,
       "individualFingerprints": [
-        387064965
+        2823698414
       ],
       "status": 1,
-      "timestamp": "2020-05-12T12:47:47.8247817Z",
-      "lastWriteTimeUtc": "2020-05-12T12:43:19.7863386Z",
-      "queryTimestamp": "2020-05-12T12:47:48.3623448Z",
+      "timestamp": "2020-05-29T14:49:42.811314Z",
+      "lastWriteTimeUtc": "2020-05-29T14:42:34.5444333Z",
+      "queryTimestamp": "2020-05-29T14:49:43.5132649Z",
       "fileCount": 1,
-      "fileSize": 6278399
+      "fileSize": 4632842
+    },
+    {
+      "folderName": "Pam's HarvestCraft 1.12.2zg.jar",
+      "fingerprint": 1735713960,
+      "fileDateHash": 1561577656,
+      "sectionID": 8,
+      "individualFingerprints": [
+        1735713960
+      ],
+      "status": 1,
+      "timestamp": "2020-05-29T14:49:42.9609214Z",
+      "lastWriteTimeUtc": "2020-05-26T17:34:22.2800347Z",
+      "queryTimestamp": "2020-05-29T14:49:43.5132649Z",
+      "fileCount": 1,
+      "fileSize": 4912890
+    },
+    {
+      "folderName": "vehicle-mod-0.44.1-1.12.2.jar",
+      "fingerprint": 3246484112,
+      "fileDateHash": 4036320876,
+      "sectionID": 8,
+      "individualFingerprints": [
+        3246484112
+      ],
+      "status": 1,
+      "timestamp": "2020-05-29T14:49:43.0208195Z",
+      "lastWriteTimeUtc": "2020-05-29T14:42:52.6113728Z",
+      "queryTimestamp": "2020-05-29T14:49:43.5142618Z",
+      "fileCount": 1,
+      "fileSize": 2139906
+    },
+    {
+      "folderName": "CustomNPCs_1.12.2-(01Oct19).jar",
+      "fingerprint": 2418954644,
+      "fileDateHash": 1187223476,
+      "sectionID": 8,
+      "individualFingerprints": [
+        2418954644
+      ],
+      "status": 1,
+      "timestamp": "2020-05-29T14:49:42.8452241Z",
+      "lastWriteTimeUtc": "2020-05-12T18:53:57.7974121Z",
+      "queryTimestamp": "2020-05-29T14:49:43.5142618Z",
+      "fileCount": 1,
+      "fileSize": 10440159
+    },
+    {
+      "folderName": "worldedit-forge-mc1.12.2-6.1.10-dist.jar",
+      "fingerprint": 198975533,
+      "fileDateHash": 809636156,
+      "sectionID": 8,
+      "individualFingerprints": [
+        198975533
+      ],
+      "status": 1,
+      "timestamp": "2020-05-29T14:49:43.0377737Z",
+      "lastWriteTimeUtc": "2020-05-24T19:49:47.4525929Z",
+      "queryTimestamp": "2020-05-29T14:49:43.5142618Z",
+      "fileCount": 1,
+      "fileSize": 1479535
+    },
+    {
+      "folderName": "DynmapBlockScan-3.0-universal-renderer-SNAPSHOT-forge-1.12.2.jar",
+      "fingerprint": 2805910376,
+      "fileDateHash": 2336680280,
+      "sectionID": 8,
+      "individualFingerprints": [
+        2805910376
+      ],
+      "status": 1,
+      "timestamp": "2020-05-30T08:40:18.2411543Z",
+      "lastWriteTimeUtc": "2020-04-15T19:07:08.3884902Z",
+      "queryTimestamp": "2020-05-30T08:40:18.5094834Z",
+      "fileCount": 1,
+      "fileSize": 565024
+    },
+    {
+      "folderName": "movingelevators-1.2.16-mc1.12.jar",
+      "fingerprint": 1566663566,
+      "fileDateHash": 3749629437,
+      "sectionID": 8,
+      "individualFingerprints": [
+        1566663566
+      ],
+      "status": 1,
+      "timestamp": "2020-05-29T14:49:42.9529418Z",
+      "lastWriteTimeUtc": "2020-05-26T15:03:34.8968416Z",
+      "queryTimestamp": "2020-05-29T14:49:43.5142618Z",
+      "fileCount": 1,
+      "fileSize": 203211
     },
     {
       "folderName": "EnderStorage-1.12.2-2.4.6.137-universal.jar",
@@ -220,13 +220,256 @@
       "status": 1,
       "timestamp": "2020-05-12T12:47:47.8217896Z",
       "lastWriteTimeUtc": "2020-05-12T12:44:09.4276139Z",
-      "queryTimestamp": "2020-05-12T12:47:48.3623448Z",
+      "queryTimestamp": "2020-05-29T14:49:43.5142618Z",
       "fileCount": 1,
       "fileSize": 223250
+    },
+    {
+      "folderName": "Dynmap-3.0-beta-4-forge-1.12.2.jar",
+      "fingerprint": 1501540455,
+      "fileDateHash": 2510495627,
+      "sectionID": 8,
+      "individualFingerprints": [
+        1501540455
+      ],
+      "status": 1,
+      "timestamp": "2020-05-12T12:47:47.7818972Z",
+      "lastWriteTimeUtc": "2020-05-12T12:39:08.5350031Z",
+      "queryTimestamp": "2020-05-29T14:49:43.5152599Z",
+      "fileCount": 1,
+      "fileSize": 5862985
+    },
+    {
+      "folderName": "rustic-1.1.4.jar",
+      "fingerprint": 830222828,
+      "fileDateHash": 3566029958,
+      "sectionID": 8,
+      "individualFingerprints": [
+        830222828
+      ],
+      "status": 1,
+      "timestamp": "2020-05-29T14:49:43.0048625Z",
+      "lastWriteTimeUtc": "2020-05-29T14:42:47.2165737Z",
+      "queryTimestamp": "2020-05-29T14:49:43.5152599Z",
+      "fileCount": 1,
+      "fileSize": 1361675
+    },
+    {
+      "folderName": "CodeChickenLib-1.12.2-3.2.3.358-universal.jar",
+      "fingerprint": 2940918666,
+      "fileDateHash": 3779440426,
+      "sectionID": 8,
+      "individualFingerprints": [
+        2940918666
+      ],
+      "status": 1,
+      "timestamp": "2020-05-12T12:47:47.7759144Z",
+      "lastWriteTimeUtc": "2020-05-12T12:44:09.2002215Z",
+      "queryTimestamp": "2020-05-29T14:49:43.5152599Z",
+      "fileCount": 1,
+      "fileSize": 704330
+    },
+    {
+      "folderName": "BetterRecords-1.12.2-1.6.2.jar",
+      "fingerprint": 4022999282,
+      "fileDateHash": 1810978853,
+      "sectionID": 8,
+      "individualFingerprints": [
+        4022999282
+      ],
+      "status": 1,
+      "timestamp": "2020-05-12T12:47:47.7689309Z",
+      "lastWriteTimeUtc": "2020-05-12T12:43:20.9342786Z",
+      "queryTimestamp": "2020-05-29T14:49:43.5152599Z",
+      "fileCount": 1,
+      "fileSize": 852156
+    },
+    {
+      "folderName": "Pixelmon Dark v0.9.7 - GRAY.zip",
+      "fingerprint": 1432234705,
+      "fileDateHash": 4128495378,
+      "sectionID": 9,
+      "individualFingerprints": [
+        1432234705
+      ],
+      "status": 1,
+      "timestamp": "2020-05-29T14:49:42.7634414Z",
+      "lastWriteTimeUtc": "2020-05-28T17:30:01.4844417Z",
+      "queryTimestamp": "2020-05-29T14:49:43.5152599Z",
+      "fileCount": 1,
+      "fileSize": 5908689
+    },
+    {
+      "folderName": "ordinarycoins-1.12.2-1.5.jar",
+      "fingerprint": 714612351,
+      "fileDateHash": 1217922611,
+      "sectionID": 8,
+      "individualFingerprints": [
+        714612351
+      ],
+      "status": 1,
+      "timestamp": "2020-05-29T14:49:42.9589257Z",
+      "lastWriteTimeUtc": "2020-05-27T09:54:46.8013499Z",
+      "queryTimestamp": "2020-05-29T14:49:43.5152599Z",
+      "fileCount": 1,
+      "fileSize": 47241
+    },
+    {
+      "folderName": "StorageDrawers-1.12.2-5.4.2.jar",
+      "fingerprint": 880280580,
+      "fileDateHash": 1522780592,
+      "sectionID": 8,
+      "individualFingerprints": [
+        880280580
+      ],
+      "status": 1,
+      "timestamp": "2020-05-29T14:49:43.0148352Z",
+      "lastWriteTimeUtc": "2020-05-12T13:03:18.9236927Z",
+      "queryTimestamp": "2020-05-29T14:49:43.516258Z",
+      "fileCount": 1,
+      "fileSize": 605947
+    },
+    {
+      "folderName": "Placebo-1.12.2-1.6.0.jar",
+      "fingerprint": 2862833350,
+      "fileDateHash": 4235245034,
+      "sectionID": 8,
+      "individualFingerprints": [
+        2862833350
+      ],
+      "status": 1,
+      "timestamp": "2020-05-12T12:47:47.8906062Z",
+      "lastWriteTimeUtc": "2020-05-12T12:42:12.469283Z",
+      "queryTimestamp": "2020-05-29T14:49:43.516258Z",
+      "fileCount": 1,
+      "fileSize": 76902
+    },
+    {
+      "folderName": "AutoRegLib-1.3-32.jar",
+      "fingerprint": 69589181,
+      "fileDateHash": 1233594449,
+      "sectionID": 8,
+      "individualFingerprints": [
+        69589181
+      ],
+      "status": 1,
+      "timestamp": "2020-05-12T12:47:47.7669374Z",
+      "lastWriteTimeUtc": "2020-05-12T12:45:20.1016962Z",
+      "queryTimestamp": "2020-05-29T14:49:43.516258Z",
+      "fileCount": 1,
+      "fileSize": 108306
+    },
+    {
+      "folderName": "[1.12.2] SecurityCraft v1.8.18.2.jar",
+      "fingerprint": 669657553,
+      "fileDateHash": 1353156309,
+      "sectionID": 8,
+      "individualFingerprints": [
+        669657553
+      ],
+      "status": 1,
+      "timestamp": "2020-05-29T14:49:43.0527566Z",
+      "lastWriteTimeUtc": "2020-05-26T10:19:27.3154867Z",
+      "queryTimestamp": "2020-05-29T14:49:43.516258Z",
+      "fileCount": 1,
+      "fileSize": 1655548
+    },
+    {
+      "folderName": "Chameleon-1.12-4.1.3.jar",
+      "fingerprint": 2760206313,
+      "fileDateHash": 729324540,
+      "sectionID": 8,
+      "individualFingerprints": [
+        2760206313
+      ],
+      "status": 1,
+      "timestamp": "2020-05-29T14:49:42.8442267Z",
+      "lastWriteTimeUtc": "2020-05-12T13:03:18.5996604Z",
+      "queryTimestamp": "2020-05-29T14:49:43.516258Z",
+      "fileCount": 1,
+      "fileSize": 96859
+    },
+    {
+      "folderName": "New World",
+      "fingerprint": 2684980088,
+      "fileDateHash": 615706247,
+      "sectionID": 10,
+      "individualFingerprints": [
+        355020512,
+        485156085,
+        489458212,
+        489458212,
+        489458212,
+        699042660,
+        758054953,
+        758054953,
+        758054953,
+        822415853,
+        1055756179,
+        1244582513,
+        1310355346,
+        1327951146,
+        1370012994,
+        2076451140,
+        2215693592,
+        2438022517,
+        2707112640,
+        2866145806,
+        2866145806,
+        2988772804,
+        3015727586,
+        3568159534,
+        3623321517,
+        3771282984,
+        3771282984,
+        3771282984,
+        3860967192,
+        3977365566,
+        4213863462,
+        4213863462,
+        4213863462,
+        4213863462
+      ],
+      "status": 1,
+      "timestamp": "2020-05-30T08:40:18.2511299Z",
+      "lastWriteTimeUtc": "2020-05-29T14:51:11.4209003Z",
+      "queryTimestamp": "2020-05-30T08:40:18.5124759Z",
+      "fileCount": 17,
+      "fileSize": 0
+    },
+    {
+      "folderName": "furniture-6.3.1-1.12.2.jar",
+      "fingerprint": 1566871439,
+      "fileDateHash": 2019677580,
+      "sectionID": 8,
+      "individualFingerprints": [
+        1566871439
+      ],
+      "status": 1,
+      "timestamp": "2020-05-29T14:49:42.9299636Z",
+      "lastWriteTimeUtc": "2020-05-12T17:53:47.5958289Z",
+      "queryTimestamp": "2020-05-29T14:49:43.5172549Z",
+      "fileCount": 1,
+      "fileSize": 2435626
+    },
+    {
+      "folderName": "Forgelin-1.8.4.jar",
+      "fingerprint": 387064965,
+      "fileDateHash": 2867451565,
+      "sectionID": 8,
+      "individualFingerprints": [
+        387064965
+      ],
+      "status": 1,
+      "timestamp": "2020-05-12T12:47:47.8247817Z",
+      "lastWriteTimeUtc": "2020-05-12T12:43:19.7863386Z",
+      "queryTimestamp": "2020-05-29T14:49:43.5172549Z",
+      "fileCount": 1,
+      "fileSize": 6278399
     }
   ],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2020-05-12T12:47:48.9148684Z",
+  "lastPreviousMatchUpdate": "2020-05-30T08:40:19.5462785Z",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.12.2",
@@ -311,7 +554,7 @@
       "dateInstalled": "2020-05-12T12:43:41.8313873Z",
       "dateUpdated": "2020-05-29T14:42:47.223556Z",
       "dateLastUpdateAttempted": "2020-05-29T14:42:47.223556Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -734,6 +977,86 @@
       "preferenceReleaseType": null,
       "manifestName": null,
       "installedTargets": null
+    },
+    {
+      "addonID": 233105,
+      "gameInstanceID": "254ab742-ac9c-4ac7-9ead-d5aab7c8f8cf",
+      "installedFile": {
+        "id": 2745846,
+        "displayName": "McJtyLib - 1.12-3.5.4",
+        "fileName": "mcjtylib-1.12-3.5.4.jar",
+        "fileDate": "2019-07-22T03:27:04.243Z",
+        "fileLength": 544856,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2745/846/mcjtylib-1.12-3.5.4.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 270789,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 245211,
+            "type": 2,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3642991143,
+            "type": 0
+          },
+          {
+            "foldername": "mcjty",
+            "fingerprint": 1987490093,
+            "type": 0
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 2959765002,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 847320386,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 285741512,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "mcjtylib-1.12-3.5.4.jar"
+      },
+      "dateInstalled": "2020-05-31T08:26:55.9967027Z",
+      "dateUpdated": "2020-05-31T08:26:56.0026856Z",
+      "dateLastUpdateAttempted": "2020-05-31T08:26:56.0026856Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
     },
     {
       "addonID": 222722,
@@ -1424,7 +1747,7 @@
       "dateInstalled": "2020-05-26T15:04:02.7793982Z",
       "dateUpdated": "2020-05-29T14:42:52.615362Z",
       "dateLastUpdateAttempted": "2020-05-29T14:42:52.615362Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -1940,7 +2263,7 @@
       "dateInstalled": "2020-05-29T14:42:34.5484217Z",
       "dateUpdated": "2020-05-29T14:42:34.5643777Z",
       "dateLastUpdateAttempted": "2020-05-29T14:42:34.5643777Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -1949,7 +2272,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 250363,
@@ -2096,6 +2419,103 @@
       "installedTargets": null
     },
     {
+      "addonID": 224641,
+      "gameInstanceID": "254ab742-ac9c-4ac7-9ead-d5aab7c8f8cf",
+      "installedFile": {
+        "id": 2861573,
+        "displayName": "RFTools - 1.12-7.73",
+        "fileName": "rftools-1.12-7.73.jar",
+        "fileDate": "2020-01-16T04:23:11.573Z",
+        "fileLength": 2895803,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2861/573/rftools-1.12-7.73.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 245211,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 233105,
+            "type": 3,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 256287,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 270789,
+            "type": 2,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 2802329841,
+            "type": 0
+          },
+          {
+            "foldername": "mcjty",
+            "fingerprint": 3215212379,
+            "type": 0
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 2114006565,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 4232950739,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1148423064,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 2954177313,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "rftools-1.12-7.73.jar"
+      },
+      "dateInstalled": "2020-05-31T08:26:56.6313184Z",
+      "dateUpdated": "2020-05-31T08:26:56.6353079Z",
+      "dateLastUpdateAttempted": "2020-05-31T08:26:56.6353079Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
+    },
+    {
       "addonID": 298275,
       "gameInstanceID": "254ab742-ac9c-4ac7-9ead-d5aab7c8f8cf",
       "installedFile": {
@@ -2158,89 +2578,6 @@
       "dateInstalled": "2020-05-12T12:42:12.6418382Z",
       "dateUpdated": "2020-05-12T12:42:12.6438163Z",
       "dateLastUpdateAttempted": "2020-05-12T12:42:12.6438163Z",
-      "status": 5,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 293856,
-      "gameInstanceID": "254ab742-ac9c-4ac7-9ead-d5aab7c8f8cf",
-      "installedFile": {
-        "id": 2700874,
-        "displayName": "CraftingAutomat-MC1.12.2-1.0.5.jar",
-        "fileName": "CraftingAutomat-MC1.12.2-1.0.5.jar",
-        "fileDate": "2019-04-18T19:58:57.67Z",
-        "fileLength": 94027,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2700/874/CraftingAutomat-MC1.12.2-1.0.5.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 1127863399,
-            "type": 0
-          },
-          {
-            "foldername": "lolcroc",
-            "fingerprint": 2144928118,
-            "type": 0
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 772929829,
-            "type": 0
-          },
-          {
-            "foldername": "extra",
-            "fingerprint": 3118897247,
-            "type": 0
-          },
-          {
-            "foldername": "mcmod.info",
-            "fingerprint": 1929864125,
-            "type": 0
-          },
-          {
-            "foldername": "mcmod_big.info",
-            "fingerprint": 3323762202,
-            "type": 0
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 1857159225,
-            "type": 0
-          }
-        ],
-        "packageFingerprint": 1010396279,
-        "gameVersion": [
-          "Forge",
-          "1.12.2"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2017-09-18T05:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "CraftingAutomat-MC1.12.2-1.0.5.jar"
-      },
-      "dateInstalled": "2020-05-12T12:40:40.8422521Z",
-      "dateUpdated": "2020-05-12T12:40:40.8442469Z",
-      "dateLastUpdateAttempted": "2020-05-12T12:40:40.8442469Z",
       "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
