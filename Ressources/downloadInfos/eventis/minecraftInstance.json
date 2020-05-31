@@ -29,7 +29,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2020-05-31T08:32:16.7968539Z",
+  "lastPlayed": "2020-05-31T09:52:47.3682814Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -2588,6 +2588,89 @@
       "preferenceReleaseType": null,
       "manifestName": null,
       "installedTargets": null
+    },
+    {
+      "addonID": 293856,
+      "gameInstanceID": "254ab742-ac9c-4ac7-9ead-d5aab7c8f8cf",
+      "installedFile": {
+        "id": 2700874,
+        "displayName": "CraftingAutomat-MC1.12.2-1.0.5.jar",
+        "fileName": "CraftingAutomat-MC1.12.2-1.0.5.jar",
+        "fileDate": "2019-04-18T19:58:57.67Z",
+        "fileLength": 94027,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2700/874/CraftingAutomat-MC1.12.2-1.0.5.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 1127863399,
+            "type": 0
+          },
+          {
+            "foldername": "lolcroc",
+            "fingerprint": 2144928118,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 772929829,
+            "type": 0
+          },
+          {
+            "foldername": "extra",
+            "fingerprint": 3118897247,
+            "type": 0
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 1929864125,
+            "type": 0
+          },
+          {
+            "foldername": "mcmod_big.info",
+            "fingerprint": 3323762202,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 1857159225,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 1010396279,
+        "gameVersion": [
+          "Forge",
+          "1.12.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2017-09-18T05:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "CraftingAutomat-MC1.12.2-1.0.5.jar"
+      },
+      "dateInstalled": "2020-05-31T09:31:52.4012034Z",
+      "dateUpdated": "2020-05-31T09:31:52.4051907Z",
+      "dateLastUpdateAttempted": "2020-05-31T09:31:52.4051907Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
     },
     {
       "addonID": 373051,
