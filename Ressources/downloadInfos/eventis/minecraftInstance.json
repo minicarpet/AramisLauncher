@@ -29,7 +29,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2020-06-04T09:28:58.310102Z",
+  "lastPlayed": "2020-06-04T11:35:45.0546708Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -118,6 +118,21 @@
       "queryTimestamp": "2020-06-04T09:28:44.7625745Z",
       "fileCount": 1,
       "fileSize": 4632842
+    },
+    {
+      "folderName": "BiomesOPlenty-1.12.2-7.0.1.2444-universal.jar",
+      "fingerprint": 753778938,
+      "fileDateHash": 1709747106,
+      "sectionID": 8,
+      "individualFingerprints": [
+        753778938
+      ],
+      "status": 1,
+      "timestamp": "2020-06-04T09:30:58.9372399Z",
+      "lastWriteTimeUtc": "2020-06-04T09:29:07.4313479Z",
+      "queryTimestamp": "2020-06-04T09:30:59.3265687Z",
+      "fileCount": 1,
+      "fileSize": 4702147
     },
     {
       "folderName": "Pam's HarvestCraft 1.12.2zg.jar",
@@ -421,8 +436,8 @@
     },
     {
       "folderName": "New World",
-      "fingerprint": 2475637667,
-      "fileDateHash": 4043878821,
+      "fingerprint": 2049750075,
+      "fileDateHash": 1779636219,
       "sectionID": 10,
       "individualFingerprints": [
         242431811,
@@ -434,7 +449,6 @@
         758054953,
         758054953,
         758054953,
-        860113335,
         1055756179,
         1244582513,
         1327951146,
@@ -447,6 +461,7 @@
         2438022517,
         2707112640,
         2731450146,
+        2739818747,
         2866145806,
         2866145806,
         3568159534,
@@ -464,9 +479,9 @@
         4213863462
       ],
       "status": 1,
-      "timestamp": "2020-06-04T09:28:44.2978171Z",
+      "timestamp": "2020-06-04T09:30:58.9710531Z",
       "lastWriteTimeUtc": "2020-06-04T09:18:40.4915897Z",
-      "queryTimestamp": "2020-06-04T09:28:44.7675616Z",
+      "queryTimestamp": "2020-06-04T09:30:59.330559Z",
       "fileCount": 17,
       "fileSize": 0
     },
@@ -540,6 +555,13 @@
   "preferenceShowAddOnInfo": true,
   "installDate": "2020-05-11T14:22:48.1349424Z",
   "installedAddons": [
+	{
+      "installedFile": {
+        "fileName": "PixelmonGenerations-1.12.2-8.0.0-universal.jar",
+        "fileLength": 416814428,
+        "downloadUrl": "https://doc-10-50-docs.googleusercontent.com/docs/securesc/o478bqe486avuuaqe26f3p3moeb88fr0/5tnp9gm82f218il2guosal14mpu5gltv/1591272225000/01271928825130832479/15815397828341810181/1ami3w-BhPMfKBwi-TkF0AIKhk7yfT-3S?e=download&authuser=0&nonce=hk2kg8486rejc&user=15815397828341810181&hash=jj1i3pe34uci8spl2o6439m18dlsttrv",
+      }
+    },
     {
       "addonID": 256141,
       "gameInstanceID": "254ab742-ac9c-4ac7-9ead-d5aab7c8f8cf",
@@ -1576,6 +1598,107 @@
       "installedTargets": null
     },
     {
+      "addonID": 220318,
+      "gameInstanceID": "254ab742-ac9c-4ac7-9ead-d5aab7c8f8cf",
+      "installedFile": {
+        "id": 2842510,
+        "displayName": "BiomesOPlenty-1.12.2-7.0.1.2444-universal.jar",
+        "fileName": "BiomesOPlenty-1.12.2-7.0.1.2444-universal.jar",
+        "fileDate": "2019-12-14T11:25:45.71Z",
+        "fileLength": 4702147,
+        "releaseType": 2,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2842/510/BiomesOPlenty-1.12.2-7.0.1.2444-universal.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3320843694,
+            "type": 3
+          },
+          {
+            "foldername": "biomesoplenty",
+            "fingerprint": 2714163880,
+            "type": 3
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 3263641587,
+            "type": 3
+          },
+          {
+            "foldername": "LICENSE.txt",
+            "fingerprint": 2878218662,
+            "type": 3
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 2922892018,
+            "type": 3
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 2585792492,
+            "type": 3
+          },
+          {
+            "foldername": "version.properties",
+            "fingerprint": 3038953978,
+            "type": 3
+          }
+        ],
+        "packageFingerprint": 753778938,
+        "gameVersion": [
+          "Forge",
+          "1.12.2"
+        ],
+        "sortableGameVersion": [
+          {
+            "gameVersionPadded": "0",
+            "gameVersion": "",
+            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
+            "gameVersionName": "Forge"
+          },
+          {
+            "gameVersionPadded": "0000000001.0000000012.0000000002",
+            "gameVersion": "1.12.2",
+            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+            "gameVersionName": "1.12.2"
+          }
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 6,
+        "restrictProjectFileAccess": 1,
+        "projectStatus": 4,
+        "renderCacheId": 1720934,
+        "projectId": 220318,
+        "packageFingerprintId": 387480798,
+        "gameVersionDateReleased": "2017-09-18T05:00:00Z",
+        "gameVersionMappingId": 2030263,
+        "gameVersionId": 6756,
+        "gameId": 432,
+        "isServerPack": false,
+        "FileNameOnDisk": "BiomesOPlenty-1.12.2-7.0.1.2444-universal.jar"
+      },
+      "dateInstalled": "2020-06-04T09:31:00.347496Z",
+      "dateUpdated": "2019-06-04T09:31:00.347496Z",
+      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
+    },
+    {
       "addonID": 55438,
       "gameInstanceID": "254ab742-ac9c-4ac7-9ead-d5aab7c8f8cf",
       "installedFile": {
@@ -1877,6 +2000,91 @@
       "preferenceReleaseType": null,
       "manifestName": null,
       "installedTargets": null
+    },
+    {
+      "addonID": 243315,
+      "gameInstanceID": "254ab742-ac9c-4ac7-9ead-d5aab7c8f8cf",
+      "installedFile": {
+        "id": 2614896,
+        "displayName": "vending-1.12.2-3.0.1.2.jar",
+        "fileName": "vending-1.12.2-3.0.1.2.jar",
+        "fileDate": "2018-09-09T07:45:48.307Z",
+        "fileLength": 389773,
+        "releaseType": 2,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2614/896/vending-1.12.2-3.0.1.2.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 261270,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 271204,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 698594498,
+            "type": 0
+          },
+          {
+            "foldername": "info",
+            "fingerprint": 4061786548,
+            "type": 0
+          },
+          {
+            "foldername": "icon.png",
+            "fingerprint": 2907094461,
+            "type": 0
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 1964571163,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1666290976,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 3602301382,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "vending-1.12.2-3.0.1.2.jar"
+      },
+      "dateInstalled": "2020-06-04T11:34:51.769666Z",
+      "dateUpdated": "2020-06-04T11:34:51.7726438Z",
+      "dateLastUpdateAttempted": "2020-06-04T11:34:51.7726438Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
     },
     {
       "addonID": 64760,
@@ -2247,6 +2455,73 @@
       "preferenceReleaseType": null,
       "manifestName": null,
       "installedTargets": null
+    },
+    {
+      "addonID": 271204,
+      "gameInstanceID": "254ab742-ac9c-4ac7-9ead-d5aab7c8f8cf",
+      "installedFile": {
+        "id": 2489397,
+        "displayName": "foamflower-1.12.2-1.0.0.0-beta1.jar",
+        "fileName": "foamflower-1.12.2-1.0.0.0-beta1.jar",
+        "fileDate": "2017-10-10T17:17:59.64Z",
+        "fileLength": 67908,
+        "releaseType": 2,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2489/397/foamflower-1.12.2-1.0.0.0-beta1.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 2464251221,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 2797965336,
+            "type": 0
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 2612578514,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1102229153,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 87639258,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "foamflower-1.12.2-1.0.0.0-beta1.jar"
+      },
+      "dateInstalled": "2020-06-04T11:34:50.9001958Z",
+      "dateUpdated": "2020-06-04T11:34:50.9086797Z",
+      "dateLastUpdateAttempted": "2020-06-04T11:34:50.9086797Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
     },
     {
       "addonID": 221826,
