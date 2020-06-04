@@ -29,7 +29,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2020-05-31T09:52:47.3682814Z",
+  "lastPlayed": "2020-06-04T09:28:58.310102Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -45,6 +45,21 @@
   "name": "Pixelmon",
   "cachedScans": [
     {
+      "folderName": "rftools-1.12-7.73.jar",
+      "fingerprint": 2954177313,
+      "fileDateHash": 1855800453,
+      "sectionID": 8,
+      "individualFingerprints": [
+        2954177313
+      ],
+      "status": 1,
+      "timestamp": "2020-06-04T09:28:44.276531Z",
+      "lastWriteTimeUtc": "2020-05-31T08:26:56.6313184Z",
+      "queryTimestamp": "2020-06-04T09:28:44.761577Z",
+      "fileCount": 1,
+      "fileSize": 2895803
+    },
+    {
       "folderName": "ClickMachine-1.12.2-1.2.0.jar",
       "fingerprint": 2192331120,
       "fileDateHash": 1862271557,
@@ -55,7 +70,7 @@
       "status": 1,
       "timestamp": "2020-05-12T12:47:47.7749152Z",
       "lastWriteTimeUtc": "2020-05-12T12:42:12.6418382Z",
-      "queryTimestamp": "2020-05-29T14:49:43.5122676Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7625745Z",
       "fileCount": 1,
       "fileSize": 55819
     },
@@ -70,7 +85,7 @@
       "status": 1,
       "timestamp": "2020-05-12T12:47:47.883625Z",
       "lastWriteTimeUtc": "2020-05-12T12:38:59.3246444Z",
-      "queryTimestamp": "2020-05-29T14:49:43.5132649Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7625745Z",
       "fileCount": 1,
       "fileSize": 651473
     },
@@ -85,24 +100,9 @@
       "status": 1,
       "timestamp": "2020-05-29T14:49:42.9549348Z",
       "lastWriteTimeUtc": "2020-05-26T15:04:01.43704Z",
-      "queryTimestamp": "2020-05-29T14:49:43.5132649Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7625745Z",
       "fileCount": 1,
       "fileSize": 129099
-    },
-    {
-      "folderName": "PixelmonGenerations-1.12.2-2.9.4-universal.jar",
-      "fingerprint": 3973564056,
-      "fileDateHash": 3044810924,
-      "sectionID": 8,
-      "individualFingerprints": [
-        3973564056
-      ],
-      "status": 1,
-      "timestamp": "2020-05-11T14:30:01.4631739Z",
-      "lastWriteTimeUtc": "2020-05-11T14:29:55.4802349Z",
-      "queryTimestamp": "2020-05-29T14:49:43.5132649Z",
-      "fileCount": 1,
-      "fileSize": 396489945
     },
     {
       "folderName": "Armourers-Workshop-1.12.2-0.50.1.jar",
@@ -115,7 +115,7 @@
       "status": 1,
       "timestamp": "2020-05-29T14:49:42.811314Z",
       "lastWriteTimeUtc": "2020-05-29T14:42:34.5444333Z",
-      "queryTimestamp": "2020-05-29T14:49:43.5132649Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7625745Z",
       "fileCount": 1,
       "fileSize": 4632842
     },
@@ -130,7 +130,7 @@
       "status": 1,
       "timestamp": "2020-05-29T14:49:42.9609214Z",
       "lastWriteTimeUtc": "2020-05-26T17:34:22.2800347Z",
-      "queryTimestamp": "2020-05-29T14:49:43.5132649Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7625745Z",
       "fileCount": 1,
       "fileSize": 4912890
     },
@@ -145,7 +145,7 @@
       "status": 1,
       "timestamp": "2020-05-29T14:49:43.0208195Z",
       "lastWriteTimeUtc": "2020-05-29T14:42:52.6113728Z",
-      "queryTimestamp": "2020-05-29T14:49:43.5142618Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7635708Z",
       "fileCount": 1,
       "fileSize": 2139906
     },
@@ -160,7 +160,7 @@
       "status": 1,
       "timestamp": "2020-05-29T14:49:42.8452241Z",
       "lastWriteTimeUtc": "2020-05-12T18:53:57.7974121Z",
-      "queryTimestamp": "2020-05-29T14:49:43.5142618Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7635708Z",
       "fileCount": 1,
       "fileSize": 10440159
     },
@@ -175,7 +175,7 @@
       "status": 1,
       "timestamp": "2020-05-29T14:49:43.0377737Z",
       "lastWriteTimeUtc": "2020-05-24T19:49:47.4525929Z",
-      "queryTimestamp": "2020-05-29T14:49:43.5142618Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7635708Z",
       "fileCount": 1,
       "fileSize": 1479535
     },
@@ -190,7 +190,7 @@
       "status": 1,
       "timestamp": "2020-05-30T08:40:18.2411543Z",
       "lastWriteTimeUtc": "2020-04-15T19:07:08.3884902Z",
-      "queryTimestamp": "2020-05-30T08:40:18.5094834Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7635708Z",
       "fileCount": 1,
       "fileSize": 565024
     },
@@ -205,7 +205,7 @@
       "status": 1,
       "timestamp": "2020-05-29T14:49:42.9529418Z",
       "lastWriteTimeUtc": "2020-05-26T15:03:34.8968416Z",
-      "queryTimestamp": "2020-05-29T14:49:43.5142618Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7645687Z",
       "fileCount": 1,
       "fileSize": 203211
     },
@@ -220,7 +220,7 @@
       "status": 1,
       "timestamp": "2020-05-12T12:47:47.8217896Z",
       "lastWriteTimeUtc": "2020-05-12T12:44:09.4276139Z",
-      "queryTimestamp": "2020-05-29T14:49:43.5142618Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7645687Z",
       "fileCount": 1,
       "fileSize": 223250
     },
@@ -235,9 +235,24 @@
       "status": 1,
       "timestamp": "2020-05-12T12:47:47.7818972Z",
       "lastWriteTimeUtc": "2020-05-12T12:39:08.5350031Z",
-      "queryTimestamp": "2020-05-29T14:49:43.5152599Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7645687Z",
       "fileCount": 1,
       "fileSize": 5862985
+    },
+    {
+      "folderName": "PixelmonGenerations-1.12.2-8.0.0-universal.jar",
+      "fingerprint": 3155662286,
+      "fileDateHash": 1690466137,
+      "sectionID": 8,
+      "individualFingerprints": [
+        3155662286
+      ],
+      "status": 1,
+      "timestamp": "2020-06-04T09:28:42.4111988Z",
+      "lastWriteTimeUtc": "2020-06-04T09:27:57.4158558Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7645687Z",
+      "fileCount": 1,
+      "fileSize": 416814428
     },
     {
       "folderName": "rustic-1.1.4.jar",
@@ -250,7 +265,7 @@
       "status": 1,
       "timestamp": "2020-05-29T14:49:43.0048625Z",
       "lastWriteTimeUtc": "2020-05-29T14:42:47.2165737Z",
-      "queryTimestamp": "2020-05-29T14:49:43.5152599Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7655659Z",
       "fileCount": 1,
       "fileSize": 1361675
     },
@@ -265,9 +280,24 @@
       "status": 1,
       "timestamp": "2020-05-12T12:47:47.7759144Z",
       "lastWriteTimeUtc": "2020-05-12T12:44:09.2002215Z",
-      "queryTimestamp": "2020-05-29T14:49:43.5152599Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7655659Z",
       "fileCount": 1,
       "fileSize": 704330
+    },
+    {
+      "folderName": "mcjtylib-1.12-3.5.4.jar",
+      "fingerprint": 285741512,
+      "fileDateHash": 1156105976,
+      "sectionID": 8,
+      "individualFingerprints": [
+        285741512
+      ],
+      "status": 1,
+      "timestamp": "2020-06-04T09:28:42.4082068Z",
+      "lastWriteTimeUtc": "2020-05-31T08:26:55.9947057Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7655659Z",
+      "fileCount": 1,
+      "fileSize": 544856
     },
     {
       "folderName": "BetterRecords-1.12.2-1.6.2.jar",
@@ -280,7 +310,7 @@
       "status": 1,
       "timestamp": "2020-05-12T12:47:47.7689309Z",
       "lastWriteTimeUtc": "2020-05-12T12:43:20.9342786Z",
-      "queryTimestamp": "2020-05-29T14:49:43.5152599Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7655659Z",
       "fileCount": 1,
       "fileSize": 852156
     },
@@ -295,7 +325,7 @@
       "status": 1,
       "timestamp": "2020-05-29T14:49:42.7634414Z",
       "lastWriteTimeUtc": "2020-05-28T17:30:01.4844417Z",
-      "queryTimestamp": "2020-05-29T14:49:43.5152599Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7655659Z",
       "fileCount": 1,
       "fileSize": 5908689
     },
@@ -310,7 +340,7 @@
       "status": 1,
       "timestamp": "2020-05-29T14:49:42.9589257Z",
       "lastWriteTimeUtc": "2020-05-27T09:54:46.8013499Z",
-      "queryTimestamp": "2020-05-29T14:49:43.5152599Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7665628Z",
       "fileCount": 1,
       "fileSize": 47241
     },
@@ -325,7 +355,7 @@
       "status": 1,
       "timestamp": "2020-05-29T14:49:43.0148352Z",
       "lastWriteTimeUtc": "2020-05-12T13:03:18.9236927Z",
-      "queryTimestamp": "2020-05-29T14:49:43.516258Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7665628Z",
       "fileCount": 1,
       "fileSize": 605947
     },
@@ -340,7 +370,7 @@
       "status": 1,
       "timestamp": "2020-05-12T12:47:47.8906062Z",
       "lastWriteTimeUtc": "2020-05-12T12:42:12.469283Z",
-      "queryTimestamp": "2020-05-29T14:49:43.516258Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7665628Z",
       "fileCount": 1,
       "fileSize": 76902
     },
@@ -355,7 +385,7 @@
       "status": 1,
       "timestamp": "2020-05-12T12:47:47.7669374Z",
       "lastWriteTimeUtc": "2020-05-12T12:45:20.1016962Z",
-      "queryTimestamp": "2020-05-29T14:49:43.516258Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7665628Z",
       "fileCount": 1,
       "fileSize": 108306
     },
@@ -370,7 +400,7 @@
       "status": 1,
       "timestamp": "2020-05-29T14:49:43.0527566Z",
       "lastWriteTimeUtc": "2020-05-26T10:19:27.3154867Z",
-      "queryTimestamp": "2020-05-29T14:49:43.516258Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7665628Z",
       "fileCount": 1,
       "fileSize": 1655548
     },
@@ -385,18 +415,18 @@
       "status": 1,
       "timestamp": "2020-05-29T14:49:42.8442267Z",
       "lastWriteTimeUtc": "2020-05-12T13:03:18.5996604Z",
-      "queryTimestamp": "2020-05-29T14:49:43.516258Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7665628Z",
       "fileCount": 1,
       "fileSize": 96859
     },
     {
       "folderName": "New World",
-      "fingerprint": 2684980088,
-      "fileDateHash": 615706247,
+      "fingerprint": 2475637667,
+      "fileDateHash": 4043878821,
       "sectionID": 10,
       "individualFingerprints": [
-        355020512,
-        485156085,
+        242431811,
+        446950089,
         489458212,
         489458212,
         489458212,
@@ -404,38 +434,56 @@
         758054953,
         758054953,
         758054953,
-        822415853,
+        860113335,
         1055756179,
         1244582513,
-        1310355346,
         1327951146,
         1370012994,
-        2076451140,
+        1377481428,
+        1458181385,
+        2097830874,
         2215693592,
+        2375823107,
         2438022517,
         2707112640,
+        2731450146,
         2866145806,
         2866145806,
-        2988772804,
-        3015727586,
         3568159534,
-        3623321517,
+        3771282984,
+        3771282984,
         3771282984,
         3771282984,
         3771282984,
         3860967192,
-        3977365566,
+        3979492479,
+        4050131641,
         4213863462,
         4213863462,
         4213863462,
         4213863462
       ],
       "status": 1,
-      "timestamp": "2020-05-30T08:40:18.2511299Z",
-      "lastWriteTimeUtc": "2020-05-29T14:51:11.4209003Z",
-      "queryTimestamp": "2020-05-30T08:40:18.5124759Z",
+      "timestamp": "2020-06-04T09:28:44.2978171Z",
+      "lastWriteTimeUtc": "2020-06-04T09:18:40.4915897Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7675616Z",
       "fileCount": 17,
       "fileSize": 0
+    },
+    {
+      "folderName": "CraftingAutomat-MC1.12.2-1.0.5.jar",
+      "fingerprint": 1010396279,
+      "fileDateHash": 1022880484,
+      "sectionID": 8,
+      "individualFingerprints": [
+        1010396279
+      ],
+      "status": 1,
+      "timestamp": "2020-06-04T09:28:42.406212Z",
+      "lastWriteTimeUtc": "2020-05-31T09:31:52.4002271Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7675616Z",
+      "fileCount": 1,
+      "fileSize": 94027
     },
     {
       "folderName": "furniture-6.3.1-1.12.2.jar",
@@ -448,7 +496,7 @@
       "status": 1,
       "timestamp": "2020-05-29T14:49:42.9299636Z",
       "lastWriteTimeUtc": "2020-05-12T17:53:47.5958289Z",
-      "queryTimestamp": "2020-05-29T14:49:43.5172549Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7675616Z",
       "fileCount": 1,
       "fileSize": 2435626
     },
@@ -463,13 +511,13 @@
       "status": 1,
       "timestamp": "2020-05-12T12:47:47.8247817Z",
       "lastWriteTimeUtc": "2020-05-12T12:43:19.7863386Z",
-      "queryTimestamp": "2020-05-29T14:49:43.5172549Z",
+      "queryTimestamp": "2020-06-04T09:28:44.7675616Z",
       "fileCount": 1,
       "fileSize": 6278399
     }
   ],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2020-05-30T08:40:19.5462785Z",
+  "lastPreviousMatchUpdate": "2020-06-04T09:28:45.2383172Z",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.12.2",
@@ -1047,7 +1095,7 @@
       "dateInstalled": "2020-05-31T08:26:55.9967027Z",
       "dateUpdated": "2020-05-31T08:26:56.0026856Z",
       "dateLastUpdateAttempted": "2020-05-31T08:26:56.0026856Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -1056,7 +1104,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 222722,
@@ -1928,147 +1976,6 @@
       "installedTargets": null
     },
     {
-      "addonID": 374704,
-      "gameInstanceID": "254ab742-ac9c-4ac7-9ead-d5aab7c8f8cf",
-      "installedFile": {
-        "id": 2926148,
-        "displayName": "pixelmon 1.12.2 newest version 7.2.2",
-        "fileName": "PixelmonGenerations-1.12.2-2.9.4-universal.jar",
-        "fileDate": "2020-04-10T11:46:11.863Z",
-        "fileLength": 396489945,
-        "releaseType": 1,
-        "fileStatus": 5,
-        "downloadUrl": "https://edge.forgecdn.net/files/2926/148/PixelmonGenerations-1.12.2-2.9.4-universal.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": false,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 2016218533,
-            "type": 3
-          },
-          {
-            "foldername": "com",
-            "fingerprint": 1389463136,
-            "type": 3
-          },
-          {
-            "foldername": "org",
-            "fingerprint": 1215860635,
-            "type": 3
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 1006956565,
-            "type": 3
-          },
-          {
-            "foldername": "mcmod.info",
-            "fingerprint": 724967543,
-            "type": 3
-          },
-          {
-            "foldername": "mixins.pixelmon.json",
-            "fingerprint": 2819707667,
-            "type": 3
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 2897934054,
-            "type": 3
-          },
-          {
-            "foldername": "net",
-            "fingerprint": 1044375354,
-            "type": 3
-          },
-          {
-            "foldername": "win-x86",
-            "fingerprint": 802789130,
-            "type": 3
-          },
-          {
-            "foldername": "win-x64",
-            "fingerprint": 2063815514,
-            "type": 3
-          },
-          {
-            "foldername": "linux",
-            "fingerprint": 2351147067,
-            "type": 3
-          },
-          {
-            "foldername": "darwin",
-            "fingerprint": 435226543,
-            "type": 3
-          },
-          {
-            "foldername": "dummyThing",
-            "fingerprint": 79582461,
-            "type": 3
-          },
-          {
-            "foldername": "info",
-            "fingerprint": 2033703370,
-            "type": 3
-          },
-          {
-            "foldername": "dev",
-            "fingerprint": 125557860,
-            "type": 3
-          }
-        ],
-        "packageFingerprint": 3973564056,
-        "gameVersion": [
-          "Forge",
-          "1.12.2"
-        ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000012.0000000002",
-            "gameVersion": "1.12.2",
-            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
-          }
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 5,
-        "renderCacheId": 1823552,
-        "projectId": 374704,
-        "packageFingerprintId": 437964324,
-        "gameVersionDateReleased": "2006-12-11T00:00:00Z",
-        "gameVersionMappingId": 2171952,
-        "gameVersionId": 4456,
-        "gameId": 432,
-        "isServerPack": false,
-        "FileNameOnDisk": "PixelmonGenerations-1.12.2-2.9.4-universal.jar"
-      },
-      "dateInstalled": "2020-05-11T14:30:05.1282208Z",
-      "dateUpdated": "2019-05-11T14:30:05.1282208Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
       "addonID": 266572,
       "gameInstanceID": "254ab742-ac9c-4ac7-9ead-d5aab7c8f8cf",
       "installedFile": {
@@ -2504,7 +2411,7 @@
       "dateInstalled": "2020-05-31T08:26:56.6313184Z",
       "dateUpdated": "2020-05-31T08:26:56.6353079Z",
       "dateLastUpdateAttempted": "2020-05-31T08:26:56.6353079Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -2513,7 +2420,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 298275,
@@ -2661,7 +2568,7 @@
       "dateInstalled": "2020-05-31T09:31:52.4012034Z",
       "dateUpdated": "2020-05-31T09:31:52.4051907Z",
       "dateLastUpdateAttempted": "2020-05-31T09:31:52.4051907Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -2670,7 +2577,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 373051,
