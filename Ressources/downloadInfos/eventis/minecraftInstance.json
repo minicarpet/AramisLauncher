@@ -555,13 +555,6 @@
   "preferenceShowAddOnInfo": true,
   "installDate": "2020-05-11T14:22:48.1349424Z",
   "installedAddons": [
-	{
-      "installedFile": {
-        "fileName": "PixelmonGenerations-1.12.2-8.0.0-universal.jar",
-        "fileLength": 416814428,
-        "downloadUrl": "https://edge.forgecdn.net/files/2926/148/PixelmonGenerations-1.12.2-8.0.0-universal.jar",
-      }
-    },
     {
       "addonID": 256141,
       "gameInstanceID": "254ab742-ac9c-4ac7-9ead-d5aab7c8f8cf",
