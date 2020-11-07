@@ -46,7 +46,14 @@ namespace AramisLauncher.Download
                 if (insalledPackage != null && insalledPackage.packageVersion != CommonData.packageVersion)
                 {
                     /* package version does not correspond to the recorded one, delete files */
-                    Directory.Delete(CommonData.packageFolder, true);
+                    try
+                    {
+                        Directory.Delete(CommonData.packageFolder, true);
+                    }
+                    catch (Exception)
+                    {
+
+                    }
                 }
                 else if (insalledPackage != null)
                 {
