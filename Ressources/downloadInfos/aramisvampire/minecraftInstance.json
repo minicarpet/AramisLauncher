@@ -32,67 +32,194 @@
   "javaDirOverride": null,
   "lastPlayed": "0001-01-01T00:00:00",
   "manifest": {
-    "minecraft": {
-      "version": "1.15.2",
-      "additionalJavaArgs": null,
-      "modLoaders": [
-        {
-          "id": "forge-31.1.44",
-          "primary": true
-        }
-      ],
-      "libraries": null
-    },
-    "manifestType": "minecraftModpack",
-    "manifestVersion": 1,
-    "name": "hugo",
-    "version": "1.0.0",
-    "author": "azmoket",
-    "description": null,
-    "projectID": null,
-    "files": [
+  "minecraft": {
+    "version": "1.15.2",
+    "modLoaders": [
       {
-        "projectID": 64760,
-        "fileID": 2960791,
-        "required": true
-      },
-      {
-        "projectID": 286660,
-        "fileID": 2906951,
-        "required": true
-      },
-      {
-        "projectID": 55438,
-        "fileID": 2853267,
-        "required": true
-      },
-      {
-        "projectID": 303657,
-        "fileID": 2869118,
-        "required": true
-      },
-      {
-        "projectID": 289380,
-        "fileID": 2946425,
-        "required": true
-      },
-      {
-        "projectID": 357178,
-        "fileID": 2939224,
-        "required": true
-      },
-      {
-        "projectID": 308663,
-        "fileID": 2935384,
-        "required": true
-      },
-      {
-        "projectID": 373051,
-        "fileID": 2954892,
-        "required": true
+        "id": "forge-31.2.45",
+        "primary": true
       }
-    ],
-    "overrides": "overrides"
+    ]
+  },
+  "manifestType": "minecraftModpack",
+  "manifestVersion": 1,
+  "name": "aramisvampire",
+  "version": "1.0.0",
+  "author": "azmoket",
+  "files": [
+    {
+      "projectID": 323596,
+      "fileID": 2992655,
+      "required": true
+    },
+    {
+      "projectID": 280441,
+      "fileID": 2927621,
+      "required": true
+    },
+    {
+      "projectID": 406893,
+      "fileID": 3092795,
+      "required": true
+    },
+    {
+      "projectID": 225643,
+      "fileID": 3020377,
+      "required": true
+    },
+    {
+      "projectID": 228525,
+      "fileID": 2965233,
+      "required": true
+    },
+    {
+      "projectID": 357178,
+      "fileID": 3076610,
+      "required": true
+    },
+    {
+      "projectID": 220318,
+      "fileID": 2988999,
+      "required": true
+    },
+    {
+      "projectID": 348964,
+      "fileID": 3034851,
+      "required": true
+    },
+    {
+      "projectID": 306770,
+      "fileID": 3000903,
+      "required": true
+    },
+    {
+      "projectID": 344449,
+      "fileID": 3015757,
+      "required": true
+    },
+    {
+      "projectID": 309927,
+      "fileID": 3021133,
+      "required": true
+    },
+    {
+      "projectID": 246640,
+      "fileID": 3022674,
+      "required": true
+    },
+    {
+      "projectID": 368718,
+      "fileID": 3003397,
+      "required": true
+    },
+    {
+      "projectID": 347488,
+      "fileID": 2972754,
+      "required": true
+    },
+    {
+      "projectID": 373793,
+      "fileID": 3046703,
+      "required": true
+    },
+    {
+      "projectID": 278993,
+      "fileID": 2873657,
+      "required": true
+    },
+    {
+      "projectID": 250363,
+      "fileID": 2911830,
+      "required": true
+    },
+    {
+      "projectID": 276951,
+      "fileID": 3028347,
+      "required": true
+    },
+    {
+      "projectID": 32274,
+      "fileID": 2981594,
+      "required": true
+    },
+    {
+      "projectID": 243121,
+      "fileID": 2980651,
+      "required": true
+    },
+    {
+      "projectID": 342584,
+      "fileID": 3082939,
+      "required": true
+    },
+    {
+      "projectID": 264231,
+      "fileID": 3077979,
+      "required": true
+    },
+    {
+      "projectID": 225608,
+      "fileID": 2873556,
+      "required": true
+    },
+    {
+      "projectID": 328085,
+      "fileID": 3066060,
+      "required": true
+    },
+    {
+      "projectID": 245755,
+      "fileID": 2991235,
+      "required": true
+    },
+    {
+      "projectID": 272335,
+      "fileID": 3014039,
+      "required": true
+    },
+    {
+      "projectID": 238222,
+      "fileID": 3039710,
+      "required": true
+    },
+    {
+      "projectID": 331936,
+      "fileID": 2983465,
+      "required": true
+    },
+    {
+      "projectID": 357557,
+      "fileID": 2873656,
+      "required": true
+    },
+    {
+      "projectID": 238372,
+      "fileID": 2957553,
+      "required": true
+    },
+    {
+      "projectID": 233029,
+      "fileID": 2991969,
+      "required": true
+    },
+    {
+      "projectID": 300297,
+      "fileID": 3088023,
+      "required": true
+    },
+    {
+      "projectID": 239197,
+      "fileID": 2949785,
+      "required": true
+    },
+    {
+      "projectID": 340991,
+      "fileID": 3101903,
+      "required": true
+    }
+  ],
+  "overrides": "overrides"
+}
   },
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
