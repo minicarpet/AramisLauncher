@@ -43,8 +43,8 @@
   },
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
-  "name": "aramisvampire",
-  "version": "1.0.0",
+  "name": "AramisVampire",
+  "version": "1.0.1",
   "author": "azmoket",
   "files": [
     {
@@ -59,7 +59,7 @@
     },
     {
       "projectID": 406893,
-      "fileID": 3092795,
+      "fileID": 3104866,
       "required": true
     },
     {
@@ -123,6 +123,11 @@
       "required": true
     },
     {
+      "projectID": 240630,
+      "fileID": 2946240,
+      "required": true
+    },
+    {
       "projectID": 278993,
       "fileID": 2873657,
       "required": true
@@ -130,6 +135,11 @@
     {
       "projectID": 250363,
       "fileID": 2911830,
+      "required": true
+    },
+    {
+      "projectID": 311880,
+      "fileID": 3015910,
       "required": true
     },
     {
@@ -150,6 +160,11 @@
     {
       "projectID": 342584,
       "fileID": 3082939,
+      "required": true
+    },
+    {
+      "projectID": 380404,
+      "fileID": 3070962,
       "required": true
     },
     {
@@ -193,23 +208,18 @@
       "required": true
     },
     {
-      "projectID": 238372,
-      "fileID": 2957553,
-      "required": true
-    },
-    {
       "projectID": 233029,
       "fileID": 2991969,
       "required": true
     },
     {
-      "projectID": 300297,
-      "fileID": 3088023,
+      "projectID": 238372,
+      "fileID": 2957553,
       "required": true
     },
     {
-      "projectID": 239197,
-      "fileID": 2949785,
+      "projectID": 300297,
+      "fileID": 3088023,
       "required": true
     },
     {
@@ -219,7 +229,7 @@
     }
   ],
   "overrides": "overrides"
-},
+  },
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
   "projectID": 0,
