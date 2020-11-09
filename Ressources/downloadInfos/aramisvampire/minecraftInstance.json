@@ -1,23 +1,23 @@
 {
   "baseModLoader": {
-    "id": 4449,
-    "gameVersionId": 7807,
+    "id": 4715,
+    "gameVersionId": 8103,
     "minecraftGameVersionId": 64,
-    "forgeVersion": "31.1.44",
-    "name": "forge-31.1.44",
+    "forgeVersion": "31.2.45",
+    "name": "forge-31.2.45",
     "type": 1,
-    "downloadUrl": "https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/forge/1.15.2-31.1.44/forge-1.15.2-31.1.44.jar",
-    "filename": "forge-1.15.2-31.1.44.jar",
+    "downloadUrl": "https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/forge/1.15.2-31.2.45/forge-1.15.2-31.2.45.jar",
+    "filename": "forge-1.15.2-31.2.45.jar",
     "installMethod": 3,
-    "latest": false,
+    "latest": true,
     "recommended": false,
     "approved": false,
-    "dateModified": "2020-04-12T19:31:03Z",
-    "mavenVersionString": "net.minecraftforge:forge:1.15.2-31.1.44",
-    "versionJson": "{\r\n  \"id\": \"forge-31.1.44\",\r\n  \"time\": \"2020-04-12T19:31:03Z\",\r\n  \"releaseTime\": \"2020-04-12T19:31:03Z\",\r\n  \"type\": \"release\",\r\n  \"minimumLauncherVersion\": 0,\r\n  \"inheritsFrom\": \"1.15.2\",\r\n  \"jar\": \"forge-31.1.44\",\r\n  \"libraries\": [\r\n    {\r\n      \"name\": \"net.minecraftforge:forge:1.15.2-31.1.44\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/forge/1.15.2-31.1.44/forge-1.15.2-31.1.44.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/forge/1.15.2-31.1.44/forge-1.15.2-31.1.44.jar\",\r\n          \"sha1\": \"27369ead62e36b5135a0eafb7fa9d27f00f82443\",\r\n          \"size\": 183705\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.ow2.asm:asm:7.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/ow2/asm/asm/7.2/asm-7.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/ow2/asm/asm/7.2/asm-7.2.jar\",\r\n          \"sha1\": \"fa637eb67eb7628c915d73762b681ae7ff0b9731\",\r\n          \"size\": 114873\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.ow2.asm:asm-commons:7.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/ow2/asm/asm-commons/7.2/asm-commons-7.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/ow2/asm/asm-commons/7.2/asm-commons-7.2.jar\",\r\n          \"sha1\": \"ca2954e8d92a05bacc28ff465b25c70e0f512497\",\r\n          \"size\": 70051\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.ow2.asm:asm-tree:7.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/ow2/asm/asm-tree/7.2/asm-tree-7.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/ow2/asm/asm-tree/7.2/asm-tree-7.2.jar\",\r\n          \"sha1\": \"3a23cc36edaf8fc5a89cb100182758ccb5991487\",\r\n          \"size\": 50283\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"cpw.mods:modlauncher:5.0.0-milestone.4\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"cpw/mods/modlauncher/5.0.0-milestone.4/modlauncher-5.0.0-milestone.4.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/cpw/mods/modlauncher/5.0.0-milestone.4/modlauncher-5.0.0-milestone.4.jar\",\r\n          \"sha1\": \"b44442aef3243d9929e3290a1838195ad505c6c3\",\r\n          \"size\": 115810\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"cpw.mods:grossjava9hacks:1.1.0\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"cpw/mods/grossjava9hacks/1.1.0/grossjava9hacks-1.1.0.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/cpw/mods/grossjava9hacks/1.1.0/grossjava9hacks-1.1.0.jar\",\r\n          \"sha1\": \"ba432ff9b3477370a2317eff223ad3b6a82d37b1\",\r\n          \"size\": 1759\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecraftforge:accesstransformers:2.0.4-shadowed\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/accesstransformers/2.0.4-shadowed/accesstransformers-2.0.4-shadowed.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/accesstransformers/2.0.4-shadowed/accesstransformers-2.0.4-shadowed.jar\",\r\n          \"sha1\": \"7e484d734393278c318af389f7a5435192ae6d5e\",\r\n          \"size\": 444913\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecraftforge:eventbus:2.0.0-milestone.1-service\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/eventbus/2.0.0-milestone.1-service/eventbus-2.0.0-milestone.1-service.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/eventbus/2.0.0-milestone.1-service/eventbus-2.0.0-milestone.1-service.jar\",\r\n          \"sha1\": \"ef0e4a7c15c8eadb7e94233ee7b1d7b98841c752\",\r\n          \"size\": 39764\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecraftforge:forgespi:2.0.0-milestone.1\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/forgespi/2.0.0-milestone.1/forgespi-2.0.0-milestone.1.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/forgespi/2.0.0-milestone.1/forgespi-2.0.0-milestone.1.jar\",\r\n          \"sha1\": \"0fbfcafacae7a5adaf23c34a0ed08ac5b54d4c79\",\r\n          \"size\": 19454\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecraftforge:coremods:2.0.0-milestone.1\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/coremods/2.0.0-milestone.1/coremods-2.0.0-milestone.1.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/coremods/2.0.0-milestone.1/coremods-2.0.0-milestone.1.jar\",\r\n          \"sha1\": \"610df322bd810fff462b9fed9d3faa8a4ab4b37f\",\r\n          \"size\": 21780\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecraftforge:unsafe:0.2.0\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/unsafe/0.2.0/unsafe-0.2.0.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/unsafe/0.2.0/unsafe-0.2.0.jar\",\r\n          \"sha1\": \"54d7a0a5e8fdb71b973025caa46f341ae5904f39\",\r\n          \"size\": 2834\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"com.electronwill.night-config:core:3.6.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"com/electronwill/night-config/core/3.6.2/core-3.6.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/com/electronwill/night-config/core/3.6.2/core-3.6.2.jar\",\r\n          \"sha1\": \"56f6500038861d4a8832072676da7bf7916217d0\",\r\n          \"size\": 199091\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"com.electronwill.night-config:toml:3.6.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"com/electronwill/night-config/toml/3.6.2/toml-3.6.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/com/electronwill/night-config/toml/3.6.2/toml-3.6.2.jar\",\r\n          \"sha1\": \"3ac4263d06433da39a5eee95e2679f1642d921f0\",\r\n          \"size\": 31152\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.jline:jline:3.12.1\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/jline/jline/3.12.1/jline-3.12.1.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/jline/jline/3.12.1/jline-3.12.1.jar\",\r\n          \"sha1\": \"de2bd909cb9f8eaa741bd03df4a1bd3f6eb593c7\",\r\n          \"size\": 732926\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.apache.maven:maven-artifact:3.6.0\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/apache/maven/maven-artifact/3.6.0/maven-artifact-3.6.0.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/apache/maven/maven-artifact/3.6.0/maven-artifact-3.6.0.jar\",\r\n          \"sha1\": \"d4c0da647de59c9ccc304a112fe1f1474d49e8eb\",\r\n          \"size\": 55051\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.jodah:typetools:0.6.1\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/jodah/typetools/0.6.1/typetools-0.6.1.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/jodah/typetools/0.6.1/typetools-0.6.1.jar\",\r\n          \"sha1\": \"55a544eebff09427be04bebfc62bfc4cc2de8c93\",\r\n          \"size\": 14941\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.apache.logging.log4j:log4j-api:2.11.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.jar\",\r\n          \"sha1\": \"f5e9a2ffca496057d6891a3de65128efc636e26e\",\r\n          \"size\": 266283\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.apache.logging.log4j:log4j-core:2.11.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/apache/logging/log4j/log4j-core/2.11.2/log4j-core-2.11.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/apache/logging/log4j/log4j-core/2.11.2/log4j-core-2.11.2.jar\",\r\n          \"sha1\": \"6c2fb3f5b7cd27504726aef1b674b542a0c9cf53\",\r\n          \"size\": 1629585\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecrell:terminalconsoleappender:1.2.0\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecrell/terminalconsoleappender/1.2.0/terminalconsoleappender-1.2.0.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecrell/terminalconsoleappender/1.2.0/terminalconsoleappender-1.2.0.jar\",\r\n          \"sha1\": \"96d02cd3b384ff015a8fef4223bcb4ccf1717c95\",\r\n          \"size\": 15977\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.sf.jopt-simple:jopt-simple:5.0.4\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar\",\r\n          \"sha1\": \"4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c\",\r\n          \"size\": 78146\r\n        }\r\n      }\r\n    }\r\n  ],\r\n  \"mainClass\": \"cpw.mods.modlauncher.Launcher\",\r\n  \"arguments\": {\r\n    \"game\": [\r\n      \"--launchTarget\",\r\n      \"fmlclient\",\r\n      \"--fml.forgeVersion\",\r\n      \"31.1.44\",\r\n      \"--fml.mcVersion\",\r\n      \"1.15.2\",\r\n      \"--fml.forgeGroup\",\r\n      \"net.minecraftforge\",\r\n      \"--fml.mcpVersion\",\r\n      \"20200307.202953\"\r\n    ]\r\n  }\r\n}",
-    "librariesInstallLocation": "{0}\\libraries\\net\\minecraftforge\\forge\\1.15.2-31.1.44",
+    "dateModified": "2020-10-05T14:38:24Z",
+    "mavenVersionString": "net.minecraftforge:forge:1.15.2-31.2.45",
+    "versionJson": "{\r\n  \"id\": \"forge-31.2.45\",\r\n  \"time\": \"2020-10-05T14:38:24Z\",\r\n  \"releaseTime\": \"2020-10-05T14:38:24Z\",\r\n  \"type\": \"release\",\r\n  \"minimumLauncherVersion\": 0,\r\n  \"inheritsFrom\": \"1.15.2\",\r\n  \"jar\": \"forge-31.2.45\",\r\n  \"libraries\": [\r\n    {\r\n      \"name\": \"net.minecraftforge:forge:1.15.2-31.2.45\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/forge/1.15.2-31.2.45/forge-1.15.2-31.2.45.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/forge/1.15.2-31.2.45/forge-1.15.2-31.2.45.jar\",\r\n          \"sha1\": \"37c8ca1059d9d49e7c4e726ac883cb0dfec8a2e6\",\r\n          \"size\": 194623\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.ow2.asm:asm:7.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/ow2/asm/asm/7.2/asm-7.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/ow2/asm/asm/7.2/asm-7.2.jar\",\r\n          \"sha1\": \"fa637eb67eb7628c915d73762b681ae7ff0b9731\",\r\n          \"size\": 114873\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.ow2.asm:asm-commons:7.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/ow2/asm/asm-commons/7.2/asm-commons-7.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/ow2/asm/asm-commons/7.2/asm-commons-7.2.jar\",\r\n          \"sha1\": \"ca2954e8d92a05bacc28ff465b25c70e0f512497\",\r\n          \"size\": 70051\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.ow2.asm:asm-tree:7.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/ow2/asm/asm-tree/7.2/asm-tree-7.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/ow2/asm/asm-tree/7.2/asm-tree-7.2.jar\",\r\n          \"sha1\": \"3a23cc36edaf8fc5a89cb100182758ccb5991487\",\r\n          \"size\": 50283\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.ow2.asm:asm-util:7.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/ow2/asm/asm-util/7.2/asm-util-7.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/ow2/asm/asm-util/7.2/asm-util-7.2.jar\",\r\n          \"sha1\": \"a3ae34e57fa8a4040e28247291d0cc3d6b8c7bcf\",\r\n          \"size\": 80707\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.ow2.asm:asm-analysis:7.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/ow2/asm/asm-analysis/7.2/asm-analysis-7.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/ow2/asm/asm-analysis/7.2/asm-analysis-7.2.jar\",\r\n          \"sha1\": \"b6e6abe057f23630113f4167c34bda7086691258\",\r\n          \"size\": 33444\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"cpw.mods:modlauncher:5.1.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"cpw/mods/modlauncher/5.1.2/modlauncher-5.1.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/cpw/mods/modlauncher/5.1.2/modlauncher-5.1.2.jar\",\r\n          \"sha1\": \"42f764429585b8a12ba42d43a02c0c9018710052\",\r\n          \"size\": 115985\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"cpw.mods:grossjava9hacks:1.3.0\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"cpw/mods/grossjava9hacks/1.3.0/grossjava9hacks-1.3.0.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/cpw/mods/grossjava9hacks/1.3.0/grossjava9hacks-1.3.0.jar\",\r\n          \"sha1\": \"1a922de964d0c19d864fbcba2678c1a1c4602c35\",\r\n          \"size\": 1921\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecraftforge:accesstransformers:2.1.3-shadowed\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/accesstransformers/2.1.3-shadowed/accesstransformers-2.1.3-shadowed.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/accesstransformers/2.1.3-shadowed/accesstransformers-2.1.3-shadowed.jar\",\r\n          \"sha1\": \"addc10ee659e011004852c6cf1d036180f67a169\",\r\n          \"size\": 444938\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecraftforge:eventbus:2.2.0-service\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/eventbus/2.2.0-service/eventbus-2.2.0-service.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/eventbus/2.2.0-service/eventbus-2.2.0-service.jar\",\r\n          \"sha1\": \"e663ad1f795b81da8a132c8fde40580b05c2343d\",\r\n          \"size\": 39776\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecraftforge:forgespi:3.0.0\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/forgespi/3.0.0/forgespi-3.0.0.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/forgespi/3.0.0/forgespi-3.0.0.jar\",\r\n          \"sha1\": \"f950d208c9fa7a1d7700d8a222bd08d4baf90600\",\r\n          \"size\": 19925\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecraftforge:coremods:2.0.3\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/coremods/2.0.3/coremods-2.0.3.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/coremods/2.0.3/coremods-2.0.3.jar\",\r\n          \"sha1\": \"9e3f5323f6a2c3ac04fa27481cbeeb48f89757bd\",\r\n          \"size\": 21802\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecraftforge:unsafe:0.2.0\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/unsafe/0.2.0/unsafe-0.2.0.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/unsafe/0.2.0/unsafe-0.2.0.jar\",\r\n          \"sha1\": \"54d7a0a5e8fdb71b973025caa46f341ae5904f39\",\r\n          \"size\": 2834\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.spongepowered:mixin:0.8.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/spongepowered/mixin/0.8.2/mixin-0.8.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/spongepowered/mixin/0.8.2/mixin-0.8.2.jar\",\r\n          \"sha1\": \"1cf212283d26f706fd3074318870bebd14d2a9ed\",\r\n          \"size\": 935252\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"com.electronwill.night-config:core:3.6.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"com/electronwill/night-config/core/3.6.2/core-3.6.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/com/electronwill/night-config/core/3.6.2/core-3.6.2.jar\",\r\n          \"sha1\": \"56f6500038861d4a8832072676da7bf7916217d0\",\r\n          \"size\": 199091\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"com.electronwill.night-config:toml:3.6.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"com/electronwill/night-config/toml/3.6.2/toml-3.6.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/com/electronwill/night-config/toml/3.6.2/toml-3.6.2.jar\",\r\n          \"sha1\": \"3ac4263d06433da39a5eee95e2679f1642d921f0\",\r\n          \"size\": 31152\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.jline:jline:3.12.1\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/jline/jline/3.12.1/jline-3.12.1.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/jline/jline/3.12.1/jline-3.12.1.jar\",\r\n          \"sha1\": \"de2bd909cb9f8eaa741bd03df4a1bd3f6eb593c7\",\r\n          \"size\": 732926\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.apache.maven:maven-artifact:3.6.0\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/apache/maven/maven-artifact/3.6.0/maven-artifact-3.6.0.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/apache/maven/maven-artifact/3.6.0/maven-artifact-3.6.0.jar\",\r\n          \"sha1\": \"d4c0da647de59c9ccc304a112fe1f1474d49e8eb\",\r\n          \"size\": 55051\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.jodah:typetools:0.8.1\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/jodah/typetools/0.8.1/typetools-0.8.1.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/jodah/typetools/0.8.1/typetools-0.8.1.jar\",\r\n          \"sha1\": \"d12de898d333cb7eb0e39a35db03c1e09d92d595\",\r\n          \"size\": 15367\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.apache.logging.log4j:log4j-api:2.11.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.jar\",\r\n          \"sha1\": \"f5e9a2ffca496057d6891a3de65128efc636e26e\",\r\n          \"size\": 266283\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.apache.logging.log4j:log4j-core:2.11.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/apache/logging/log4j/log4j-core/2.11.2/log4j-core-2.11.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/apache/logging/log4j/log4j-core/2.11.2/log4j-core-2.11.2.jar\",\r\n          \"sha1\": \"6c2fb3f5b7cd27504726aef1b674b542a0c9cf53\",\r\n          \"size\": 1629585\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecrell:terminalconsoleappender:1.2.0\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecrell/terminalconsoleappender/1.2.0/terminalconsoleappender-1.2.0.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecrell/terminalconsoleappender/1.2.0/terminalconsoleappender-1.2.0.jar\",\r\n          \"sha1\": \"96d02cd3b384ff015a8fef4223bcb4ccf1717c95\",\r\n          \"size\": 15977\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.sf.jopt-simple:jopt-simple:5.0.4\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar\",\r\n          \"sha1\": \"4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c\",\r\n          \"size\": 78146\r\n        }\r\n      }\r\n    }\r\n  ],\r\n  \"mainClass\": \"cpw.mods.modlauncher.Launcher\",\r\n  \"arguments\": {\r\n    \"game\": [\r\n      \"--launchTarget\",\r\n      \"fmlclient\",\r\n      \"--fml.forgeVersion\",\r\n      \"31.2.45\",\r\n      \"--fml.mcVersion\",\r\n      \"1.15.2\",\r\n      \"--fml.forgeGroup\",\r\n      \"net.minecraftforge\",\r\n      \"--fml.mcpVersion\",\r\n      \"20200515.085601\"\r\n    ]\r\n  }\r\n}",
+    "librariesInstallLocation": "{0}\\libraries\\net\\minecraftforge\\forge\\1.15.2-31.2.45",
     "minecraftVersion": "1.15.2",
-    "modLoaderGameVersionId": 7807,
+    "modLoaderGameVersionId": 8103,
     "modLoaderGameVersionTypeId": 3,
     "modLoaderGameVersionStatus": 1,
     "modLoaderGameVersionTypeStatus": 1,
@@ -25,225 +25,25 @@
     "mcGameVersionTypeId": 68722,
     "mcGameVersionStatus": 1,
     "mcGameVersionTypeStatus": 1,
-    "installProfileJson": "{\r\n  \"_comment_\": [\r\n    \"Please do not automate the download and installation of Forge.\",\r\n    \"Our efforts are supported by ads from the download page.\",\r\n    \"If you MUST automate this, please consider supporting the project through https://www.patreon.com/LexManos/\"\r\n  ],\r\n  \"profile\": \"forge\",\r\n  \"version\": \"1.15.2-forge-31.1.44\",\r\n  \"json\": \"/version.json\",\r\n  \"path\": \"net.minecraftforge:forge:1.15.2-31.1.44\",\r\n  \"logo\": \"/big_logo.png\",\r\n  \"minecraft\": \"1.15.2\",\r\n  \"welcome\": \"Welcome to the simple Forge installer.\",\r\n  \"data\": {\r\n    \"MAPPINGS\": {\r\n      \"client\": \"[de.oceanlabs.mcp:mcp_config:1.15.2-20200307.202953:mappings@txt]\",\r\n      \"server\": \"[de.oceanlabs.mcp:mcp_config:1.15.2-20200307.202953:mappings@txt]\"\r\n    },\r\n    \"BINPATCH\": {\r\n      \"client\": \"/data/client.lzma\",\r\n      \"server\": \"/data/server.lzma\"\r\n    },\r\n    \"MC_SLIM\": {\r\n      \"client\": \"[net.minecraft:client:1.15.2:slim]\",\r\n      \"server\": \"[net.minecraft:server:1.15.2:slim]\"\r\n    },\r\n    \"MC_SLIM_SHA\": {\r\n      \"client\": \"'cb8029d524d1b45d268136c2971e3796454f948a'\",\r\n      \"server\": \"'9e4cfc5a34121901aba5f4bf002af9ae472eede0'\"\r\n    },\r\n    \"MC_EXTRA\": {\r\n      \"client\": \"[net.minecraft:client:1.15.2:extra]\",\r\n      \"server\": \"[net.minecraft:server:1.15.2:extra]\"\r\n    },\r\n    \"MC_EXTRA_SHA\": {\r\n      \"client\": \"'f41c6b1e3ebe4c897239170639b9a76742a282e2'\",\r\n      \"server\": \"'eb84dde2927f1dedb0b810f373a9a4e7325ba95d'\"\r\n    },\r\n    \"MC_SRG\": {\r\n      \"client\": \"[net.minecraft:client:1.15.2-20200307.202953:srg]\",\r\n      \"server\": \"[net.minecraft:server:1.15.2-20200307.202953:srg]\"\r\n    },\r\n    \"PATCHED\": {\r\n      \"client\": \"[net.minecraftforge:forge:1.15.2-31.1.44:client]\",\r\n      \"server\": \"[net.minecraftforge:forge:1.15.2-31.1.44:server]\"\r\n    },\r\n    \"PATCHED_SHA\": {\r\n      \"client\": \"'db6d09f71b4c34b2ea08160a4a1f80ae5242cb2d'\",\r\n      \"server\": \"'1133763c47a9cf391cc839a5a6617168fa58cf6e'\"\r\n    },\r\n    \"MCP_VERSION\": {\r\n      \"client\": \"'20200307.202953'\",\r\n      \"server\": \"'20200307.202953'\"\r\n    }\r\n  },\r\n  \"processors\": [\r\n    {\r\n      \"jar\": \"net.minecraftforge:installertools:1.1.4\",\r\n      \"classpath\": [\r\n        \"net.md-5:SpecialSource:1.8.5\",\r\n        \"net.sf.jopt-simple:jopt-simple:5.0.4\",\r\n        \"com.google.code.gson:gson:2.8.0\",\r\n        \"org.ow2.asm:asm-commons:6.1.1\",\r\n        \"com.google.guava:guava:20.0\",\r\n        \"net.sf.opencsv:opencsv:2.3\",\r\n        \"org.ow2.asm:asm-analysis:6.1.1\",\r\n        \"org.ow2.asm:asm-tree:6.1.1\",\r\n        \"org.ow2.asm:asm:6.1.1\"\r\n      ],\r\n      \"args\": [\r\n        \"--task\",\r\n        \"MCP_DATA\",\r\n        \"--input\",\r\n        \"[de.oceanlabs.mcp:mcp_config:1.15.2-20200307.202953@zip]\",\r\n        \"--output\",\r\n        \"{MAPPINGS}\",\r\n        \"--key\",\r\n        \"mappings\"\r\n      ]\r\n    },\r\n    {\r\n      \"jar\": \"net.minecraftforge:jarsplitter:1.1.2\",\r\n      \"classpath\": [\r\n        \"net.sf.jopt-simple:jopt-simple:5.0.4\"\r\n      ],\r\n      \"args\": [\r\n        \"--input\",\r\n        \"{MINECRAFT_JAR}\",\r\n        \"--slim\",\r\n        \"{MC_SLIM}\",\r\n        \"--extra\",\r\n        \"{MC_EXTRA}\",\r\n        \"--srg\",\r\n        \"{MAPPINGS}\"\r\n      ]\r\n    },\r\n    {\r\n      \"jar\": \"net.md-5:SpecialSource:1.8.5\",\r\n      \"classpath\": [\r\n        \"org.ow2.asm:asm-commons:6.1.1\",\r\n        \"net.sf.jopt-simple:jopt-simple:4.9\",\r\n        \"com.google.guava:guava:20.0\",\r\n        \"net.sf.opencsv:opencsv:2.3\",\r\n        \"org.ow2.asm:asm-analysis:6.1.1\",\r\n        \"org.ow2.asm:asm-tree:6.1.1\",\r\n        \"org.ow2.asm:asm:6.1.1\"\r\n      ],\r\n      \"args\": [\r\n        \"--in-jar\",\r\n        \"{MC_SLIM}\",\r\n        \"--out-jar\",\r\n        \"{MC_SRG}\",\r\n        \"--srg-in\",\r\n        \"{MAPPINGS}\"\r\n      ]\r\n    },\r\n    {\r\n      \"jar\": \"net.minecraftforge:binarypatcher:1.0.12\",\r\n      \"classpath\": [\r\n        \"commons-io:commons-io:2.4\",\r\n        \"com.google.guava:guava:25.1-jre\",\r\n        \"net.sf.jopt-simple:jopt-simple:5.0.4\",\r\n        \"com.github.jponge:lzma-java:1.3\",\r\n        \"com.nothome:javaxdelta:2.0.1\",\r\n        \"com.google.code.findbugs:jsr305:3.0.2\",\r\n        \"org.checkerframework:checker-qual:2.0.0\",\r\n        \"com.google.errorprone:error_prone_annotations:2.1.3\",\r\n        \"com.google.j2objc:j2objc-annotations:1.1\",\r\n        \"org.codehaus.mojo:animal-sniffer-annotations:1.14\",\r\n        \"trove:trove:1.0.2\"\r\n      ],\r\n      \"args\": [\r\n        \"--clean\",\r\n        \"{MC_SRG}\",\r\n        \"--output\",\r\n        \"{PATCHED}\",\r\n        \"--apply\",\r\n        \"{BINPATCH}\"\r\n      ]\r\n    }\r\n  ],\r\n  \"libraries\": [\r\n    {\r\n      \"name\": \"com.github.jponge:lzma-java:1.3\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"com/github/jponge/lzma-java/1.3/lzma-java-1.3.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/com/github/jponge/lzma-java/1.3/lzma-java-1.3.jar\",\r\n          \"sha1\": \"a25db9d4d385ccda4825ae1b47a7a61d86e595af\",\r\n          \"size\": 51041\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"com.google.code.findbugs:jsr305:3.0.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar\",\r\n          \"sha1\": \"25ea2e8b0c338a877313bd4672d3fe056ea78f0d\",\r\n          \"size\": 19936\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"com.google.code.gson:gson:2.8.0\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"com/google/code/gson/gson/2.8.0/gson-2.8.0.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar\",\r\n          \"sha1\": \"c4ba5371a29ac9b2ad6129b1d39ea38750043eff\",\r\n          \"size\": 231952\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"com.google.errorprone:error_prone_annotations:2.1.3\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar\",\r\n          \"sha1\": \"39b109f2cd352b2d71b52a3b5a1a9850e1dc304b\",\r\n          \"size\": 13704\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"com.google.guava:guava:20.0\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"com/google/guava/guava/20.0/guava-20.0.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/com/google/guava/guava/20.0/guava-20.0.jar\",\r\n          \"sha1\": \"89507701249388e1ed5ddcf8c41f4ce1be7831ef\",\r\n          \"size\": 2442625\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"com.google.guava:guava:25.1-jre\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"com/google/guava/guava/25.1-jre/guava-25.1-jre.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/com/google/guava/guava/25.1-jre/guava-25.1-jre.jar\",\r\n          \"sha1\": \"6c57e4b22b44e89e548b5c9f70f0c45fe10fb0b4\",\r\n          \"size\": 2734339\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"com.google.j2objc:j2objc-annotations:1.1\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar\",\r\n          \"sha1\": \"ed28ded51a8b1c6b112568def5f4b455e6809019\",\r\n          \"size\": 8782\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"com.nothome:javaxdelta:2.0.1\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"com/nothome/javaxdelta/2.0.1/javaxdelta-2.0.1.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/com/nothome/javaxdelta/2.0.1/javaxdelta-2.0.1.jar\",\r\n          \"sha1\": \"d4f5d077f1b15c6f67595015d69572303ad3f66d\",\r\n          \"size\": 38995\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"commons-io:commons-io:2.4\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"commons-io/commons-io/2.4/commons-io-2.4.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/commons-io/commons-io/2.4/commons-io-2.4.jar\",\r\n          \"sha1\": \"b1b6ea3b7e4aa4f492509a4952029cd8e48019ad\",\r\n          \"size\": 185140\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"de.oceanlabs.mcp:mcp_config:1.15.2-20200307.202953@zip\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"de/oceanlabs/mcp/mcp_config/1.15.2-20200307.202953/mcp_config-1.15.2-20200307.202953.zip\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/de/oceanlabs/mcp/mcp_config/1.15.2-20200307.202953/mcp_config-1.15.2-20200307.202953.zip\",\r\n          \"sha1\": \"50de53c3759d3f4ed4b80e750bd75e3f18be0582\",\r\n          \"size\": 674047\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.md-5:SpecialSource:1.8.5\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/md-5/SpecialSource/1.8.5/SpecialSource-1.8.5.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/md-5/SpecialSource/1.8.5/SpecialSource-1.8.5.jar\",\r\n          \"sha1\": \"c670c493c436a885c872fa4810bc698628b95922\",\r\n          \"size\": 81179\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecraftforge:binarypatcher:1.0.12\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/binarypatcher/1.0.12/binarypatcher-1.0.12.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/binarypatcher/1.0.12/binarypatcher-1.0.12.jar\",\r\n          \"sha1\": \"971ea098f83ef2e1b96c1b7849465bb79fd05838\",\r\n          \"size\": 16491\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecraftforge:forge:1.15.2-31.1.44:universal\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/forge/1.15.2-31.1.44/forge-1.15.2-31.1.44-universal.jar\",\r\n          \"url\": \"\",\r\n          \"sha1\": \"0f3809414b15d1d9a15d83bd65f9cf5a0ea68620\",\r\n          \"size\": 2181698\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecraftforge:installertools:1.1.4\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/installertools/1.1.4/installertools-1.1.4.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/installertools/1.1.4/installertools-1.1.4.jar\",\r\n          \"sha1\": \"ce2a64d84365374fc797f829e60321874d48145f\",\r\n          \"size\": 34230\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecraftforge:jarsplitter:1.1.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/jarsplitter/1.1.2/jarsplitter-1.1.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/jarsplitter/1.1.2/jarsplitter-1.1.2.jar\",\r\n          \"sha1\": \"7d6c2c293883c220e7622087849b26a35b3318e5\",\r\n          \"size\": 7981\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.sf.jopt-simple:jopt-simple:4.9\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/sf/jopt-simple/jopt-simple/4.9/jopt-simple-4.9.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/sf/jopt-simple/jopt-simple/4.9/jopt-simple-4.9.jar\",\r\n          \"sha1\": \"ee9e9eaa0a35360dcfeac129ff4923215fd65904\",\r\n          \"size\": 66469\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.sf.jopt-simple:jopt-simple:5.0.4\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar\",\r\n          \"sha1\": \"4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c\",\r\n          \"size\": 78146\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.sf.opencsv:opencsv:2.3\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/sf/opencsv/opencsv/2.3/opencsv-2.3.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/sf/opencsv/opencsv/2.3/opencsv-2.3.jar\",\r\n          \"sha1\": \"c23708cdb9e80a144db433e23344a788a1fd6599\",\r\n          \"size\": 19827\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.checkerframework:checker-qual:2.0.0\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/checkerframework/checker-qual/2.0.0/checker-qual-2.0.0.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/checkerframework/checker-qual/2.0.0/checker-qual-2.0.0.jar\",\r\n          \"sha1\": \"518929596ee3249127502a8573b2e008e2d51ed3\",\r\n          \"size\": 343222\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.codehaus.mojo:animal-sniffer-annotations:1.14\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar\",\r\n          \"sha1\": \"775b7e22fb10026eed3f86e8dc556dfafe35f2d5\",\r\n          \"size\": 3482\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.ow2.asm:asm-analysis:6.1.1\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/ow2/asm/asm-analysis/6.1.1/asm-analysis-6.1.1.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/ow2/asm/asm-analysis/6.1.1/asm-analysis-6.1.1.jar\",\r\n          \"sha1\": \"376d85732456ec4d2c4bc020ee152061c61f00b5\",\r\n          \"size\": 31979\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.ow2.asm:asm-commons:6.1.1\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/ow2/asm/asm-commons/6.1.1/asm-commons-6.1.1.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/ow2/asm/asm-commons/6.1.1/asm-commons-6.1.1.jar\",\r\n          \"sha1\": \"70a7deee986e66c015cea1c9978f9654cc667020\",\r\n          \"size\": 77745\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.ow2.asm:asm-tree:6.1.1\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/ow2/asm/asm-tree/6.1.1/asm-tree-6.1.1.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/ow2/asm/asm-tree/6.1.1/asm-tree-6.1.1.jar\",\r\n          \"sha1\": \"19fdc358e7bd3986b9867de508ce6cefa693dda6\",\r\n          \"size\": 50050\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.ow2.asm:asm:6.1.1\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/ow2/asm/asm/6.1.1/asm-6.1.1.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/ow2/asm/asm/6.1.1/asm-6.1.1.jar\",\r\n          \"sha1\": \"264754515362d92acd39e8d40395f6b8dee7bc08\",\r\n          \"size\": 108252\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"trove:trove:1.0.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"trove/trove/1.0.2/trove-1.0.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/trove/trove/1.0.2/trove-1.0.2.jar\",\r\n          \"sha1\": \"112b40581ab9a4d3de4636d49985a7f686d181c8\",\r\n          \"size\": 361155\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecraftforge:forge:1.15.2-31.1.44:universal\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/forge/1.15.2-31.1.44/forge-1.15.2-31.1.44-universal.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/forge/1.15.2-31.1.44/forge-1.15.2-31.1.44-universal.jar\",\r\n          \"size\": 0\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecraftforge:forge:1.15.2-31.1.44:clientdata@lzma\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/forge/1.15.2-31.1.44/forge-1.15.2-31.1.44-clientdata.lzma\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/forge/1.15.2-31.1.44/forge-1.15.2-31.1.44-clientdata.lzma\",\r\n          \"size\": 0\r\n        }\r\n      }\r\n    }\r\n  ]\r\n}"
+    "installProfileJson": "{\r\n  \"_comment_\": [\r\n    \"Please do not automate the download and installation of Forge.\",\r\n    \"Our efforts are supported by ads from the download page.\",\r\n    \"If you MUST automate this, please consider supporting the project through https://www.patreon.com/LexManos/\"\r\n  ],\r\n  \"profile\": \"forge\",\r\n  \"version\": \"1.15.2-forge-31.2.45\",\r\n  \"json\": \"/version.json\",\r\n  \"path\": \"net.minecraftforge:forge:1.15.2-31.2.45\",\r\n  \"logo\": \"/big_logo.png\",\r\n  \"minecraft\": \"1.15.2\",\r\n  \"welcome\": \"Welcome to the simple Forge installer.\",\r\n  \"data\": {\r\n    \"MAPPINGS\": {\r\n      \"client\": \"[de.oceanlabs.mcp:mcp_config:1.15.2-20200515.085601:mappings@txt]\",\r\n      \"server\": \"[de.oceanlabs.mcp:mcp_config:1.15.2-20200515.085601:mappings@txt]\"\r\n    },\r\n    \"BINPATCH\": {\r\n      \"client\": \"/data/client.lzma\",\r\n      \"server\": \"/data/server.lzma\"\r\n    },\r\n    \"MC_SLIM\": {\r\n      \"client\": \"[net.minecraft:client:1.15.2:slim]\",\r\n      \"server\": \"[net.minecraft:server:1.15.2:slim]\"\r\n    },\r\n    \"MC_SLIM_SHA\": {\r\n      \"client\": \"'cb8029d524d1b45d268136c2971e3796454f948a'\",\r\n      \"server\": \"'9e4cfc5a34121901aba5f4bf002af9ae472eede0'\"\r\n    },\r\n    \"MC_EXTRA\": {\r\n      \"client\": \"[net.minecraft:client:1.15.2:extra]\",\r\n      \"server\": \"[net.minecraft:server:1.15.2:extra]\"\r\n    },\r\n    \"MC_EXTRA_SHA\": {\r\n      \"client\": \"'f41c6b1e3ebe4c897239170639b9a76742a282e2'\",\r\n      \"server\": \"'eb84dde2927f1dedb0b810f373a9a4e7325ba95d'\"\r\n    },\r\n    \"MC_SRG\": {\r\n      \"client\": \"[net.minecraft:client:1.15.2-20200515.085601:srg]\",\r\n      \"server\": \"[net.minecraft:server:1.15.2-20200515.085601:srg]\"\r\n    },\r\n    \"PATCHED\": {\r\n      \"client\": \"[net.minecraftforge:forge:1.15.2-31.2.45:client]\",\r\n      \"server\": \"[net.minecraftforge:forge:1.15.2-31.2.45:server]\"\r\n    },\r\n    \"PATCHED_SHA\": {\r\n      \"client\": \"'9778a45f679fb4d52834ff0723eaa2355ef8f256'\",\r\n      \"server\": \"'87ec5b0a94bf1164f4b14ba20806a8a5d1f3d7f1'\"\r\n    },\r\n    \"MCP_VERSION\": {\r\n      \"client\": \"'20200515.085601'\",\r\n      \"server\": \"'20200515.085601'\"\r\n    }\r\n  },\r\n  \"processors\": [\r\n    {\r\n      \"jar\": \"net.minecraftforge:installertools:1.1.4\",\r\n      \"classpath\": [\r\n        \"net.md-5:SpecialSource:1.8.5\",\r\n        \"net.sf.jopt-simple:jopt-simple:5.0.4\",\r\n        \"com.google.code.gson:gson:2.8.0\",\r\n        \"org.ow2.asm:asm-commons:6.1.1\",\r\n        \"com.google.guava:guava:20.0\",\r\n        \"net.sf.opencsv:opencsv:2.3\",\r\n        \"org.ow2.asm:asm-analysis:6.1.1\",\r\n        \"org.ow2.asm:asm-tree:6.1.1\",\r\n        \"org.ow2.asm:asm:6.1.1\"\r\n      ],\r\n      \"args\": [\r\n        \"--task\",\r\n        \"MCP_DATA\",\r\n        \"--input\",\r\n        \"[de.oceanlabs.mcp:mcp_config:1.15.2-20200515.085601@zip]\",\r\n        \"--output\",\r\n        \"{MAPPINGS}\",\r\n        \"--key\",\r\n        \"mappings\"\r\n      ]\r\n    },\r\n    {\r\n      \"jar\": \"net.minecraftforge:jarsplitter:1.1.2\",\r\n      \"classpath\": [\r\n        \"net.sf.jopt-simple:jopt-simple:5.0.4\"\r\n      ],\r\n      \"args\": [\r\n        \"--input\",\r\n        \"{MINECRAFT_JAR}\",\r\n        \"--slim\",\r\n        \"{MC_SLIM}\",\r\n        \"--extra\",\r\n        \"{MC_EXTRA}\",\r\n        \"--srg\",\r\n        \"{MAPPINGS}\"\r\n      ]\r\n    },\r\n    {\r\n      \"jar\": \"net.md-5:SpecialSource:1.8.5\",\r\n      \"classpath\": [\r\n        \"org.ow2.asm:asm-commons:6.1.1\",\r\n        \"net.sf.jopt-simple:jopt-simple:4.9\",\r\n        \"com.google.guava:guava:20.0\",\r\n        \"net.sf.opencsv:opencsv:2.3\",\r\n        \"org.ow2.asm:asm-analysis:6.1.1\",\r\n        \"org.ow2.asm:asm-tree:6.1.1\",\r\n        \"org.ow2.asm:asm:6.1.1\"\r\n      ],\r\n      \"args\": [\r\n        \"--in-jar\",\r\n        \"{MC_SLIM}\",\r\n        \"--out-jar\",\r\n        \"{MC_SRG}\",\r\n        \"--srg-in\",\r\n        \"{MAPPINGS}\"\r\n      ]\r\n    },\r\n    {\r\n      \"jar\": \"net.minecraftforge:binarypatcher:1.0.12\",\r\n      \"classpath\": [\r\n        \"commons-io:commons-io:2.4\",\r\n        \"com.google.guava:guava:25.1-jre\",\r\n        \"net.sf.jopt-simple:jopt-simple:5.0.4\",\r\n        \"com.github.jponge:lzma-java:1.3\",\r\n        \"com.nothome:javaxdelta:2.0.1\",\r\n        \"com.google.code.findbugs:jsr305:3.0.2\",\r\n        \"org.checkerframework:checker-qual:2.0.0\",\r\n        \"com.google.errorprone:error_prone_annotations:2.1.3\",\r\n        \"com.google.j2objc:j2objc-annotations:1.1\",\r\n        \"org.codehaus.mojo:animal-sniffer-annotations:1.14\",\r\n        \"trove:trove:1.0.2\"\r\n      ],\r\n      \"args\": [\r\n        \"--clean\",\r\n        \"{MC_SRG}\",\r\n        \"--output\",\r\n        \"{PATCHED}\",\r\n        \"--apply\",\r\n        \"{BINPATCH}\"\r\n      ]\r\n    }\r\n  ],\r\n  \"libraries\": [\r\n    {\r\n      \"name\": \"com.github.jponge:lzma-java:1.3\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"com/github/jponge/lzma-java/1.3/lzma-java-1.3.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/com/github/jponge/lzma-java/1.3/lzma-java-1.3.jar\",\r\n          \"sha1\": \"a25db9d4d385ccda4825ae1b47a7a61d86e595af\",\r\n          \"size\": 51041\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"com.google.code.findbugs:jsr305:3.0.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar\",\r\n          \"sha1\": \"25ea2e8b0c338a877313bd4672d3fe056ea78f0d\",\r\n          \"size\": 19936\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"com.google.code.gson:gson:2.8.0\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"com/google/code/gson/gson/2.8.0/gson-2.8.0.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar\",\r\n          \"sha1\": \"c4ba5371a29ac9b2ad6129b1d39ea38750043eff\",\r\n          \"size\": 231952\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"com.google.errorprone:error_prone_annotations:2.1.3\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar\",\r\n          \"sha1\": \"39b109f2cd352b2d71b52a3b5a1a9850e1dc304b\",\r\n          \"size\": 13704\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"com.google.guava:guava:20.0\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"com/google/guava/guava/20.0/guava-20.0.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/com/google/guava/guava/20.0/guava-20.0.jar\",\r\n          \"sha1\": \"89507701249388e1ed5ddcf8c41f4ce1be7831ef\",\r\n          \"size\": 2442625\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"com.google.guava:guava:25.1-jre\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"com/google/guava/guava/25.1-jre/guava-25.1-jre.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/com/google/guava/guava/25.1-jre/guava-25.1-jre.jar\",\r\n          \"sha1\": \"6c57e4b22b44e89e548b5c9f70f0c45fe10fb0b4\",\r\n          \"size\": 2734339\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"com.google.j2objc:j2objc-annotations:1.1\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar\",\r\n          \"sha1\": \"ed28ded51a8b1c6b112568def5f4b455e6809019\",\r\n          \"size\": 8782\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"com.nothome:javaxdelta:2.0.1\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"com/nothome/javaxdelta/2.0.1/javaxdelta-2.0.1.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/com/nothome/javaxdelta/2.0.1/javaxdelta-2.0.1.jar\",\r\n          \"sha1\": \"d4f5d077f1b15c6f67595015d69572303ad3f66d\",\r\n          \"size\": 38995\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"commons-io:commons-io:2.4\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"commons-io/commons-io/2.4/commons-io-2.4.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/commons-io/commons-io/2.4/commons-io-2.4.jar\",\r\n          \"sha1\": \"b1b6ea3b7e4aa4f492509a4952029cd8e48019ad\",\r\n          \"size\": 185140\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"de.oceanlabs.mcp:mcp_config:1.15.2-20200515.085601@zip\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"de/oceanlabs/mcp/mcp_config/1.15.2-20200515.085601/mcp_config-1.15.2-20200515.085601.zip\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/de/oceanlabs/mcp/mcp_config/1.15.2-20200515.085601/mcp_config-1.15.2-20200515.085601.zip\",\r\n          \"sha1\": \"5711d9b33408935d4484078dd1985c59de875ab6\",\r\n          \"size\": 675404\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.md-5:SpecialSource:1.8.5\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/md-5/SpecialSource/1.8.5/SpecialSource-1.8.5.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/md-5/SpecialSource/1.8.5/SpecialSource-1.8.5.jar\",\r\n          \"sha1\": \"c670c493c436a885c872fa4810bc698628b95922\",\r\n          \"size\": 81179\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecraftforge:binarypatcher:1.0.12\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/binarypatcher/1.0.12/binarypatcher-1.0.12.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/binarypatcher/1.0.12/binarypatcher-1.0.12.jar\",\r\n          \"sha1\": \"971ea098f83ef2e1b96c1b7849465bb79fd05838\",\r\n          \"size\": 16491\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecraftforge:forge:1.15.2-31.2.45:universal\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/forge/1.15.2-31.2.45/forge-1.15.2-31.2.45-universal.jar\",\r\n          \"url\": \"\",\r\n          \"sha1\": \"e9b795f9888db97cd321c0e6eba946b19a30bc91\",\r\n          \"size\": 2240526\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecraftforge:installertools:1.1.4\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/installertools/1.1.4/installertools-1.1.4.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/installertools/1.1.4/installertools-1.1.4.jar\",\r\n          \"sha1\": \"ce2a64d84365374fc797f829e60321874d48145f\",\r\n          \"size\": 34230\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecraftforge:jarsplitter:1.1.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/jarsplitter/1.1.2/jarsplitter-1.1.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/jarsplitter/1.1.2/jarsplitter-1.1.2.jar\",\r\n          \"sha1\": \"7d6c2c293883c220e7622087849b26a35b3318e5\",\r\n          \"size\": 7981\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.sf.jopt-simple:jopt-simple:4.9\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/sf/jopt-simple/jopt-simple/4.9/jopt-simple-4.9.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/sf/jopt-simple/jopt-simple/4.9/jopt-simple-4.9.jar\",\r\n          \"sha1\": \"ee9e9eaa0a35360dcfeac129ff4923215fd65904\",\r\n          \"size\": 66469\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.sf.jopt-simple:jopt-simple:5.0.4\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar\",\r\n          \"sha1\": \"4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c\",\r\n          \"size\": 78146\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.sf.opencsv:opencsv:2.3\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/sf/opencsv/opencsv/2.3/opencsv-2.3.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/sf/opencsv/opencsv/2.3/opencsv-2.3.jar\",\r\n          \"sha1\": \"c23708cdb9e80a144db433e23344a788a1fd6599\",\r\n          \"size\": 19827\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.checkerframework:checker-qual:2.0.0\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/checkerframework/checker-qual/2.0.0/checker-qual-2.0.0.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/checkerframework/checker-qual/2.0.0/checker-qual-2.0.0.jar\",\r\n          \"sha1\": \"518929596ee3249127502a8573b2e008e2d51ed3\",\r\n          \"size\": 343222\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.codehaus.mojo:animal-sniffer-annotations:1.14\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar\",\r\n          \"sha1\": \"775b7e22fb10026eed3f86e8dc556dfafe35f2d5\",\r\n          \"size\": 3482\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.ow2.asm:asm-analysis:6.1.1\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/ow2/asm/asm-analysis/6.1.1/asm-analysis-6.1.1.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/ow2/asm/asm-analysis/6.1.1/asm-analysis-6.1.1.jar\",\r\n          \"sha1\": \"376d85732456ec4d2c4bc020ee152061c61f00b5\",\r\n          \"size\": 31979\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.ow2.asm:asm-commons:6.1.1\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/ow2/asm/asm-commons/6.1.1/asm-commons-6.1.1.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/ow2/asm/asm-commons/6.1.1/asm-commons-6.1.1.jar\",\r\n          \"sha1\": \"70a7deee986e66c015cea1c9978f9654cc667020\",\r\n          \"size\": 77745\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.ow2.asm:asm-tree:6.1.1\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/ow2/asm/asm-tree/6.1.1/asm-tree-6.1.1.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/ow2/asm/asm-tree/6.1.1/asm-tree-6.1.1.jar\",\r\n          \"sha1\": \"19fdc358e7bd3986b9867de508ce6cefa693dda6\",\r\n          \"size\": 50050\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"org.ow2.asm:asm:6.1.1\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"org/ow2/asm/asm/6.1.1/asm-6.1.1.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/org/ow2/asm/asm/6.1.1/asm-6.1.1.jar\",\r\n          \"sha1\": \"264754515362d92acd39e8d40395f6b8dee7bc08\",\r\n          \"size\": 108252\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"trove:trove:1.0.2\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"trove/trove/1.0.2/trove-1.0.2.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/trove/trove/1.0.2/trove-1.0.2.jar\",\r\n          \"sha1\": \"112b40581ab9a4d3de4636d49985a7f686d181c8\",\r\n          \"size\": 361155\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecraftforge:forge:1.15.2-31.2.45:universal\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/forge/1.15.2-31.2.45/forge-1.15.2-31.2.45-universal.jar\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/forge/1.15.2-31.2.45/forge-1.15.2-31.2.45-universal.jar\",\r\n          \"size\": 0\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"net.minecraftforge:forge:1.15.2-31.2.45:clientdata@lzma\",\r\n      \"downloads\": {\r\n        \"artifact\": {\r\n          \"path\": \"net/minecraftforge/forge/1.15.2-31.2.45/forge-1.15.2-31.2.45-clientdata.lzma\",\r\n          \"url\": \"https://modloaders.forgecdn.net/647622546/maven/net/minecraftforge/forge/1.15.2-31.2.45/forge-1.15.2-31.2.45-clientdata.lzma\",\r\n          \"size\": 0\r\n        }\r\n      }\r\n    }\r\n  ]\r\n}"
   },
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "0001-01-01T00:00:00",
-  "manifest": {
-  "minecraft": {
-    "version": "1.15.2",
-    "modLoaders": [
-      {
-        "id": "forge-31.2.45",
-        "primary": true
-      }
-    ]
-  },
-  "manifestType": "minecraftModpack",
-  "manifestVersion": 1,
-  "name": "AramisVampire",
-  "version": "1.0.1",
-  "author": "azmoket",
-  "files": [
-    {
-      "projectID": 323596,
-      "fileID": 2992655,
-      "required": true
-    },
-    {
-      "projectID": 280441,
-      "fileID": 2927621,
-      "required": true
-    },
-    {
-      "projectID": 406893,
-      "fileID": 3104866,
-      "required": true
-    },
-    {
-      "projectID": 225643,
-      "fileID": 3020377,
-      "required": true
-    },
-    {
-      "projectID": 228525,
-      "fileID": 2965233,
-      "required": true
-    },
-    {
-      "projectID": 357178,
-      "fileID": 3076610,
-      "required": true
-    },
-    {
-      "projectID": 220318,
-      "fileID": 2988999,
-      "required": true
-    },
-    {
-      "projectID": 348964,
-      "fileID": 3034851,
-      "required": true
-    },
-    {
-      "projectID": 306770,
-      "fileID": 3000903,
-      "required": true
-    },
-    {
-      "projectID": 344449,
-      "fileID": 3015757,
-      "required": true
-    },
-    {
-      "projectID": 309927,
-      "fileID": 3021133,
-      "required": true
-    },
-    {
-      "projectID": 246640,
-      "fileID": 3022674,
-      "required": true
-    },
-    {
-      "projectID": 368718,
-      "fileID": 3003397,
-      "required": true
-    },
-    {
-      "projectID": 347488,
-      "fileID": 2972754,
-      "required": true
-    },
-    {
-      "projectID": 373793,
-      "fileID": 3046703,
-      "required": true
-    },
-    {
-      "projectID": 240630,
-      "fileID": 2946240,
-      "required": true
-    },
-    {
-      "projectID": 278993,
-      "fileID": 2873657,
-      "required": true
-    },
-    {
-      "projectID": 250363,
-      "fileID": 2911830,
-      "required": true
-    },
-    {
-      "projectID": 311880,
-      "fileID": 3015910,
-      "required": true
-    },
-    {
-      "projectID": 276951,
-      "fileID": 3028347,
-      "required": true
-    },
-    {
-      "projectID": 32274,
-      "fileID": 2981594,
-      "required": true
-    },
-    {
-      "projectID": 243121,
-      "fileID": 2980651,
-      "required": true
-    },
-    {
-      "projectID": 342584,
-      "fileID": 3082939,
-      "required": true
-    },
-    {
-      "projectID": 380404,
-      "fileID": 3070962,
-      "required": true
-    },
-    {
-      "projectID": 264231,
-      "fileID": 3077979,
-      "required": true
-    },
-    {
-      "projectID": 225608,
-      "fileID": 2873556,
-      "required": true
-    },
-    {
-      "projectID": 328085,
-      "fileID": 3066060,
-      "required": true
-    },
-    {
-      "projectID": 245755,
-      "fileID": 2991235,
-      "required": true
-    },
-    {
-      "projectID": 272335,
-      "fileID": 3014039,
-      "required": true
-    },
-    {
-      "projectID": 238222,
-      "fileID": 3039710,
-      "required": true
-    },
-    {
-      "projectID": 331936,
-      "fileID": 2983465,
-      "required": true
-    },
-    {
-      "projectID": 357557,
-      "fileID": 2873656,
-      "required": true
-    },
-    {
-      "projectID": 233029,
-      "fileID": 2991969,
-      "required": true
-    },
-    {
-      "projectID": 238372,
-      "fileID": 2957553,
-      "required": true
-    },
-    {
-      "projectID": 300297,
-      "fileID": 3088023,
-      "required": true
-    },
-    {
-      "projectID": 340991,
-      "fileID": 3101903,
-      "required": true
-    }
-  ],
-  "overrides": "overrides"
-  },
+  "lastPlayed": "2020-11-08T14:35:30.4189504Z",
+  "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
   "projectID": 0,
   "fileID": 0,
   "customAuthor": "azmoket",
-  "modpackOverrides": [
-    "mods\\preview_OptiFine_1.15.2_HD_U_G1_pre14.jar"
-  ],
+  "modpackOverrides": null,
   "isMemoryOverride": false,
   "allocatedMemory": 5376,
-  "guid": "7208b2f3-6a5c-4001-bcfe-5199c3eecfbf",
+  "guid": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
   "gameTypeID": 432,
-  "installPath": "C:\\Users\\azmok\\Twitch\\Minecraft\\Instances\\hugo\\",
-  "name": "hugo",
+  "installPath": "C:\\Users\\azmok\\Twitch\\Minecraft\\Instances\\Aramis MC\\",
+  "name": "AramisVampire",
   "cachedScans": [],
   "isValid": true,
   "lastPreviousMatchUpdate": "0001-01-01T00:00:00",
@@ -267,27 +67,286 @@
     "LastSyncDate": "0001-01-01T00:00:00"
   },
   "preferenceShowAddOnInfo": true,
-  "installDate": "2020-05-21T19:58:44.5831727Z",
+  "installDate": "2020-11-01T23:10:51.5155818Z",
   "installedAddons": [
     {
-      "addonID": 64760,
-      "gameInstanceID": "7208b2f3-6a5c-4001-bcfe-5199c3eecfbf",
+      "addonID": 323596,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
       "installedFile": {
-        "id": 2960791,
-        "displayName": "[1.15.2] SecurityCraft v1.8.18.1.jar",
-        "fileName": "[1.15.2] SecurityCraft v1.8.18.1.jar",
-        "fileDate": "2020-05-19T15:17:38.107Z",
-        "fileLength": 2047758,
+        "id": 2992655,
+        "displayName": "rats-5.3.2-1.15.2",
+        "fileName": "rats-5.3.2-1.15.2.jar",
+        "fileDate": "2020-06-30T01:27:53.5Z",
+        "fileLength": 5671166,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2960/791/[1.15.2] SecurityCraft v1.8.18.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2992/655/rats-5.3.2-1.15.2.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 245211,
-            "type": 2,
+            "addonId": 331936,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3997739549,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 301367318,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 2418258594,
+            "type": 0
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 2757364653,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 4253522632,
+            "type": 0
+          },
+          {
+            "foldername": "rats_logo.png",
+            "fingerprint": 681856709,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 625021421,
+        "gameVersion": [
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2020-01-22T00:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "rats-5.3.2-1.15.2.jar"
+      },
+      "dateInstalled": "2020-11-01T23:33:39.4774682Z",
+      "dateUpdated": "2020-11-01T23:33:39.4824566Z",
+      "dateLastUpdateAttempted": "2020-11-01T23:33:39.4824566Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 280441,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 2927621,
+        "displayName": "MysticalCustomization-1.15.2-1.0.0.jar",
+        "fileName": "MysticalCustomization-1.15.2-1.0.0.jar",
+        "fileDate": "2020-04-11T22:59:15.827Z",
+        "fileLength": 35036,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2927/621/MysticalCustomization-1.15.2-1.0.0.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 246640,
+            "type": 3,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 272335,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 2085382600,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 1652668869,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 2427622460,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 1792968592,
+        "gameVersion": [
+          "Forge",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "MysticalCustomization-1.15.2-1.0.0.jar"
+      },
+      "dateInstalled": "2020-11-01T23:23:54.041392Z",
+      "dateUpdated": "2020-11-01T23:23:54.0423854Z",
+      "dateLastUpdateAttempted": "2020-11-01T23:23:54.0423854Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 406893,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 3104866,
+        "displayName": "lotr-1.15-renewed-2.5.jar",
+        "fileName": "lotr-1.15-renewed-2.5.jar",
+        "fileDate": "2020-11-07T17:21:15.697Z",
+        "fileLength": 11062502,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3104/866/lotr-1.15-renewed-2.5.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 719168442,
+            "type": 0
+          },
+          {
+            "foldername": "lotr",
+            "fingerprint": 3305396103,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 3589547834,
+            "type": 0
+          },
+          {
+            "foldername": "changelog-renewed.txt",
+            "fingerprint": 2432672928,
+            "type": 0
+          },
+          {
+            "foldername": "credits.txt",
+            "fingerprint": 1870753598,
+            "type": 0
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 337911390,
+            "type": 0
+          },
+          {
+            "foldername": "lotr-transformer-general.js",
+            "fingerprint": 2450188503,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 2129796890,
+            "type": 0
+          },
+          {
+            "foldername": "renewed_logo.png",
+            "fingerprint": 1906294571,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 2974345895,
+        "gameVersion": [
+          "Forge",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "lotr-1.15-renewed-2.5.jar"
+      },
+      "dateInstalled": "2020-11-01T23:26:23.1695012Z",
+      "dateUpdated": "2020-11-08T10:55:59.692956Z",
+      "dateLastUpdateAttempted": "2020-11-08T10:55:59.692956Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 225643,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 3020377,
+        "displayName": "Botania-r1.15-388.jar",
+        "fileName": "Botania-r1.15-388.jar",
+        "fileDate": "2020-08-01T02:53:27.99Z",
+        "fileLength": 14776702,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3020/377/Botania-r1.15-388.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 306770,
+            "type": 3,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 309927,
+            "type": 3,
             "fileId": 0
           },
           {
@@ -298,7 +357,7 @@
           },
           {
             "id": 0,
-            "addonId": 253449,
+            "addonId": 243121,
             "type": 2,
             "fileId": 0
           }
@@ -307,46 +366,108 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 119792520,
+            "fingerprint": 1648808922,
+            "type": 0
+          },
+          {
+            "foldername": "vazkii",
+            "fingerprint": 214616653,
+            "type": 0
+          },
+          {
+            "foldername": "logo.png",
+            "fingerprint": 2050890553,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 2029078671,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 3899911406,
+            "type": 0
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 1641815835,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 4195472666,
+        "gameVersion": [
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "Botania-r1.15-388.jar"
+      },
+      "dateInstalled": "2020-11-01T23:20:53.6010287Z",
+      "dateUpdated": "2020-11-01T23:20:53.6120009Z",
+      "dateLastUpdateAttempted": "2020-11-01T23:20:53.6120009Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 228525,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 2965233,
+        "displayName": "Bookshelf-1.15.2-5.6.40.jar",
+        "fileName": "Bookshelf-1.15.2-5.6.40.jar",
+        "fileDate": "2020-05-25T07:16:28.45Z",
+        "fileLength": 178961,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2965/233/Bookshelf-1.15.2-5.6.40.jar",
+        "isAlternate": false,
+        "alternateFileId": 2965234,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 4092051930,
             "type": 0
           },
           {
             "foldername": "net",
-            "fingerprint": 473412068,
-            "type": 0
-          },
-          {
-            "foldername": "1.8 Changelog.txt",
-            "fingerprint": 4102203648,
-            "type": 0
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 2477826015,
-            "type": 0
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 985080553,
-            "type": 0
-          },
-          {
-            "foldername": "License.txt",
-            "fingerprint": 1924322117,
+            "fingerprint": 1981872159,
             "type": 0
           },
           {
             "foldername": "pack.mcmeta",
-            "fingerprint": 3224128753,
+            "fingerprint": 2119111672,
             "type": 0
           },
           {
-            "foldername": "scLogo.png",
-            "fingerprint": 1430534995,
+            "foldername": "assets",
+            "fingerprint": 788307383,
+            "type": 0
+          },
+          {
+            "foldername": "logo.png",
+            "fingerprint": 777571610,
             "type": 0
           }
         ],
-        "packageFingerprint": 437281226,
+        "packageFingerprint": 3230628091,
         "gameVersion": [
           "Forge",
           "1.15.2"
@@ -360,12 +481,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "[1.15.2] SecurityCraft v1.8.18.1.jar"
+        "FileNameOnDisk": "Bookshelf-1.15.2-5.6.40.jar"
       },
-      "dateInstalled": "2020-05-21T19:58:50.1433128Z",
-      "dateUpdated": "2020-05-21T19:58:50.1453037Z",
-      "dateLastUpdateAttempted": "2020-05-21T19:58:50.1453037Z",
-      "status": 4,
+      "dateInstalled": "2020-11-02T12:57:56.0068713Z",
+      "dateUpdated": "2020-11-02T12:57:56.0078686Z",
+      "dateLastUpdateAttempted": "2020-11-02T12:57:56.0078686Z",
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -374,423 +495,20 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
-    },
-    {
-      "addonID": 286660,
-      "gameInstanceID": "7208b2f3-6a5c-4001-bcfe-5199c3eecfbf",
-      "installedFile": {
-        "id": 2906951,
-        "displayName": "Vehicle Mod 0.43.5",
-        "fileName": "vehicle-mod-0.43.5-1.15.2.jar",
-        "fileDate": "2020-03-21T11:54:27.523Z",
-        "fileLength": 2156718,
-        "releaseType": 2,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2906/951/vehicle-mod-0.43.5-1.15.2.jar",
-        "isAlternate": false,
-        "alternateFileId": 2906952,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 55438,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 289380,
-            "type": 3,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 317269,
-            "type": 2,
-            "fileId": 0
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 3631398935,
-            "type": 0
-          },
-          {
-            "foldername": "com",
-            "fingerprint": 454035058,
-            "type": 0
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 2371347308,
-            "type": 0
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 2737724568,
-            "type": 0
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 3310786426,
-            "type": 0
-          }
-        ],
-        "packageFingerprint": 2720389214,
-        "gameVersion": [
-          "Forge",
-          "1.15.2"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "vehicle-mod-0.43.5-1.15.2.jar"
-      },
-      "dateInstalled": "2020-05-21T19:58:51.2972234Z",
-      "dateUpdated": "2020-05-21T19:58:51.3002171Z",
-      "dateLastUpdateAttempted": "2020-05-21T19:58:51.3002171Z",
-      "status": 4,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": []
-    },
-    {
-      "addonID": 55438,
-      "gameInstanceID": "7208b2f3-6a5c-4001-bcfe-5199c3eecfbf",
-      "installedFile": {
-        "id": 2853267,
-        "displayName": "Furniture Mod 7.0.0-pre16",
-        "fileName": "furniture-7.0.0-pre16-1.15.1.jar",
-        "fileDate": "2020-01-02T04:47:32.44Z",
-        "fileLength": 1596169,
-        "releaseType": 3,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2853/267/furniture-7.0.0-pre16-1.15.1.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 344805,
-            "type": 2,
-            "fileId": 0
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 1891222668,
-            "type": 0
-          },
-          {
-            "foldername": "com",
-            "fingerprint": 327351304,
-            "type": 0
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 2984682260,
-            "type": 0
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 4059346503,
-            "type": 0
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 1902438549,
-            "type": 0
-          }
-        ],
-        "packageFingerprint": 2488880419,
-        "gameVersion": [
-          "Forge",
-          "1.15.2",
-          "1.15.1"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "furniture-7.0.0-pre16-1.15.1.jar"
-      },
-      "dateInstalled": "2020-05-21T19:58:52.1599168Z",
-      "dateUpdated": "2020-05-21T19:58:52.161912Z",
-      "dateLastUpdateAttempted": "2020-05-21T19:58:52.161912Z",
-      "status": 4,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": []
-    },
-    {
-      "addonID": 303657,
-      "gameInstanceID": "7208b2f3-6a5c-4001-bcfe-5199c3eecfbf",
-      "installedFile": {
-        "id": 2869118,
-        "displayName": "Kiwi-1.15.2-2.6.5.jar",
-        "fileName": "Kiwi-1.15.2-2.6.5.jar",
-        "fileDate": "2020-01-25T20:30:51.743Z",
-        "fileLength": 165785,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2869/118/Kiwi-1.15.2-2.6.5.jar",
-        "isAlternate": false,
-        "alternateFileId": 2869119,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 2412563655,
-            "type": 0
-          },
-          {
-            "foldername": "snownee",
-            "fingerprint": 1635636246,
-            "type": 0
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 209388338,
-            "type": 0
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 3596916334,
-            "type": 0
-          }
-        ],
-        "packageFingerprint": 2010764741,
-        "gameVersion": [
-          "1.15.2"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "Kiwi-1.15.2-2.6.5.jar"
-      },
-      "dateInstalled": "2020-05-21T19:58:52.7812554Z",
-      "dateUpdated": "2020-05-21T19:58:52.7822729Z",
-      "dateLastUpdateAttempted": "2020-05-21T19:58:52.7822729Z",
-      "status": 4,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": []
-    },
-    {
-      "addonID": 289380,
-      "gameInstanceID": "7208b2f3-6a5c-4001-bcfe-5199c3eecfbf",
-      "installedFile": {
-        "id": 2946425,
-        "displayName": "Obfuscate 0.4.3",
-        "fileName": "obfuscate-0.4.3-1.15.2.jar",
-        "fileDate": "2020-05-02T14:27:56.03Z",
-        "fileLength": 133544,
-        "releaseType": 2,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2946/425/obfuscate-0.4.3-1.15.2.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 3254255769,
-            "type": 0
-          },
-          {
-            "foldername": "com",
-            "fingerprint": 498776118,
-            "type": 0
-          },
-          {
-            "foldername": "coremods",
-            "fingerprint": 3363014097,
-            "type": 0
-          },
-          {
-            "foldername": "obfuscate.png",
-            "fingerprint": 4142413448,
-            "type": 0
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 1476969517,
-            "type": 0
-          }
-        ],
-        "packageFingerprint": 4116536920,
-        "gameVersion": [
-          "Forge",
-          "1.15.2"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "obfuscate-0.4.3-1.15.2.jar"
-      },
-      "dateInstalled": "2020-05-21T19:58:53.0655153Z",
-      "dateUpdated": "2020-05-21T19:58:53.0674902Z",
-      "dateLastUpdateAttempted": "2020-05-21T19:58:53.0674902Z",
-      "status": 4,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": []
-    },
-    {
-      "addonID": 308663,
-      "gameInstanceID": "7208b2f3-6a5c-4001-bcfe-5199c3eecfbf",
-      "installedFile": {
-        "id": 2935384,
-        "displayName": "SnowRealMagic-1.15.2-1.7.5.jar",
-        "fileName": "SnowRealMagic-1.15.2-1.7.5.jar",
-        "fileDate": "2020-04-20T09:26:37.41Z",
-        "fileLength": 106121,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2935/384/SnowRealMagic-1.15.2-1.7.5.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 357178,
-            "type": 3,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 303657,
-            "type": 3,
-            "fileId": 0
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 113606525,
-            "type": 0
-          },
-          {
-            "foldername": "snownee",
-            "fingerprint": 1264243188,
-            "type": 0
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 2675600078,
-            "type": 0
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 3927052252,
-            "type": 0
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 3442734353,
-            "type": 0
-          },
-          {
-            "foldername": "mixins.snowrealmagic.refmap.json",
-            "fingerprint": 1861396106,
-            "type": 0
-          }
-        ],
-        "packageFingerprint": 3588751327,
-        "gameVersion": [
-          "1.15.2"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "SnowRealMagic-1.15.2-1.7.5.jar"
-      },
-      "dateInstalled": "2020-05-21T19:58:54.3031868Z",
-      "dateUpdated": "2020-05-21T19:58:54.304186Z",
-      "dateLastUpdateAttempted": "2020-05-21T19:58:54.304186Z",
-      "status": 4,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 357178,
-      "gameInstanceID": "7208b2f3-6a5c-4001-bcfe-5199c3eecfbf",
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
       "installedFile": {
-        "id": 2939224,
-        "displayName": "MixinBootstrap-1.0.3.jar",
-        "fileName": "MixinBootstrap-1.0.3.jar",
-        "fileDate": "2020-04-24T11:46:26.267Z",
-        "fileLength": 1061758,
+        "id": 3076610,
+        "displayName": "MixinBootstrap-1.0.5.jar",
+        "fileName": "MixinBootstrap-1.0.5.jar",
+        "fileDate": "2020-10-11T02:14:40.237Z",
+        "fileLength": 1066150,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2939/224/MixinBootstrap-1.0.3.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3076/610/MixinBootstrap-1.0.5.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -798,7 +516,7 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3224103252,
+            "fingerprint": 2919143622,
             "type": 0
           },
           {
@@ -818,7 +536,7 @@
           },
           {
             "foldername": "org",
-            "fingerprint": 1667467214,
+            "fingerprint": 30393446,
             "type": 0
           },
           {
@@ -827,8 +545,9 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 1852187718,
+        "packageFingerprint": 2683462983,
         "gameVersion": [
+          "1.16.3",
           "1.14.4",
           "Forge",
           "1.15.2",
@@ -843,11 +562,791 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "MixinBootstrap-1.0.3.jar"
+        "FileNameOnDisk": "MixinBootstrap-1.0.5.jar"
       },
-      "dateInstalled": "2020-05-21T19:58:53.7117871Z",
-      "dateUpdated": "2020-05-21T19:58:53.7137626Z",
-      "dateLastUpdateAttempted": "2020-05-21T19:58:53.7137626Z",
+      "dateInstalled": "2020-11-01T23:20:57.9563792Z",
+      "dateUpdated": "2020-11-01T23:20:57.9583739Z",
+      "dateLastUpdateAttempted": "2020-11-01T23:20:57.9583739Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 220318,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 2988999,
+        "displayName": "Biomes O' Plenty 1.15.2-10.0.0.366",
+        "fileName": "BiomesOPlenty-1.15.2-10.0.0.366-universal.jar",
+        "fileDate": "2020-06-26T02:49:04.33Z",
+        "fileLength": 3232629,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2988/999/BiomesOPlenty-1.15.2-10.0.0.366-universal.jar",
+        "isAlternate": false,
+        "alternateFileId": 2989000,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 1014653701,
+            "type": 0
+          },
+          {
+            "foldername": "biomesoplenty",
+            "fingerprint": 3674691027,
+            "type": 0
+          },
+          {
+            "foldername": "bop_logo.png",
+            "fingerprint": 2745841392,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 542382981,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1254297999,
+            "type": 0
+          },
+          {
+            "foldername": "LICENSE.txt",
+            "fingerprint": 2878218662,
+            "type": 0
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 2330471587,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 3213709152,
+        "gameVersion": [
+          "Forge",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "BiomesOPlenty-1.15.2-10.0.0.366-universal.jar"
+      },
+      "dateInstalled": "2020-11-01T23:51:40.8898349Z",
+      "dateUpdated": "2020-11-01T23:51:40.8948223Z",
+      "dateLastUpdateAttempted": "2020-11-01T23:51:40.8948223Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 348964,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 3034851,
+        "displayName": "infinitetrading_1.15.2-1.2.jar",
+        "fileName": "infinitetrading_1.15.2-1.2.jar",
+        "fileDate": "2020-08-17T08:57:31.157Z",
+        "fileLength": 7246,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3034/851/infinitetrading_1.15.2-1.2.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 342584,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 2040418755,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 374035185,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 1594494625,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 3152499344,
+        "gameVersion": [
+          "Forge",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "infinitetrading_1.15.2-1.2.jar"
+      },
+      "dateInstalled": "2020-11-03T14:33:07.1060182Z",
+      "dateUpdated": "2020-11-03T14:33:07.1080133Z",
+      "dateLastUpdateAttempted": "2020-11-03T14:33:07.1080133Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 306770,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 3000903,
+        "displayName": "Patchouli-1.15.2-1.2-35.jar",
+        "fileName": "Patchouli-1.15.2-1.2-35.jar",
+        "fileDate": "2020-07-10T03:11:29.63Z",
+        "fileLength": 533222,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3000/903/Patchouli-1.15.2-1.2-35.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 2088420784,
+            "type": 0
+          },
+          {
+            "foldername": "vazkii",
+            "fingerprint": 1121250966,
+            "type": 0
+          },
+          {
+            "foldername": "logo.png",
+            "fingerprint": 4171053254,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 887639394,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 2861410200,
+            "type": 0
+          },
+          {
+            "foldername": "asm",
+            "fingerprint": 1110767511,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 3453550543,
+        "gameVersion": [
+          "Forge",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "Patchouli-1.15.2-1.2-35.jar"
+      },
+      "dateInstalled": "2020-11-01T23:20:51.3719909Z",
+      "dateUpdated": "2020-11-01T23:20:51.374984Z",
+      "dateLastUpdateAttempted": "2020-11-01T23:20:51.374984Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 344449,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 3015757,
+        "displayName": "polyores-2.0.jar",
+        "fileName": "polyores-2.0.jar",
+        "fileDate": "2020-07-27T01:00:18.877Z",
+        "fileLength": 341816,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3015/757/polyores-2.0.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 1676886478,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 2680319665,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1229976042,
+            "type": 0
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 3294289018,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 3327219774,
+            "type": 0
+          },
+          {
+            "foldername": "polyores.png",
+            "fingerprint": 615092717,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 3794442353,
+        "gameVersion": [
+          "1.15",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2019-12-10T15:26:51.027Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "polyores-2.0.jar"
+      },
+      "dateInstalled": "2020-11-02T12:59:07.1457948Z",
+      "dateUpdated": "2020-11-02T12:59:07.1477891Z",
+      "dateLastUpdateAttempted": "2020-11-02T12:59:07.1477891Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 309927,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 3021133,
+        "displayName": "curios-FORGE-1.15.2-2.0.2.6.jar",
+        "fileName": "curios-FORGE-1.15.2-2.0.2.6.jar",
+        "fileDate": "2020-08-02T01:10:44.193Z",
+        "fileLength": 184356,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3021/133/curios-FORGE-1.15.2-2.0.2.6.jar",
+        "isAlternate": false,
+        "alternateFileId": 3021134,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3240243885,
+            "type": 0
+          },
+          {
+            "foldername": "top",
+            "fingerprint": 2383002949,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 4032806572,
+            "type": 0
+          },
+          {
+            "foldername": "CHANGELOG.md",
+            "fingerprint": 3280654064,
+            "type": 0
+          },
+          {
+            "foldername": "curios_icon.png",
+            "fingerprint": 1224242090,
+            "type": 0
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 354465712,
+            "type": 0
+          },
+          {
+            "foldername": "licenses",
+            "fingerprint": 1268541612,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 2397832804,
+            "type": 0
+          },
+          {
+            "foldername": "README.md",
+            "fingerprint": 2479755029,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 2287747228,
+        "gameVersion": [
+          "Forge",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "curios-FORGE-1.15.2-2.0.2.6.jar"
+      },
+      "dateInstalled": "2020-11-01T23:20:51.6053666Z",
+      "dateUpdated": "2020-11-01T23:20:51.6073628Z",
+      "dateLastUpdateAttempted": "2020-11-01T23:20:51.6073628Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 246640,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 3022674,
+        "displayName": "MysticalAgriculture-1.15.2-3.0.10.jar",
+        "fileName": "MysticalAgriculture-1.15.2-3.0.10.jar",
+        "fileDate": "2020-08-03T20:25:36.92Z",
+        "fileLength": 1075055,
+        "releaseType": 2,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3022/674/MysticalAgriculture-1.15.2-3.0.10.jar",
+        "isAlternate": false,
+        "alternateFileId": 3022678,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 272335,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 2490632681,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 1935072625,
+            "type": 0
+          },
+          {
+            "foldername": ".cache",
+            "fingerprint": 2288839767,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 4101955895,
+            "type": 0
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 1442688753,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 1347000033,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 303027953,
+        "gameVersion": [
+          "Forge",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "MysticalAgriculture-1.15.2-3.0.10.jar"
+      },
+      "dateInstalled": "2020-11-01T23:21:18.075564Z",
+      "dateUpdated": "2020-11-01T23:21:18.0775587Z",
+      "dateLastUpdateAttempted": "2020-11-01T23:21:18.0775587Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 368718,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 3003397,
+        "displayName": "JEITweaker-1.15.2-1.0.1.3.jar",
+        "fileName": "JEITweaker-1.15.2-1.0.1.3.jar",
+        "fileDate": "2020-07-12T23:27:59.223Z",
+        "fileLength": 7604,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3003/397/JEITweaker-1.15.2-1.0.1.3.jar",
+        "isAlternate": false,
+        "alternateFileId": 3003398,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 2158524068,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 3354985442,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 3895712427,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 1806803299,
+        "gameVersion": [
+          "Forge",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "JEITweaker-1.15.2-1.0.1.3.jar"
+      },
+      "dateInstalled": "2020-11-01T23:12:04.6295519Z",
+      "dateUpdated": "2020-11-01T23:12:04.6305491Z",
+      "dateLastUpdateAttempted": "2020-11-01T23:12:04.6305491Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 347488,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 2972754,
+        "displayName": "Valhelsia Structures - 15.0.3a",
+        "fileName": "valhelsia_structures-15.0.3a.jar",
+        "fileDate": "2020-06-05T01:57:42.75Z",
+        "fileLength": 628490,
+        "releaseType": 2,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2972/754/valhelsia_structures-15.0.3a.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 545755052,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 3609001166,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1541758873,
+            "type": 0
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 3565585888,
+            "type": 0
+          },
+          {
+            "foldername": "logo.png",
+            "fingerprint": 1285106689,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 4253522632,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 2434356388,
+        "gameVersion": [
+          "Forge",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "valhelsia_structures-15.0.3a.jar"
+      },
+      "dateInstalled": "2020-11-02T13:00:13.8007465Z",
+      "dateUpdated": "2020-11-02T13:00:13.8017438Z",
+      "dateLastUpdateAttempted": "2020-11-02T13:00:13.8017438Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 373793,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 3046703,
+        "displayName": "botaniatweaker-1.2b.jar",
+        "fileName": "botaniatweaker-1.2b.jar",
+        "fileDate": "2020-08-31T19:23:53.947Z",
+        "fileLength": 35045,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3046/703/botaniatweaker-1.2b.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 357178,
+            "type": 3,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 225643,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 2786085862,
+            "type": 0
+          },
+          {
+            "foldername": "tfar",
+            "fingerprint": 3729712403,
+            "type": 0
+          },
+          {
+            "foldername": "botaniatweaker.mixins.json",
+            "fingerprint": 2499145450,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 2432683592,
+            "type": 0
+          },
+          {
+            "foldername": "botaniatweaker.refmap.json",
+            "fingerprint": 2694691641,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 722780150,
+        "gameVersion": [
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2020-01-22T00:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "botaniatweaker-1.2b.jar"
+      },
+      "dateInstalled": "2020-11-01T23:20:58.5049161Z",
+      "dateUpdated": "2020-11-01T23:20:58.506907Z",
+      "dateLastUpdateAttempted": "2020-11-01T23:20:58.506907Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 240630,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 2946240,
+        "displayName": "JustEnoughResources-1.15.2-0.10.1.77",
+        "fileName": "JustEnoughResources-1.15.2-0.10.1.77.jar",
+        "fileDate": "2020-05-02T08:08:12.213Z",
+        "fileLength": 221036,
+        "releaseType": 3,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2946/240/JustEnoughResources-1.15.2-0.10.1.77.jar",
+        "isAlternate": false,
+        "alternateFileId": 2946241,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 1731574032,
+            "type": 0
+          },
+          {
+            "foldername": "jeresources",
+            "fingerprint": 3376209280,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 2604549910,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 3829494983,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 1922105641,
+        "gameVersion": [
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "JustEnoughResources-1.15.2-0.10.1.77.jar"
+      },
+      "dateInstalled": "2020-11-08T14:34:54.9407042Z",
+      "dateUpdated": "2020-11-08T14:34:54.9436967Z",
+      "dateLastUpdateAttempted": "2020-11-08T14:34:54.9436967Z",
       "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
@@ -857,20 +1356,100 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
-      "addonID": 373051,
-      "gameInstanceID": "7208b2f3-6a5c-4001-bcfe-5199c3eecfbf",
+      "addonID": 278993,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
       "installedFile": {
-        "id": 2954892,
-        "displayName": "movingelevators-1.2.16-mc1.15",
-        "fileName": "movingelevators-1.2.16-mc1.15.jar",
-        "fileDate": "2020-05-12T13:34:06.413Z",
-        "fileLength": 206017,
+        "id": 2873657,
+        "displayName": "BonsaiTrees-2.1.2.6.jar",
+        "fileName": "BonsaiTrees-2.1.2.6.jar",
+        "fileDate": "2020-02-02T10:37:47.853Z",
+        "fileLength": 186909,
+        "releaseType": 2,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2873/657/BonsaiTrees-2.1.2.6.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 357557,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 343345371,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 1201855661,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 2436763882,
+            "type": 0
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 1910615674,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 1314047681,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 1429512733,
+        "gameVersion": [
+          "Forge",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "BonsaiTrees-2.1.2.6.jar"
+      },
+      "dateInstalled": "2020-11-07T16:29:02.504903Z",
+      "dateUpdated": "2020-11-07T16:29:02.5059014Z",
+      "dateLastUpdateAttempted": "2020-11-07T16:29:02.5059014Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 250363,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 2911830,
+        "displayName": "AutoRegLib-1.5-40.jar",
+        "fileName": "AutoRegLib-1.5-40.jar",
+        "fileDate": "2020-03-24T21:04:37.757Z",
+        "fileLength": 58933,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2954/892/movingelevators-1.2.16-mc1.15.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2911/830/AutoRegLib-1.5-40.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -878,36 +1457,1613 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3380300582,
+            "fingerprint": 3163068919,
             "type": 0
           },
           {
-            "foldername": "com",
-            "fingerprint": 2807073307,
+            "foldername": "vazkii",
+            "fingerprint": 1336282113,
             "type": 0
           },
           {
             "foldername": "assets",
-            "fingerprint": 345017697,
-            "type": 0
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 2342906965,
-            "type": 0
-          },
-          {
-            "foldername": "movingelevators.png",
-            "fingerprint": 2073663021,
+            "fingerprint": 168030657,
             "type": 0
           },
           {
             "foldername": "pack.mcmeta",
-            "fingerprint": 616320599,
+            "fingerprint": 3875124119,
             "type": 0
           }
         ],
-        "packageFingerprint": 538879713,
+        "packageFingerprint": 1112807760,
+        "gameVersion": [
+          "Forge",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "AutoRegLib-1.5-40.jar"
+      },
+      "dateInstalled": "2020-11-07T16:30:19.1513713Z",
+      "dateUpdated": "2020-11-07T16:30:19.1533664Z",
+      "dateLastUpdateAttempted": "2020-11-07T16:30:19.1533664Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 311880,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 3015910,
+        "displayName": "TinyMobFarm-1.15.2-1.0.8",
+        "fileName": "TinyMobFarm-1.15.2-1.0.8.jar",
+        "fileDate": "2020-07-27T06:11:30.303Z",
+        "fileLength": 72598,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3015/910/TinyMobFarm-1.15.2-1.0.8.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 1458211880,
+            "type": 0
+          },
+          {
+            "foldername": "cn",
+            "fingerprint": 1316059923,
+            "type": 0
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 986297935,
+            "type": 0
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 236136949,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1615309847,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 3273911401,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 4183675259,
+        "gameVersion": [
+          "Forge",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "TinyMobFarm-1.15.2-1.0.8.jar"
+      },
+      "dateInstalled": "2020-11-08T14:35:08.6628653Z",
+      "dateUpdated": "2020-11-08T14:35:08.6658563Z",
+      "dateLastUpdateAttempted": "2020-11-08T14:35:08.6658563Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 276951,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 3028347,
+        "displayName": "comforts-FORGE-1.15.2-2.0.0.4.jar",
+        "fileName": "comforts-FORGE-1.15.2-2.0.0.4.jar",
+        "fileDate": "2020-08-10T06:48:24.21Z",
+        "fileLength": 236220,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3028/347/comforts-FORGE-1.15.2-2.0.0.4.jar",
+        "isAlternate": false,
+        "alternateFileId": 3028348,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 665866993,
+            "type": 0
+          },
+          {
+            "foldername": "top",
+            "fingerprint": 1482545668,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 776057431,
+            "type": 0
+          },
+          {
+            "foldername": "CHANGELOG.md",
+            "fingerprint": 4248721505,
+            "type": 0
+          },
+          {
+            "foldername": "comforts_icon.png",
+            "fingerprint": 1045601088,
+            "type": 0
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 2788335590,
+            "type": 0
+          },
+          {
+            "foldername": "licenses",
+            "fingerprint": 2780256419,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 324051243,
+            "type": 0
+          },
+          {
+            "foldername": "README.md",
+            "fingerprint": 1410585725,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 2611814847,
+        "gameVersion": [
+          "Forge",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "comforts-FORGE-1.15.2-2.0.0.4.jar"
+      },
+      "dateInstalled": "2020-11-02T12:00:44.5034828Z",
+      "dateUpdated": "2020-11-02T12:00:44.5054776Z",
+      "dateLastUpdateAttempted": "2020-11-02T12:00:44.5054776Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 32274,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 2981594,
+        "displayName": "journeymap-1.15.2-5.7.0b3",
+        "fileName": "journeymap-1.15.2-5.7.0b3.jar",
+        "fileDate": "2020-06-16T16:34:17.197Z",
+        "fileLength": 6823032,
+        "releaseType": 2,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2981/594/journeymap-1.15.2-5.7.0b3.jar",
+        "isAlternate": false,
+        "alternateFileId": 2981596,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 226005,
+            "type": 4,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3210627753,
+            "type": 0
+          },
+          {
+            "foldername": "journeymap",
+            "fingerprint": 784371690,
+            "type": 0
+          },
+          {
+            "foldername": "modinfo",
+            "fingerprint": 3264659479,
+            "type": 0
+          },
+          {
+            "foldername": "net",
+            "fingerprint": 3133282320,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1342462522,
+            "type": 0
+          },
+          {
+            "foldername": "journeymap.png",
+            "fingerprint": 3357985534,
+            "type": 0
+          },
+          {
+            "foldername": "license.txt",
+            "fingerprint": 568011566,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 2930129283,
+            "type": 0
+          },
+          {
+            "foldername": "render-event-transformer.js",
+            "fingerprint": 2784044465,
+            "type": 0
+          },
+          {
+            "foldername": "info",
+            "fingerprint": 1640364356,
+            "type": 0
+          },
+          {
+            "foldername": "NOTICE.txt",
+            "fingerprint": 3411389661,
+            "type": 0
+          },
+          {
+            "foldername": "about.html",
+            "fingerprint": 1421502970,
+            "type": 0
+          },
+          {
+            "foldername": "org",
+            "fingerprint": 870500181,
+            "type": 0
+          },
+          {
+            "foldername": "jetty-dir.css",
+            "fingerprint": 4183154058,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 2722798450,
+        "gameVersion": [
+          "Forge",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "journeymap-1.15.2-5.7.0b3.jar"
+      },
+      "dateInstalled": "2020-11-03T14:30:51.6876223Z",
+      "dateUpdated": "2020-11-03T14:30:51.694604Z",
+      "dateLastUpdateAttempted": "2020-11-03T14:30:51.694604Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 243121,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 2980651,
+        "displayName": "Quark-r2.1-245.jar",
+        "fileName": "Quark-r2.1-245.jar",
+        "fileDate": "2020-06-15T09:29:00.89Z",
+        "fileLength": 5424185,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2980/651/Quark-r2.1-245.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 250363,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 2092015558,
+            "type": 0
+          },
+          {
+            "foldername": "vazkii",
+            "fingerprint": 3006907326,
+            "type": 0
+          },
+          {
+            "foldername": "asm",
+            "fingerprint": 3122410887,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1003088429,
+            "type": 0
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 1100931501,
+            "type": 0
+          },
+          {
+            "foldername": "genscripts",
+            "fingerprint": 639376859,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 2899891612,
+            "type": 0
+          },
+          {
+            "foldername": "proxypack.mcmeta",
+            "fingerprint": 2303534909,
+            "type": 0
+          },
+          {
+            "foldername": "proxypack.png",
+            "fingerprint": 3258380684,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 2496780500,
+        "gameVersion": [
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "Quark-r2.1-245.jar"
+      },
+      "dateInstalled": "2020-11-07T16:30:19.8368185Z",
+      "dateUpdated": "2020-11-07T16:30:19.8418051Z",
+      "dateLastUpdateAttempted": "2020-11-07T16:30:19.8418051Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 342584,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 3082939,
+        "displayName": "collective-1.15.2-1.53.jar",
+        "fileName": "collective-1.15.2-1.53.jar",
+        "fileDate": "2020-10-16T13:12:34.41Z",
+        "fileLength": 109064,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3082/939/collective-1.15.2-1.53.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 1942029339,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 271282386,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 4079018442,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 2777029448,
+        "gameVersion": [
+          "Forge",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "collective-1.15.2-1.53.jar"
+      },
+      "dateInstalled": "2020-11-03T14:33:06.6622046Z",
+      "dateUpdated": "2020-11-03T14:33:06.6641994Z",
+      "dateLastUpdateAttempted": "2020-11-03T14:33:06.6641994Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 380404,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 3070962,
+        "displayName": "jeilotr-1.3.1-BETA.jar",
+        "fileName": "jeilotr-1.3.1-BETA.jar",
+        "fileDate": "2020-10-03T13:40:29.85Z",
+        "fileLength": 27021,
+        "releaseType": 2,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3070/962/jeilotr-1.3.1-BETA.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 238222,
+            "type": 3,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 406893,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 2949747177,
+            "type": 0
+          },
+          {
+            "foldername": "craftedMods",
+            "fingerprint": 1749822239,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 1203190412,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 3302604965,
+        "gameVersion": [
+          "Forge",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "jeilotr-1.3.1-BETA.jar"
+      },
+      "dateInstalled": "2020-11-08T14:34:47.0686223Z",
+      "dateUpdated": "2020-11-08T14:34:47.0716143Z",
+      "dateLastUpdateAttempted": "2020-11-08T14:34:47.0716143Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 264231,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 3077979,
+        "displayName": "iceandfire-2.1.0-1.15.2",
+        "fileName": "iceandfire-2.1.0-1.15.2.jar",
+        "fileDate": "2020-10-12T21:28:31.4Z",
+        "fileLength": 24524460,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3077/979/iceandfire-2.1.0-1.15.2.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 331936,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3110103627,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 2726190709,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 3705930914,
+            "type": 0
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 205491026,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 3380797652,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 2435818927,
+        "gameVersion": [
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2020-01-22T00:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "iceandfire-2.1.0-1.15.2.jar"
+      },
+      "dateInstalled": "2020-11-01T23:29:04.8610098Z",
+      "dateUpdated": "2020-11-01T23:29:04.8869408Z",
+      "dateLastUpdateAttempted": "2020-11-01T23:29:04.8869408Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 225608,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 2873556,
+        "displayName": "WorldEdit 7.1.0 (Forge for MC 1.15.2)",
+        "fileName": "worldedit-forge-mc1.15.2-7.1.0.jar",
+        "fileDate": "2020-02-02T06:31:31.387Z",
+        "fileLength": 4299039,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2873/556/worldedit-forge-mc1.15.2-7.1.0.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 535608461,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 2931108514,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1834172738,
+            "type": 0
+          },
+          {
+            "foldername": "defaults",
+            "fingerprint": 1604600326,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 3152314042,
+            "type": 0
+          },
+          {
+            "foldername": "worldedit-icon.png",
+            "fingerprint": 2897070019,
+            "type": 0
+          },
+          {
+            "foldername": "lang",
+            "fingerprint": 2328085604,
+            "type": 0
+          },
+          {
+            "foldername": "org",
+            "fingerprint": 1519895627,
+            "type": 0
+          },
+          {
+            "foldername": "net",
+            "fingerprint": 2729845848,
+            "type": 0
+          },
+          {
+            "foldername": "javax",
+            "fingerprint": 3897046899,
+            "type": 0
+          },
+          {
+            "foldername": "de",
+            "fingerprint": 398354527,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 2859939204,
+        "gameVersion": [
+          "Forge",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "worldedit-forge-mc1.15.2-7.1.0.jar"
+      },
+      "dateInstalled": "2020-11-01T23:35:33.1005503Z",
+      "dateUpdated": "2020-11-01T23:35:33.1055386Z",
+      "dateLastUpdateAttempted": "2020-11-01T23:35:33.1055386Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 328085,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 3066060,
+        "displayName": "Create - mc1.15.2_v0.2.4e",
+        "fileName": "create-mc1.15.2_v0.2.4e.jar",
+        "fileDate": "2020-09-26T09:37:43.483Z",
+        "fileLength": 4331746,
+        "releaseType": 2,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3066/60/create-mc1.15.2_v0.2.4e.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 238222,
+            "type": 2,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 530066869,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 4075087884,
+            "type": 0
+          },
+          {
+            "foldername": ".cache",
+            "fingerprint": 2491768245,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 442872516,
+            "type": 0
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 1098885220,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 68304512,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 4250948751,
+        "gameVersion": [
+          "Forge",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "create-mc1.15.2_v0.2.4e.jar"
+      },
+      "dateInstalled": "2020-11-01T23:53:34.7712317Z",
+      "dateUpdated": "2020-11-01T23:53:34.7762182Z",
+      "dateLastUpdateAttempted": "2020-11-01T23:53:34.7762182Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 245755,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 2991235,
+        "displayName": "Waystones_1.15.2-6.0.2.jar",
+        "fileName": "Waystones_1.15.2-6.0.2.jar",
+        "fileDate": "2020-06-28T15:21:40.29Z",
+        "fileLength": 194641,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2991/235/Waystones_1.15.2-6.0.2.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3755651523,
+            "type": 0
+          },
+          {
+            "foldername": "net",
+            "fingerprint": 2432221905,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1767603832,
+            "type": 0
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 1204574755,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 1362067209,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 871123471,
+        "gameVersion": [
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2020-01-22T00:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "Waystones_1.15.2-6.0.2.jar"
+      },
+      "dateInstalled": "2020-11-02T12:00:42.0460553Z",
+      "dateUpdated": "2020-11-02T12:00:42.0480503Z",
+      "dateLastUpdateAttempted": "2020-11-02T12:00:42.0480503Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 272335,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 3014039,
+        "displayName": "Cucumber-1.15.2-3.0.9.jar",
+        "fileName": "Cucumber-1.15.2-3.0.9.jar",
+        "fileDate": "2020-07-25T02:33:59.303Z",
+        "fileLength": 133859,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3014/39/Cucumber-1.15.2-3.0.9.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 2824654997,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 3259916702,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 3191462104,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 1139484936,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 755016859,
+        "gameVersion": [
+          "Forge",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "Cucumber-1.15.2-3.0.9.jar"
+      },
+      "dateInstalled": "2020-11-01T23:21:17.8461785Z",
+      "dateUpdated": "2020-11-01T23:21:17.8481751Z",
+      "dateLastUpdateAttempted": "2020-11-01T23:21:17.8481751Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 238222,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 3039710,
+        "displayName": "jei-1.15.2-6.0.3.15.jar",
+        "fileName": "jei-1.15.2-6.0.3.15.jar",
+        "fileDate": "2020-08-23T01:05:25.72Z",
+        "fileLength": 704470,
+        "releaseType": 3,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3039/710/jei-1.15.2-6.0.3.15.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 2045036789,
+            "type": 0
+          },
+          {
+            "foldername": "mezz",
+            "fingerprint": 2286300598,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 3652707984,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 4128377082,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 2132625229,
+        "gameVersion": [
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "jei-1.15.2-6.0.3.15.jar"
+      },
+      "dateInstalled": "2020-11-01T23:11:53.3327691Z",
+      "dateUpdated": "2020-11-01T23:11:53.3377552Z",
+      "dateLastUpdateAttempted": "2020-11-01T23:11:53.3377552Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 331936,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 2983465,
+        "displayName": "citadel-1.1.11-1.15.2",
+        "fileName": "citadel-1.1.11.jar",
+        "fileDate": "2020-06-19T02:40:00.46Z",
+        "fileLength": 368597,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2983/465/citadel-1.1.11.jar",
+        "isAlternate": false,
+        "alternateFileId": 2983466,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3916217283,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 3718183387,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 2246101513,
+            "type": 0
+          },
+          {
+            "foldername": "citadel.png",
+            "fingerprint": 1603167710,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 4253522632,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 3128477219,
+        "gameVersion": [
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2020-01-22T00:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "citadel-1.1.11.jar"
+      },
+      "dateInstalled": "2020-11-01T23:29:01.3693494Z",
+      "dateUpdated": "2020-11-01T23:29:01.3703465Z",
+      "dateLastUpdateAttempted": "2020-11-01T23:29:01.3703465Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 357557,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 2873656,
+        "displayName": "libnonymous-1.15.2-1.1.1.5.jar",
+        "fileName": "libnonymous-1.15.2-1.1.1.5.jar",
+        "fileDate": "2020-02-02T10:35:57.647Z",
+        "fileLength": 2414041,
+        "releaseType": 2,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2873/656/libnonymous-1.15.2-1.1.1.5.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3880877057,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 3895672967,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 3345264439,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 4253522632,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 2333676060,
+        "gameVersion": [
+          "Forge",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "libnonymous-1.15.2-1.1.1.5.jar"
+      },
+      "dateInstalled": "2020-11-07T16:29:02.3712596Z",
+      "dateUpdated": "2020-11-07T16:29:02.378242Z",
+      "dateLastUpdateAttempted": "2020-11-07T16:29:02.378242Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 233029,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 2991969,
+        "displayName": "Vampirism-1.15.2-1.6.1",
+        "fileName": "Vampirism-1.15.2-1.6.1.jar",
+        "fileDate": "2020-06-29T12:37:40.83Z",
+        "fileLength": 7358817,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2991/969/Vampirism-1.15.2-1.6.1.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 238222,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 380771,
+            "type": 2,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3236503443,
+            "type": 0
+          },
+          {
+            "foldername": "de",
+            "fingerprint": 418620748,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 4269880443,
+            "type": 0
+          },
+          {
+            "foldername": "supporters.json",
+            "fingerprint": 1227942047,
+            "type": 0
+          },
+          {
+            "foldername": ".cache",
+            "fingerprint": 3259117887,
+            "type": 0
+          },
+          {
+            "foldername": "vampireBooks.txt",
+            "fingerprint": 916199053,
+            "type": 0
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 169706055,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1932660701,
+            "type": 0
+          },
+          {
+            "foldername": "versions.json",
+            "fingerprint": 285524975,
+            "type": 0
+          },
+          {
+            "foldername": "logo.png",
+            "fingerprint": 1431393999,
+            "type": 0
+          },
+          {
+            "foldername": "structures",
+            "fingerprint": 169815282,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 2309334638,
+        "gameVersion": [
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "Vampirism-1.15.2-1.6.1.jar"
+      },
+      "dateInstalled": "2020-11-02T11:58:43.4430883Z",
+      "dateUpdated": "2020-11-02T11:58:43.4510669Z",
+      "dateLastUpdateAttempted": "2020-11-02T11:58:43.4510669Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 238372,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 2957553,
+        "displayName": "Neat 1.6-22.jar",
+        "fileName": "Neat 1.6-22.jar",
+        "fileDate": "2020-05-15T15:05:10.977Z",
+        "fileLength": 20028,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2957/553/Neat 1.6-22.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 2882954317,
+            "type": 0
+          },
+          {
+            "foldername": "vazkii",
+            "fingerprint": 3613795290,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 2996498051,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 1353712245,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 3685890881,
+        "gameVersion": [
+          "Forge",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "Neat 1.6-22.jar"
+      },
+      "dateInstalled": "2020-11-07T16:29:53.2670896Z",
+      "dateUpdated": "2020-11-07T16:29:53.2690834Z",
+      "dateLastUpdateAttempted": "2020-11-07T16:29:53.2690834Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 300297,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 3088023,
+        "displayName": "projectvibrantjourneys-1.15.2-2.0.4.jar",
+        "fileName": "projectvibrantjourneys-1.15.2-2.0.4.jar",
+        "fileDate": "2020-10-20T21:21:10.79Z",
+        "fileLength": 1518921,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3088/23/projectvibrantjourneys-1.15.2-2.0.4.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 575651472,
+            "type": 0
+          },
+          {
+            "foldername": "projectvibrantjourneys",
+            "fingerprint": 3140997471,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1249026389,
+            "type": 0
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 1978085420,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 2410259437,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 2266324327,
+        "gameVersion": [
+          "Forge",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "projectvibrantjourneys-1.15.2-2.0.4.jar"
+      },
+      "dateInstalled": "2020-11-01T23:51:47.1939733Z",
+      "dateUpdated": "2020-11-01T23:51:47.1959679Z",
+      "dateLastUpdateAttempted": "2020-11-01T23:51:47.1959679Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 239197,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 2949785,
+        "displayName": "CraftTweaker-1.15.2-6.0.0.24.jar",
+        "fileName": "CraftTweaker-1.15.2-6.0.0.24.jar",
+        "fileDate": "2020-05-06T14:32:11.277Z",
+        "fileLength": 1842020,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2949/785/CraftTweaker-1.15.2-6.0.0.24.jar",
+        "isAlternate": false,
+        "alternateFileId": 2949786,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 368718,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 1320228505,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 3558630156,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 4035650311,
+            "type": 0
+          },
+          {
+            "foldername": "StdLibs.jar",
+            "fingerprint": 3766409282,
+            "type": 0
+          },
+          {
+            "foldername": "logo.png",
+            "fingerprint": 294559973,
+            "type": 0
+          },
+          {
+            "foldername": "org",
+            "fingerprint": 1610328803,
+            "type": 0
+          },
+          {
+            "foldername": "zsynthetic",
+            "fingerprint": 2414497039,
+            "type": 0
+          },
+          {
+            "foldername": "live",
+            "fingerprint": 2735121781,
+            "type": 0
+          },
+          {
+            "foldername": "stdlib",
+            "fingerprint": 3995400988,
+            "type": 0
+          },
+          {
+            "foldername": "listeners",
+            "fingerprint": 1659195514,
+            "type": 0
+          },
+          {
+            "foldername": "compactio",
+            "fingerprint": 1016296600,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 109196048,
+        "gameVersion": [
+          "Forge",
+          "1.15.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "CraftTweaker-1.15.2-6.0.0.24.jar"
+      },
+      "dateInstalled": "2020-11-01T23:12:04.969643Z",
+      "dateUpdated": "2020-11-01T23:12:04.9716372Z",
+      "dateLastUpdateAttempted": "2020-11-01T23:12:04.9716372Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 340991,
+      "gameInstanceID": "5b2afd5e-f4fb-4e0b-b37e-644a03240453",
+      "installedFile": {
+        "id": 3101903,
+        "displayName": "Druidcraft-1.15-0.4.45.jar",
+        "fileName": "Druidcraft-1.15-0.4.45.jar",
+        "fileDate": "2020-11-04T10:04:32.143Z",
+        "fileLength": 1431676,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3101/903/Druidcraft-1.15-0.4.45.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3059444315,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 2337818759,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 3958676796,
+            "type": 0
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 3266927033,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 1082532960,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 1157866335,
         "gameVersion": [
           "1.15",
           "Forge",
@@ -923,12 +3079,12 @@
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "movingelevators-1.2.16-mc1.15.jar"
+        "FileNameOnDisk": "Druidcraft-1.15-0.4.45.jar"
       },
-      "dateInstalled": "2020-05-21T19:58:54.6123608Z",
-      "dateUpdated": "2020-05-21T19:58:54.6133582Z",
-      "dateLastUpdateAttempted": "2020-05-21T19:58:54.6133582Z",
-      "status": 4,
+      "dateInstalled": "2020-11-01T23:52:22.0352149Z",
+      "dateUpdated": "2020-11-05T19:32:14.0871574Z",
+      "dateLastUpdateAttempted": "2020-11-05T19:32:14.0871574Z",
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -937,7 +3093,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     }
   ],
   "isMigrated": false,
