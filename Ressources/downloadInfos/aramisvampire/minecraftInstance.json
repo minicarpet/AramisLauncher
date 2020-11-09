@@ -34,28 +34,19 @@
   "manifest": {
     "minecraft": {
       "version": "1.15.2",
-      "additionalJavaArgs": null,
       "modLoaders": [
         {
           "id": "forge-31.2.45",
           "primary": true
         }
-      ],
-      "libraries": null
+      ]
     },
     "manifestType": "minecraftModpack",
     "manifestVersion": 1,
-    "name": "Aramis MC",
-    "version": "1.0.0",
+    "name": "AramisVampire",
+    "version": "1.0.2",
     "author": "azmoket",
-    "description": null,
-    "projectID": null,
     "files": [
-      {
-        "projectID": 323596,
-        "fileID": 2992655,
-        "required": true
-      },
       {
         "projectID": 280441,
         "fileID": 2927621,
@@ -157,28 +148,18 @@
         "required": true
       },
       {
-        "projectID": 225608,
-        "fileID": 2873556,
-        "required": true
-      },
-      {
         "projectID": 328085,
         "fileID": 3066060,
         "required": true
       },
       {
-        "projectID": 245755,
-        "fileID": 2991235,
+        "projectID": 238222,
+        "fileID": 3039710,
         "required": true
       },
       {
         "projectID": 272335,
         "fileID": 3014039,
-        "required": true
-      },
-      {
-        "projectID": 238222,
-        "fileID": 3039710,
         "required": true
       },
       {
@@ -197,18 +178,13 @@
         "required": true
       },
       {
-        "projectID": 239197,
-        "fileID": 2949785,
-        "required": true
-      },
-      {
         "projectID": 340991,
         "fileID": 3099443,
         "required": true
       }
     ],
     "overrides": "overrides"
-  },
+    },
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
   "projectID": 0,
