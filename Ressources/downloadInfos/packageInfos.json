@@ -11,14 +11,14 @@
             "address" : "minecraft23.omgserv.com:10001"
         },
 		{
-            "packageName" : "Freebuild",
-            "version" : "1.5",
-            "address" : "cop1squad.craft.gg:10057"
-        },
-		{
             "packageName" : "AramisVampire",
             "version" : "1.0",
             "address" : "minecraft23.omgserv.com:10001"
+        },
+		{
+            "packageName" : "Freebuild",
+            "version" : "1.5",
+            "address" : "cop1squad.craft.gg:10057"
         }
     ]
 }
