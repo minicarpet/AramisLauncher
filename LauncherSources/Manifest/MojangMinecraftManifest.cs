@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-
-using System.Globalization;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-
-namespace AramisLauncher.JSON
+﻿namespace AramisLauncher.Manifest
 {
+    using System;
+    using System.Collections.Generic;
+
     public partial class MojangMinecraftManifest
     {
         public Latest Latest { get; set; }

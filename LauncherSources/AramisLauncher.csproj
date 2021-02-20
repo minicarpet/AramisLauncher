@@ -109,6 +109,7 @@
     <Compile Include="Common\CommonData.cs" />
     <Compile Include="Download\DownloadManager.cs" />
     <Compile Include="Forge\ForgeInstaller.cs" />
+    <Compile Include="Manifest\ForgeV31InstallationProfile.cs" />
     <Compile Include="Manifest\ForgeInstallationProfile.cs" />
     <Compile Include="Manifest\NewForgeVersionJson.cs" />
     <Compile Include="Manifest\PackageConfigurationJson.cs" />

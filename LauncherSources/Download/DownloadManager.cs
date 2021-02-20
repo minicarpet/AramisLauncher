@@ -1,5 +1,4 @@
 ﻿using AramisLauncher.Common;
-using AramisLauncher.JSON;
 using AramisLauncher.Manifest;
 using AramisLauncher.Minecraft;
 using System;
@@ -77,9 +76,13 @@ namespace AramisLauncher.Download
                 {
                     downloadForgeLibrairies();
                 }
-                if (ManifestManager.newForgeVersionJson != null)
+                else if (ManifestManager.newForgeVersionJson != null)
                 {
                     downloadNewForgeLibrairies();
+                }
+                else if (ManifestManager.forgeV31InstallationProfile != null)
+                {
+                    downloadForgeV31Librairies();
                 }
                 downloadLibraries();
                 downloadMinecraft();
@@ -87,8 +90,9 @@ namespace AramisLauncher.Download
                 downloadConfigs();
                 success = true;
             }
-            catch(Exception)
+            catch(Exception ex)
             {
+                Console.WriteLine(ex.Message);
             }
 
             return success;
@@ -162,7 +166,7 @@ namespace AramisLauncher.Download
                 {
                     foreach (LibraryRule libraryRule in library.Rules)
                     {
-                        if (libraryRule.Action == JSON.Action.Allow)
+                        if (libraryRule.Action == Manifest.Action.Allow)
                         {
                             if (libraryRule.Os == null)
                             {
@@ -356,9 +360,9 @@ namespace AramisLauncher.Download
                     fileDownloadInformation.outputPath = CommonData.libraryFolder + completedFilePath;
                     classPathList.Add(fileDownloadInformation.outputPath);
 
-                    if (System.IO.File.Exists(fileDownloadInformation.outputPath))
+                    if (File.Exists(fileDownloadInformation.outputPath))
                     {
-                        System.IO.File.Delete(fileDownloadInformation.outputPath);
+                        File.Delete(fileDownloadInformation.outputPath);
                     }
 
                     fileToDownload.Add(fileDownloadInformation);
@@ -387,7 +391,7 @@ namespace AramisLauncher.Download
 
                 classPathList.Add(fileDownloadInformation.outputPath);
 
-                if (System.IO.File.Exists(filePath))
+                if (File.Exists(filePath))
                 {
                     /* Compare size */
                     if (new FileInfo(filePath).Length != library.Downloads.Artifact.Size)
@@ -430,7 +434,7 @@ namespace AramisLauncher.Download
                     fileDownloadInformation.url = "https://files.minecraftforge.net/maven/" + library.Downloads.Artifact.Path;
                 }
 
-                if (System.IO.File.Exists(filePath))
+                if (File.Exists(filePath))
                 {
                     /* Compare size */
                     if (library.Downloads.Artifact.Size != 0 && new FileInfo(filePath).Length != library.Downloads.Artifact.Size)
@@ -455,6 +459,114 @@ namespace AramisLauncher.Download
                 }
 
                 HomeUserControl.ChangeProgressBarValue(++currentAsset * 100.0 / (ManifestManager.newForgeVersionJson.Libraries.Length + ManifestManager.forgeInstallationProfile.Libraries.Length));
+            }
+
+            HomeUserControl.ChangeDownLoadDescriptor("Étape 4/12 : Téléchargement des fichiers forge...");
+            DownloadFiles();
+        }
+
+        private static void downloadForgeV31Librairies()
+        {
+            HomeUserControl.ChangeDownLoadDescriptor("Étape 3/12 : Vérification des fichiers forge...");
+            HomeUserControl.ChangeProgressBarValue(0);
+            int currentAsset = 0;
+
+            List<Library> toDelete = new List<Library>();
+
+            foreach (Library library in ManifestManager.forgeV31InstallationProfile.Libraries)
+            {
+                if (library.Downloads.Artifact.Url == null)
+                {
+                    /* search for an other item with same name */
+                    Library searchLib = ManifestManager.forgeV31InstallationProfile.Libraries.Find(lib => lib.Name == library.Name && lib.Downloads.Artifact.Url != null);
+                    if (searchLib != null)
+                    {
+                        library.Downloads.Artifact.Url = searchLib.Downloads.Artifact.Url;
+                        toDelete.Add(searchLib);
+                    }
+                }
+            }
+
+            foreach (Library libraryToDelete in toDelete)
+            {
+                ManifestManager.forgeV31InstallationProfile.Libraries.Remove(libraryToDelete);
+            }
+
+            foreach (Library library in ManifestManager.forgeV31InstallationProfile.Libraries)
+            {
+                FileDownloadInformation fileDownloadInformation = new FileDownloadInformation();
+
+                string filePath = CommonData.libraryFolder + library.Downloads.Artifact.Path;
+                string sha = library.Downloads.Artifact.Sha1;
+                fileDownloadInformation.outputPath = filePath;
+                fileDownloadInformation.url = library.Downloads.Artifact.Url.AbsoluteUri;
+
+                classPathList.Add(fileDownloadInformation.outputPath);
+
+                if (File.Exists(filePath))
+                {
+                    /* Compare size */
+                    if (new FileInfo(filePath).Length != library.Downloads.Artifact.Size)
+                    {
+                        /* Size is incorrect, add to download list */
+                        fileToDownload.Add(fileDownloadInformation);
+                    }
+                    else
+                    {
+                        /* Check sha of file */
+                        if (sha != Metadata.GetSha1(filePath))
+                        {
+                            /* File sha is incorrect, download again */
+                            fileToDownload.Add(fileDownloadInformation);
+                        }
+                    }
+                }
+                else
+                {
+                    /* add to download list */
+                    fileToDownload.Add(fileDownloadInformation);
+                }
+
+                HomeUserControl.ChangeProgressBarValue(++currentAsset * 100.0 / ManifestManager.forgeV31InstallationProfile.Libraries.Count);
+            }
+
+            foreach (Library library in ManifestManager.forgeV31InstallationProfile.Libraries)
+            {
+                FileDownloadInformation fileDownloadInformation = new FileDownloadInformation();
+
+                string filePath = CommonData.libraryFolder + library.Downloads.Artifact.Path;
+                string sha = library.Downloads.Artifact.Sha1;
+                fileDownloadInformation.outputPath = filePath;
+                if (library.Downloads.Artifact.Url != null)
+                {
+                    fileDownloadInformation.url = library.Downloads.Artifact.Url.AbsoluteUri;
+                }
+
+                if (File.Exists(filePath))
+                {
+                    /* Compare size */
+                    if (library.Downloads.Artifact.Size != 0 && new FileInfo(filePath).Length != library.Downloads.Artifact.Size)
+                    {
+                        /* Size is incorrect, add to download list */
+                        fileToDownload.Add(fileDownloadInformation);
+                    }
+                    else
+                    {
+                        /* Check sha of file */
+                        if (sha != null && sha != Metadata.GetSha1(filePath))
+                        {
+                            /* File sha is incorrect, download again */
+                            fileToDownload.Add(fileDownloadInformation);
+                        }
+                    }
+                }
+                else
+                {
+                    /* add to download list */
+                    fileToDownload.Add(fileDownloadInformation);
+                }
+
+                HomeUserControl.ChangeProgressBarValue(++currentAsset * 100.0 / (ManifestManager.forgeV31InstallationProfile.Libraries.Count));
             }
 
             HomeUserControl.ChangeDownLoadDescriptor("Étape 4/12 : Téléchargement des fichiers forge...");

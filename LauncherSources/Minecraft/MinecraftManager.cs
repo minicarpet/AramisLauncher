@@ -1,6 +1,6 @@
 ﻿using AramisLauncher.Common;
 using AramisLauncher.Download;
-using AramisLauncher.JSON;
+using AramisLauncher.Manifest;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -160,7 +160,7 @@ namespace AramisLauncher.Minecraft
                     {
                         if (jvmElement.JvmClass != null)
                         {
-                            if (jvmElement.JvmClass.Rules[0].Os.Name == "windows" && jvmElement.JvmClass.Rules[0].Action == JSON.Action.Allow)
+                            if (jvmElement.JvmClass.Rules[0].Os.Name == "windows" && jvmElement.JvmClass.Rules[0].Action == Manifest.Action.Allow)
                             {
                                 if (jvmElement.JvmClass.Rules[0].Os.Version == null || (jvmElement.JvmClass.Rules[0].Os.Version != null && jvmElement.JvmClass.Rules[0].Os.Version.Contains("10")))
                                 {
@@ -234,9 +234,13 @@ namespace AramisLauncher.Minecraft
                 {
                     arguments.Append(ManifestManager.forgeVersionJson.MainClass + " ");
                 }
-                else
+                else if(ManifestManager.newForgeVersionJson != null)
                 {
                     arguments.Append(ManifestManager.newForgeVersionJson.MainClass + " ");
+                }
+                else
+                {
+                    arguments.Append("net.minecraft.launchwrapper.Launch ");
                 }
 
                 foreach (GameElement gameElement in minecraftArguments.Game)
@@ -296,9 +300,12 @@ namespace AramisLauncher.Minecraft
                 //arguments.Append("--port ");
                 //arguments.Append(CommonData.packageServerAddress.Split(':')[1] + " ");
 
-                foreach (string forgeArguments in ManifestManager.newForgeVersionJson.Arguments.Game)
+                if(ManifestManager.newForgeVersionJson != null)
                 {
-                    arguments.Append(forgeArguments + " ");
+                    foreach (string forgeArguments in ManifestManager.newForgeVersionJson.Arguments.Game)
+                    {
+                        arguments.Append(forgeArguments + " ");
+                    }
                 }
             }
 

@@ -1,16 +1,13 @@
-﻿using System.Net;
-using System.Collections.Generic;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using AramisLauncher.Minecraft;
-using System;
-using System.IO;
-using System.Text;
-using AramisLauncher.Common;
-using AramisLauncher.Manifest;
-
-namespace AramisLauncher.JSON
+﻿namespace AramisLauncher.Manifest
 {
+    using System.Net;
+    using System.Collections.Generic;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Linq;
+    using AramisLauncher.Minecraft;
+    using System;
+    using AramisLauncher.Common;
+
     class ManifestManager
     {
         public static PackageJson packageJson = new PackageJson();
@@ -21,6 +18,7 @@ namespace AramisLauncher.JSON
         public static MinecraftVersionJson minecraftVersionJson = new MinecraftVersionJson();
         public static ForgeVersionJson forgeVersionJson = new ForgeVersionJson();
         public static NewForgeVersionJson newForgeVersionJson = new NewForgeVersionJson();
+        public static ForgeV31InstallationProfile forgeV31InstallationProfile = new ForgeV31InstallationProfile();
         public static ForgeInstallationProfile forgeInstallationProfile = new ForgeInstallationProfile();
         public static string manifestVersionData;
         public static string minecrafetVersionAssetsData;
@@ -58,9 +56,18 @@ namespace AramisLauncher.JSON
             int result = packageJson.BaseModLoader.MinecraftVersion.CompareTo("1.13.0");
             if (result >= 0)
             {
-                newForgeVersionJson = NewForgeVersionJson.FromJson(packageJson.BaseModLoader.VersionJson);
-                forgeInstallationProfile = ForgeInstallationProfile.FromJson(packageJson.BaseModLoader.InstallProfileJson);
-                forgeVersionJson = null;
+                if(packageJson.BaseModLoader.ForgeVersion.CompareTo("31.2.45") >= 0)
+                {
+                    forgeVersionJson = null;
+                    newForgeVersionJson = null;
+                    forgeV31InstallationProfile = ForgeV31InstallationProfile.FromJson(packageJson.BaseModLoader.InstallProfileJson);
+                }
+                else
+                {
+                    newForgeVersionJson = NewForgeVersionJson.FromJson(packageJson.BaseModLoader.VersionJson);
+                    forgeInstallationProfile = ForgeInstallationProfile.FromJson(packageJson.BaseModLoader.InstallProfileJson);
+                    forgeVersionJson = null;
+                }
             }
             else
             {

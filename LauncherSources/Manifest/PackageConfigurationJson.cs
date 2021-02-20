@@ -1,14 +1,9 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AramisLauncher.JSON
+﻿namespace AramisLauncher.Manifest
 {
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
+    using System.Globalization;
+
     public partial class PackageConfigurationJson
     {
         [JsonProperty("name")]
@@ -29,7 +24,7 @@ namespace AramisLauncher.JSON
 
     public partial class PackageConfigurationJson
     {
-        public static PackageConfigurationJson FromJson(string json) => JsonConvert.DeserializeObject<PackageConfigurationJson>(json, AramisLauncher.JSON.PackageConfigurationJsonConverter.Settings);
+        public static PackageConfigurationJson FromJson(string json) => JsonConvert.DeserializeObject<PackageConfigurationJson>(json, PackageConfigurationJsonConverter.Settings);
     }
 
     internal static class PackageConfigurationJsonConverter

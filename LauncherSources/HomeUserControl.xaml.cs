@@ -1,7 +1,7 @@
 ﻿using AramisLauncher.Common;
 using AramisLauncher.Download;
 using AramisLauncher.Forge;
-using AramisLauncher.JSON;
+using AramisLauncher.Manifest;
 using AramisLauncher.Minecraft;
 using AramisLauncher.Package;
 using System;

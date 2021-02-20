@@ -1,14 +1,10 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AramisLauncher.Manifest
+﻿namespace AramisLauncher.Manifest
 {
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
+    using System;
+    using System.Globalization;
+
     public partial class NewForgeVersionJson
     {
         [JsonProperty("id")]
@@ -39,10 +35,10 @@ namespace AramisLauncher.Manifest
         public string MainClass { get; set; }
 
         [JsonProperty("arguments")]
-        public Arguments Arguments { get; set; }
+        public NewForgeVersionJsonArguments Arguments { get; set; }
     }
 
-    public partial class Arguments
+    public partial class NewForgeVersionJsonArguments
     {
         [JsonProperty("game")]
         public string[] Game { get; set; }
@@ -63,32 +59,17 @@ namespace AramisLauncher.Manifest
         public Artifact Artifact { get; set; }
     }
 
-    public partial class Artifact
-    {
-        [JsonProperty("path")]
-        public string Path { get; set; }
-
-        [JsonProperty("url")]
-        public Uri Url { get; set; }
-
-        [JsonProperty("sha1")]
-        public string Sha1 { get; set; }
-
-        [JsonProperty("size")]
-        public long Size { get; set; }
-    }
-
     public partial class NewForgeVersionJson
     {
-        public static NewForgeVersionJson FromJson(string json) => JsonConvert.DeserializeObject<NewForgeVersionJson>(json, AramisLauncher.JSON.Converter.Settings);
+        public static NewForgeVersionJson FromJson(string json) => JsonConvert.DeserializeObject<NewForgeVersionJson>(json, NewForgeVersionJsonConverter.Settings);
     }
 
-    public static class Serialize
+    public static class NewForgeVersionJsonSerialize
     {
-        public static string ToJson(this NewForgeVersionJson self) => JsonConvert.SerializeObject(self, AramisLauncher.JSON.Converter.Settings);
+        public static string ToJson(this NewForgeVersionJson self) => JsonConvert.SerializeObject(self, NewForgeVersionJsonConverter.Settings);
     }
 
-    internal static class Converter
+    internal static class NewForgeVersionJsonConverter
     {
         public static readonly JsonSerializerSettings Settings = new JsonSerializerSettings
         {

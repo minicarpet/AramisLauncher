@@ -1,6 +1,6 @@
 ﻿using AramisLauncher.Common;
 using AramisLauncher.Download;
-using AramisLauncher.JSON;
+using AramisLauncher.Manifest;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -38,6 +38,10 @@ namespace AramisLauncher.Forge
                 {
                     InstallPatch();
                 }
+            }
+            else if(ManifestManager.forgeV31InstallationProfile != null)
+            {
+
             }
         }
 

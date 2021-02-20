@@ -1,14 +1,7 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AramisLauncher.Manifest
+﻿namespace AramisLauncher.Manifest
 {
+    using Newtonsoft.Json;
+
     public partial class ForgeInstallationProfile
     {
         [JsonProperty("_comment_")]
@@ -101,11 +94,11 @@ namespace AramisLauncher.Manifest
 
     public partial class ForgeInstallationProfile
     {
-        public static ForgeInstallationProfile FromJson(string json) => JsonConvert.DeserializeObject<ForgeInstallationProfile>(json, AramisLauncher.JSON.Converter.Settings);
+        public static ForgeInstallationProfile FromJson(string json) => JsonConvert.DeserializeObject<ForgeInstallationProfile>(json, Converter.Settings);
     }
 
     public static class SerializeInstallationProfile
     {
-        public static string ToJson(this ForgeInstallationProfile self) => JsonConvert.SerializeObject(self, AramisLauncher.JSON.Converter.Settings);
+        public static string ToJson(this ForgeInstallationProfile self) => JsonConvert.SerializeObject(self, Converter.Settings);
     }
 }

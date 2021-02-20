@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-
-using System.Globalization;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-
-namespace AramisLauncher.JSON
+﻿namespace AramisLauncher.Manifest
 {
+    using System;
+    using System.Globalization;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
+
     public partial class MinecraftVersionJson
     {
         [JsonProperty("arguments")]
@@ -334,12 +332,12 @@ namespace AramisLauncher.JSON
 
     public partial class MinecraftVersionJson
     {
-        public static MinecraftVersionJson FromJson(string json) => JsonConvert.DeserializeObject<MinecraftVersionJson>(json, AramisLauncher.JSON.MinecraftVersionJsonConverter.Settings);
+        public static MinecraftVersionJson FromJson(string json) => JsonConvert.DeserializeObject<MinecraftVersionJson>(json, MinecraftVersionJsonConverter.Settings);
     }
 
     public static class MinecraftVersionJsonSerialize
     {
-        public static string ToJson(this MinecraftVersionJson self) => JsonConvert.SerializeObject(self, AramisLauncher.JSON.MinecraftVersionJsonConverter.Settings);
+        public static string ToJson(this MinecraftVersionJson self) => JsonConvert.SerializeObject(self, MinecraftVersionJsonConverter.Settings);
     }
 
     internal static class MinecraftVersionJsonConverter
